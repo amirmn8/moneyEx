@@ -34,7 +34,7 @@ module.exports = {
         'BTCdark': 'radial-gradient(circle, rgba(230,183,11,0.711922268907563) 0%, rgba(27,27,27,0.6558998599439776) 75%);',
         'lightBg': "linear-gradient(to bottom, #273141, #372c3d, #432831, #442821, #3a2d16);",
         'darkBg': "linear-gradient(to bottom, #f6b33f, #f8b936, #f9bf2c, #f9c520, #f9cc0b);",
-
+        'hero-pattern': "url('/assets/images/HomeNav.png')",
       },
       width: {
         '540': '540px',

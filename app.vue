@@ -1,7 +1,12 @@
-<template>
-  <div class="dark">
-    <h1 class="text-2xl font-bold underline">
-      سلام !
-    </h1>
+<template >
+  <div class="">
+    <div class="h-530 bg-lightBg dark:bg-darkBg">
+      <CommonNavbar />
+      <div class="bg-hero-pattern -mt-6 bg-repeat-x">
+
+        <MainHeader />
+      </div>
+    </div>
+
   </div>
 </template>
