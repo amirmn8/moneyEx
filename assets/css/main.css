@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .trendcoinBack {
+        @apply flex relative flex-col px-8 dark:text-white justify-center rounded-lg gap-4 h-40 dark:border dark:border-solid dark:border-zinc-500;
+    }
+}
+
 @font-face {
     font-family: Shabnam;
     src: url(../Fonts/Shabnam-Bold-FD.ttf) format('ttf');
@@ -16,6 +22,6 @@
     font-family: Shabnam;
 }
 
-* {
+html {
     direction: rtl;
 }

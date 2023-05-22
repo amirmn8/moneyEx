@@ -38,40 +38,11 @@
                             class="flex w-full items-center justify-between rounded h-10 bg-white p-2 border border-solid border-gray-300 ">
                     </div>
 
-                    <div id="select w-full">
-                        <!-- trigger button -->
-                        <label class="block text-gray-700 text-sm font-bold mb-2 mt-7" for="username">
-
-                        </label>
-                        <button type="button" onclick="toggleSelect()"
-                            class="flex w-full items-center justify-between rounded h-10 bg-ExGray p-2 border  border-solid border-gray-300 "
-                            id="select-button">
-                            <span class="flex gap-2" id="select-label"><span><img src="./Assets/Icons/IRR.png"
-                                        alt=""></span>ریال
-                                (IIR) </span>
-                            <span class="text-2xl w-5 h-5 grid place-content-center"><i
-                                    class='bx bx-chevron-down'></i></span>
-                        </button>
-
-                        <!-- list items -->
-                        <ul class="z-2 absolute mt-2 w-1/6  rounded bg-gray-50 ring-1 ring-gray-300" style="display: none"
-                            id="select-list">
-                            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" onclick="setLanguage('IRR')">
-                                <span class="flex gap-2" id="select-label"><span><img src="./Assets/Icons/IRR.png"
-                                            alt=""></span>ریال
-                                    (IIR) </span>
-                            </li>
-                            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" onclick="setLanguage('EUR')">
-                                <span class="flex gap-2" id="select-label"><span>
-                                        <img src="./Assets/Icons/IRR.png" alt=""></span>ریال
-                                    (IIR) </span>
-                            </li>
-                            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" onclick="setLanguage('GPD')">
-                                <span class="flex gap-2" id="select-label"><span><img src="./Assets/Icons/IRR.png"
-                                            alt=""></span>ریال
-                                    (IIR) </span>
-                            </li>
-                        </ul>
+                    <div id="select w-full flex ">
+                        <select
+                            class="form-select w-full px-10 mt-7 border rounded border-solid border-gray-300 h-10 bg-gray-100 appearance-none">
+                            <option value="">بیت کوین</option>
+                        </select>
                     </div>
                 </div>
                 <div class="flex mx-auto fill-gray-500 dark:fill-white"><span><svg xmlns="http://www.w3.org/2000/svg"
@@ -91,38 +62,10 @@
                     </div>
 
                     <div id="select w-full">
-                        <!-- trigger button -->
-                        <label id="exchangeFee" class="block text-ExPlaceHolder text-sm text-left font-bold mb-2 ">
-                            510،000 IRR ~ 1 USDT
-                        </label>
-                        <button type="button" onclick="toggleSelect2()"
-                            class="flex w-full items-center justify-between  h-10 bg-ExGray p-2 border rounded border-solid border-gray-300 "
-                            id="select-button2">
-                            <span class="flex gap-2" id="select-label2"><span><img src="./Assets/Icons/BTC.png"
-                                        alt=""></span>بیتکوین(BTC)</span>
-                            <span class="text-2xl w-5 h-5 grid place-content-center"><i
-                                    class='bx bx-chevron-down'></i></span>
-                        </button>
-
-                        <!-- list items -->
-                        <ul class="z-2 absolute mt-2 w-1/6  rounded bg-gray-50 ring-1 ring-gray-300" style="display: none"
-                            id="select-list2">
-                            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" onclick="setLanguage2('IRR')">
-                                <span class="flex gap-2" id="select-label2"><span><img src="./Assets/Icons/IRR.png"
-                                            alt=""></span>ریال
-                                    (IIR) </span>
-                            </li>
-                            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" onclick="setLanguage2('EUR')">
-                                <span class="flex gap-2" id="select-label2"><span><img src="./Assets/Icons/IRR.png"
-                                            alt=""></span>ریال
-                                    (IIR) </span>
-                            </li>
-                            <li class="cursor-pointer select-none p-2 hover:bg-gray-200" onclick="setLanguage2('GPD')">
-                                <span class="flex gap-2" id="select-label2"><span><img src="./Assets/Icons/IRR.png"
-                                            alt=""></span>ریال
-                                    (IIR) </span>
-                            </li>
-                        </ul>
+                        <select
+                            class="form-select w-full px-10 mt-7 border rounded border-solid border-gray-300 h-10 bg-gray-100 appearance-none">
+                            <option value="">بیت کوین</option>
+                        </select>
                     </div>
                 </div>
                 <div class="mb-4 w-full">
