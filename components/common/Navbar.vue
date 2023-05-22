@@ -33,7 +33,7 @@
                         </a>
                     </div>
                     <div class="ml-6 flex">
-                        <div class="flex space-x-4 items-center text-gray-300 hover:text-white dark:text-white">
+                        <div class="flex space-x-4 items-center text-gray-300  dark:text-white">
 
                             <a id="markets" href="./market.html"
                                 class="  hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">بازار
