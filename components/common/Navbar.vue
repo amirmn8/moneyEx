@@ -5,7 +5,7 @@
             <div class="relative flex h-20 items-center justify-between">
                 <div class="flex flex-1  h-5per  justify-between items-stretch">
                     <div class="flex flex-shrink-0 items-center">
-                        <a class="hidden dark:block" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        <a class="hidden dark:block" href="/"><svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="167" height="37" viewBox="0 0 167 37">
                                 <defs>
                                     <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
@@ -17,7 +17,7 @@
                                 <rect id="_company_logo_" width="167" height="37" fill="url(#pattern)" />
                             </svg>
 
-                        </a> <a class="dark:hidden" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        </a> <a class="dark:hidden" href="/"><svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="167" height="37" viewBox="0 0 167 37">
                                 <defs>
                                     <pattern id="pattern2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
@@ -69,12 +69,12 @@
                         </button>
                         <a id="English" class="reload" href="#en"> <button
                                 class="flex gap-2 justify-center items-center border border-gray-700 dark:border-gray-300 rounded-lg hover:bg-gray-700 dark:hover:bg-white dark:hover:text-ExYellow px-3 py-2"><img
-                                    src="./Assets/Icons/English.jpg" alt="">
+                                    src="../../Assets/Icons/English.jpg" alt="">
                                 <p>English</p>
                             </button></a>
                         <a id="persian" class="reload" href="#fa"> <button
                                 class="flex gap-2 justify-center items-center border border-gray-700 dark:border-gray-300 rounded-lg hover:bg-gray-700 dark:hover:bg-white dark:hover:text-ExYellow px-3 py-2"><img
-                                    src="./Assets/Icons/Fa.png" alt="">
+                                    src="../../assets/icons/Fa.png" alt="">
                                 <p>فارسی</p>
                             </button></a>
 
@@ -112,7 +112,7 @@
                 </svg>
             </button>
 
-            <a href="./index.html" class="flex flex-shrink-0 items-center">
+            <a href="/" class="flex flex-shrink-0 items-center">
                 <svg class="dark:hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="167" height="37" viewBox="0 0 167 37">
                     <defs>
@@ -148,7 +148,7 @@
         </div>
         <div class="flex w-full">
             <div style="backdrop-filter: blur(30px);"
-                class="flex  px-4 pr-8 flex-col py-5 gap-5 mobile-menu mobile-menu2  hidden fixed top-0 right-0 h-screen md:items-stretch md:px-24  bg-black/30 w-5/6 md:w-full  z-50">
+                class="px-4 pr-8 flex-col py-5 gap-5 mobile-menu mobile-menu2  hidden fixed top-0 right-0 h-screen md:items-stretch md:px-24  bg-black/30 w-5/6 md:w-full  z-50">
                 <div class="flex items-center justify-between md:mb-10">
                     <button
                         class=" hidden md:flex mobile-menu-button-close2 gap-2 px-2 py-2 border border-gray-600 justify-center items-center rounded-lg dark:bg-gray-700">
@@ -174,12 +174,12 @@
                         </button>
                         <a href="#fa" class="reload"> <button id="persianMob"
                                 class="flex gap-2 justify-center items-center border border-gray-500 rounded-lg text-white px-3 py-2 dark:bg-none dark:text-white dark:border-gray-200"><img
-                                    src="./Assets/Icons/Fa.png" alt="">
+                                    src="../../Assets/Icons/Fa.png" alt="">
                                 <p>فارسی</p>
                             </button></a>
                         <a href="#en" class="reload"> <button id="EnglishMob"
                                 class="flex gap-2 justify-center items-center border border-gray-500 rounded-lg text-white px-3 py-2 dark:bg-none dark:text-white dark:border-gray-200"><img
-                                    src="./Assets/Icons/English.jpg" alt="">
+                                    src="../../Assets/Icons/English.jpg" alt="">
                                 <p>English</p>
                             </button></a>
 
