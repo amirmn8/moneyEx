@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mx-auto mt-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mx-auto pt-16">
         <MainTrendCoin coin-name="USDT" coin-price="1.06$" coin-persian-name="تتر" coin-changes="0.87%"
             coin-class="text-ExGreen" coin-div-class=" trendcoinBack bg-USDT dark:bg-USDTdark">
             <template #growIcon>

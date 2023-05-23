@@ -1,11 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer base {
+    html {
+      @apply dark:bg-black;
+    }
+  }
 @layer components {
     .trendcoinBack {
         @apply flex relative flex-col px-8 dark:text-white justify-center rounded-lg gap-4 h-40 dark:border dark:border-solid dark:border-zinc-500;
     }
+ 
 }
 
 @font-face {
@@ -24,4 +29,5 @@
 
 html {
     direction: rtl;
+    
 }

@@ -1,6 +1,7 @@
 <template>
+    <div></div>
     <section
-        class="flex md:flex-row flex-col pt-10 md:pt-24 justify-evenly items-center md:items-start gap-5 md:gap-0 mx-12 lg:mx-0">
+        class="flex md:flex-row flex-col pt-10 md:pt-24 justify-evenly items-center md:items-start gap-5 md:gap-0 mx-12 lg:mx-0 ">
         <div class="flex flex-col gap-4">
             <p id="headerText1" class="text-white text-xl font-bold">معامله امن، سریع و آسان</p>
             <p id="headerText2" class="text-white text-3xl font-bold">صرافی رمزارز <span
@@ -20,7 +21,7 @@
     </section>
     <!-- End of Hero Section -->
     <!-- Hero Exchange Section -->
-    <section class="prose">
+    <section class="prose ">
         <div
             class="flex w-11/12 justify-start items-center z-20 flex-col-reverse lg:flex-row shadow-md shadow-gray-300 dark:shadow-zinc-900   lg:w-8/12 bg-white dark:bg-black  md:pb-10 mx-auto mt-16 rounded-3xl ">
             <div class="flex  justify-center  mx-auto lg:mx-0 md:my-auto">
