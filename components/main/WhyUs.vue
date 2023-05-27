@@ -9,26 +9,26 @@
 
             <div class="flex flex-col gap-4">
                 <div class="flex items-center gap-2">
-                    <img class="dark:hidden" src="../../Assets/icons/Safe.png" alt="">
-                    <img class="hidden dark:block" src="../../Assets/icons/SafeDrk.png" alt="">
+                    <img class="dark:hidden" src="../../assets/icons/Safe.png" alt="">
+                    <img class="hidden dark:block" src="../../assets/icons/SafeDrk.png" alt="">
                     <p v-text="state.whyUsText4" class="text-base font-bold dark:text-white"></p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <img class="dark:hidden" src="../../Assets/icons/Privacy.png" alt="">
-                    <img class="hidden dark:block" src="../../Assets/icons/PrivacyDark.png" alt="">
+                    <img class="dark:hidden" src="../../assets/icons/Privacy.png" alt="">
+                    <img class="hidden dark:block" src="../../assets/icons/PrivacyDark.png" alt="">
                     <p v-text="state.whyUsText5" class="text-base font-bold dark:text-white"></p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <img class="dark:hidden" src="../../Assets/icons/Cryptos.png" alt="">
-                    <img class="hidden dark:block" src="../../Assets/icons/CryptosDark.png" alt="">
+                    <img class="dark:hidden" src="../../assets/icons/Cryptos.png" alt="">
+                    <img class="hidden dark:block" src="../../assets/icons/CryptosDark.png" alt="">
                     <p v-text="state.whyUsText6" class="text-base font-bold dark:text-white"></p>
                 </div>
             </div>
         </div>
 
         <div class="flex justify-center w-full">
-            <img class="w-full dark:hidden" src="../../Assets/images/site-screen.png" alt="">
-            <img class="w-full hidden dark:block" src="../../Assets/images/site-screen-dark.png" alt="">
+            <img class="w-full dark:hidden" src="../../assets/images/site-screen.png" alt="">
+            <img class="w-full hidden dark:block" src="../../assets/images/site-screen-dark.png" alt="">
         </div>
     </section>
 </template>

@@ -74,7 +74,7 @@
                         </button>
                         <a v-if="state.lang" id="English" class="reload" href="#en"> <button @click="switchToEnglish"
                                 class="flex gap-2 justify-center items-center border border-gray-700 dark:border-gray-300 rounded-lg hover:bg-gray-700 dark:hover:bg-white dark:hover:text-ExYellow px-3 py-2"><img
-                                    src="../../Assets/Icons/English.jpg" alt="">
+                                    src="../../assets/icons/English.png" alt="">
                                 <p>English</p>
                             </button></a>
                         <a v-else id="persian" class="reload" href="#fa"> <button @click="switchToPersian"
@@ -182,12 +182,12 @@
 
                         <a v-if="state.lang" href="#en" class="reload"> <button id="EnglishMob" @click="switchToEnglish"
                                 class="flex gap-2 justify-center items-center border border-gray-500 rounded-lg text-white px-3 py-2 dark:bg-none dark:text-white dark:border-gray-200"><img
-                                    src="../../Assets/Icons/English.jpg" alt="">
+                                    src="../../assets/icons/English.png" alt="">
                                 <p>English</p>
                             </button></a>
                         <a v-else href="#fa" class="reload"> <button id="persianMob" @click="switchToPersian"
                                 class="flex gap-2 justify-center items-center border border-gray-500 rounded-lg text-white px-3 py-2 dark:bg-none dark:text-white dark:border-gray-200"><img
-                                    src="../../Assets/Icons/Fa.png" alt="">
+                                    src="../../assets/icons/Fa.png" alt="">
                                 <p>فارسی</p>
                             </button></a>
                         <button
