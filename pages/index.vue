@@ -2,7 +2,7 @@
   <div>
     <div class="dark:bg-black">
       <div class="h-530 bg-lightBg dark:bg-darkBg">
-        <CommonNavbar :state="state" :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" />
+        <MainNavbar :state="state" :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" />
         <div class="bg-hero-pattern -mt-6 bg-repeat-x ">
           <MainHeader :state="state" />
         </div>
@@ -14,7 +14,7 @@
             <MainTradeEveryWhere :state="state" />
             <MainBlogSlider :state="state" />
           </div>
-          <CommonFooter :state="state" />
+          <MainFooter :state="state" />
         </div>
 
       </div>
