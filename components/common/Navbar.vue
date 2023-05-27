@@ -4,7 +4,7 @@
             <div class="relative flex h-20 items-center justify-between">
                 <div class="flex flex-1  h-5per  justify-between items-stretch">
                     <div class="flex flex-shrink-0 items-center">
-                        <a class="hidden dark:block" href="./index.html">
+                        <a class="hidden dark:block" href="/">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167"
                                 height="37" viewBox="0 0 167 37">
                                 <defs>
@@ -17,7 +17,7 @@
                                 <rect id="_company_logo_" width="167" height="37" fill="url(#pattern)" />
                             </svg>
                         </a>
-                        <a class="dark:hidden" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        <a class="dark:hidden" href="/"><svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="167" height="37" viewBox="0 0 167 37">
                                 <defs>
                                     <pattern id="pattern2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
@@ -33,7 +33,7 @@
                     <div class="ml-6 flex">
                         <div class="flex space-x-4 items-center text-gray-800  dark:text-white">
 
-                            <a id="markets" href="./market.html"
+                            <a id="markets" href="/markets"
                                 class="  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">بازار
                                 ها</a>
                             <a id="trade" href="./exchange.html"
@@ -224,7 +224,7 @@
                     </svg>
                 </a>
                 <hr />
-                <a href="./market.html"
+                <a href="/markets"
                     class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
                     <p id="marketsMob">بازار ها</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
