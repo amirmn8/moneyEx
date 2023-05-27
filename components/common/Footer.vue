@@ -8,58 +8,43 @@
         </div>
         <div class="lg:flex gap-12">
             <div class="basis-1/3">
-                <p id="footerText1" class="font-bold mt-4 dark:text-white">درباره مانی‌اکس</p>
-                <p id="footerText2" class="mt-2 text-sm dark:text-gray-300">لورم ایپسوم متن ساختگی با تولید سادگی
-                    نامفهوم از صنعت
-                    چاپ و
-                    با
-                    استفاده از
-                    طراحان
-                    گرافیک است.
-                    چاپگرها و
-                    متون بلکه روزنامهلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                    طراحان
-                    گرافیک
-                    است</p>
+                <p v-text="state.footerText1" class="font-bold mt-4 dark:text-white"></p>
+                <p v-text="state.footerText2" class="mt-2 text-sm dark:text-gray-300"></p>
             </div>
             <div class="basis-2/3 grid grid-cols-1 md:grid-cols-2">
                 <div class="grid grid-cols-2 mt-8">
                     <div class="flex flex-col gap-1">
-                        <p id="footerText3" class="font-bold dark:text-white">دسترسی‌های سریع</p>
+                        <p id="footerText3" class="font-bold dark:text-white"></p>
                         <ul class="gap-1 flex flex-col dark:text-gray-300">
-                            <li id="footerText4">
-                                درباره ما
+                            <li v-text="state.footerText4">
                             </li>
-                            <li id="footerText5">
-                                تماس با ما
+                            <li v-text="state.footerText5">
                             </li>
-                            <li id="footerText6">
-                                حساب کاربری
+                            <li v-text="state.footerText6">
                             </li>
-                            <li id="footerText7">
-                                قوانین و مقررات
+                            <li v-text="state.footerText7">
                             </li>
                         </ul>
                     </div>
                     <div class="flex flex-col gap-1">
-                        <p id="footerText8" class="font-bold dark:text-white">خدمات ما</p>
+                        <p v-text="state.footerText8" class="font-bold dark:text-white"></p>
                         <ul class="gap-1 flex flex-col dark:text-gray-300">
-                            <li id="footerText9">
-                                تبدیل ارز </li>
+                            <li v-text="state.footerText9">
+                            </li>
                             <li>
                                 Public API
                             </li>
                             <li>
                                 Private API
                             </li>
-                            <li id="footerText10">
-                                بلاگ
+                            <li v-text="state.footerText10">
+
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="mt-8 flex flex-col gap-2">
-                    <p id="footerText11" class="font-bold dark:text-white">ارتباط با ما</p>
+                    <p v-text="state.footerText11" class="font-bold dark:text-white"> </p>
                     <div class="flex items-center gap-3">
                         <img src="../../Assets/icons/phone_in_talk.png" alt="">
                         <p class="font-bold dark:text-white">091212121212</p>
@@ -70,10 +55,7 @@
                     </div>
                     <div class="flex items-start gap-3">
                         <img src="../../Assets/icons/Location.png" alt="">
-                        <p id="footerText12" class="font-normal dark:text-white"> استان تهران، شهر تهران، خیابان
-                            مرکزی ساختمان
-                            مرکزی،
-                            پلاک 7</p>
+                        <p v-text="state.footerText12" class="font-normal dark:text-white"> </p>
                     </div>
                 </div>
             </div>
@@ -92,8 +74,7 @@
                         d="M14.625,4.5A10.125,10.125,0,1,1,4.5,14.625,10.125,10.125,0,0,1,14.625,4.5Zm0,2.25A7.875,7.875,0,1,1,6.75,14.625,7.875,7.875,0,0,1,14.625,6.75Z"
                         transform="translate(-4.5 -4.5)" fill-rule="evenodd" />
                 </svg>
-                <p class="dark:text-white" id="footerText13">کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد
-                </p>
+                <p class="dark:text-white" v-text="state.footerText13"></p>
             </div>
             <div class="flex gap-16">
                 <div class=" justify-between items-center gap-16 hidden lg:flex"> <a class="mx-auto" href="#aparat"><svg
@@ -245,8 +226,9 @@
             </div>
 
         </div>
-
-
-
     </footer>
 </template>
+<script setup>
+const props = defineProps(['state'])
+
+</script>

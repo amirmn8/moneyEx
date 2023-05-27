@@ -3,20 +3,15 @@
     <section
         class="flex md:flex-row flex-col pt-10 md:pt-24 justify-evenly items-center md:items-start gap-5 md:gap-0 mx-12 lg:mx-0 ">
         <div class="flex flex-col gap-4">
-            <p id="headerText1" class="text-white text-xl font-bold">معامله امن، سریع و آسان</p>
-            <p id="headerText2" class="text-white text-3xl font-bold">صرافی رمزارز <span
-                    class="text-ExYellow dark:text-white">مانی‌اکسـ</span> </p>
+            <p v-text="state.headerText1" class="text-white text-xl font-bold"></p>
+            <p v-html="state.headerText2" class="text-white text-3xl font-bold">
+            </p>
         </div>
         <div class="gap-2 grid md:justify-items-end justify-items-center">
-            <p id="headerText3" class="text-xl inline bg-ExGreen text-white py-2 px-2 text-left">در
-                دنیای
-                رمزارز ها پیشتاز باشید
+            <p v-text="state.headerText3" class="text-xl inline bg-ExGreen text-white py-2 px-2 text-left">
             </p>
-            <p id="headerText4" class="text-xl rotate-2 bg-white py-1 px-2 text-left dark:text-ExYellow">از
-                منبع درآمدهای بی
-                شمار
-                بهره
-                مند شوید</p>
+            <p v-text="state.headerText4" class="text-xl rotate-2 bg-white py-1 px-2 text-left dark:text-ExYellow">
+            </p>
         </div>
     </section>
     <!-- End of Hero Section -->
@@ -32,9 +27,8 @@
             <form class="w-full lg:w-3/4 2xl:w-7/12 3xl:w-8/12 flex flex-col px-6 pt-6">
                 <div class="mb-4 w-full grid grid-cols-2">
                     <div>
-                        <label id="amountPaid" class="block text-ExPlaceHolder text-sm font-bold mb-2" for="username">
-                            مقدار پرداختی
-                        </label>
+                        <label v-text="state.amountPaid" class="block text-ExPlaceHolder text-sm font-bold mb-2"
+                            for="username"></label>
                         <input type="text" placeholder="0"
                             class="flex w-full items-center justify-between rounded h-10 bg-white p-2 border border-solid border-gray-300 ">
                     </div>
@@ -55,8 +49,7 @@
                     </span></div>
                 <div class="mb-4 -mt-4 w-full grid grid-cols-2">
                     <div>
-                        <label id="amountPaid2" class="block text-ExPlaceHolder text-sm font-bold mb-2">
-                            مقدار پرداختی
+                        <label v-text="state.amountPaid2" class="block text-ExPlaceHolder text-sm font-bold mb-2">
                         </label>
                         <input type="text" placeholder="0"
                             class="flex w-full items-center rounded justify-between  h-10 bg-white p-2 border border-solid border-gray-300 ">
@@ -71,16 +64,15 @@
                 </div>
                 <div class="mb-4 w-full">
                     <div>
-                        <label id="btcAddress" class="block text-ExPlaceHolder text-sm font-bold mb-2">
-                            آدرس بیت کوین </label>
+                        <label v-text="state.btcAddress" class="block text-ExPlaceHolder text-sm font-bold mb-2">
+                        </label>
                         <input type="text"
                             class="flex w-full items-center justify-between rounded h-10 bg-white p-2 border border-solid border-gray-300 ">
                     </div>
                 </div>
                 <div class="mb-4 w-full grid lg:grid-cols-2 gap-4">
                     <div>
-                        <label id="email" class="block text-ExPlaceHolder text-sm font-bold mb-2">
-                            ایمیل یا شماره موبایل
+                        <label v-text="state.email" class="block text-ExPlaceHolder text-sm font-bold mb-2">
                         </label>
                         <input type="text"
                             class="flex w-full items-center justify-between rounded h-10 bg-white p-2 border border-solid border-gray-300 ">
@@ -89,16 +81,17 @@
                     <button
                         class="border-ExYellow shadow-sm dark:hover:shadow-lg dark:hover:shadow-ExYellow shadow-ExYellow bg-ExYellow text-white h-10 text-ExYellow border-solid hover:border hover:bg-white hover:text-ExYellow mt-7 flex justify-center px-3 py-2 rounded-md gap-2 dark:hover:bg-ExYellow dark:hover:text-white">
 
-                        <p id="buyForce">خرید آنی </p>
+                        <p v-text="state.buyForce"></p>
                     </button>
 
                 </div>
                 <div class="flex justify-center mt-6 text-sm">
-                    <p id="privacy">با خرید و انجام معامله قوانین و مقررات مانی اکس خوانده را می پذیرم</p>
+                    <p v-text="state.privacy"></p>
                 </div>
             </form>
-
-
         </div>
     </section>
 </template>
+<script setup>
+const props = defineProps(['state'])
+</script>

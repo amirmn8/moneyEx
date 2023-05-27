@@ -35,20 +35,21 @@
                     <div class="ml-6 flex">
                         <div class="flex space-x-4 items-center text-gray-300  dark:text-white">
 
-                            <a id="markets" href="./market.html"
-                                class="  hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">بازار
-                                ها</a>
-                            <a id="trade" href="./exchange.html"
-                                class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">تبدیل
-                                ارز</a>
-                            <a id="userManual" href="#"
-                                class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">راهنمای
-                                استفاده</a>
-                            <a id="easyShopping" href="#"
-                                class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">خرید
-                                آسان
+                            <a v-text="state.markets" href="./market.html"
+                                class="  hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
                             </a>
-                            <a id="blog" href="#" class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">بلاگ
+                            <a v-text="state.trade" href="./exchange.html"
+                                class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
+                            </a>
+                            <a v-text="state.userManual" href="#"
+                                class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
+                            </a>
+                            <a v-text="state.easyShopping" href="#"
+                                class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
+
+                            </a>
+                            <a v-text="state.blog" href="#"
+                                class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
                             </a>
                             <a href="#" class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
                                 <img src="./Assets/Icons/three-dots-vertical.svg" alt="">
@@ -65,14 +66,14 @@
                                     d="M170.58,284.918a4.756,4.756,0,1,1,3.571-1.389A4.833,4.833,0,0,1,170.58,284.918Zm-8.6,10.613A1.975,1.975,0,0,1,160,293.547v-1.124a3.638,3.638,0,0,1,.628-2.149,4.033,4.033,0,0,1,1.62-1.355,24.85,24.85,0,0,1,4.248-1.488,17.173,17.173,0,0,1,4.083-.5,16.451,16.451,0,0,1,4.067.512,28.161,28.161,0,0,1,4.232,1.471,3.986,3.986,0,0,1,1.653,1.355,3.638,3.638,0,0,1,.628,2.149v1.124a1.975,1.975,0,0,1-1.984,1.984Z"
                                     transform="translate(-160 -275)" />
                             </svg>
-                            <p id="userAccount">حساب کاربری</p>
+                            <p v-text="state.userPanel"></p>
                         </button>
-                        <a id="English" class="reload" href="#en"> <button
+                        <a v-if="state.lang" id="English" class="reload" href="#en"> <button @click="switchToEnglish"
                                 class="flex gap-2 justify-center items-center border border-gray-700 dark:border-gray-300 rounded-lg hover:bg-gray-700 dark:hover:bg-white dark:hover:text-ExYellow px-3 py-2"><img
                                     src="../../Assets/Icons/English.jpg" alt="">
                                 <p>English</p>
                             </button></a>
-                        <a id="persian" class="reload" href="#fa"> <button
+                        <a v-else id="persian" class="reload" href="#fa"> <button @click="switchToPersian"
                                 class="flex gap-2 justify-center items-center border border-gray-700 dark:border-gray-300 rounded-lg hover:bg-gray-700 dark:hover:bg-white dark:hover:text-ExYellow px-3 py-2"><img
                                     src="../../assets/icons/Fa.png" alt="">
                                 <p>فارسی</p>
@@ -160,7 +161,7 @@
                                 d="M174.152,293.192l11.538-11.538a1.265,1.265,0,0,0,.291-.415,1.3,1.3,0,0,0,0-.913,1.265,1.265,0,0,0-.291-.415l-11.579-11.579a1.126,1.126,0,0,0-.83-.332,1.233,1.233,0,0,0-.872,2.117l9.421,9.421H161.245a1.245,1.245,0,1,0,0,2.49H181.83l-9.463,9.463a1.126,1.126,0,0,0-.332.83,1.233,1.233,0,0,0,2.117.872Z"
                                 transform="translate(-160 -268)" fill="#fff" />
                         </svg>
-                        <p id="returnBtn" class="text-white text-sm px-3">بازگشت</p>
+                        <p v-text="state.back" class="text-white text-sm px-3"></p>
                     </button>
                     <div class="flex gap-2">
 
@@ -172,19 +173,19 @@
                                     d="M170.58,284.918a4.756,4.756,0,1,1,3.571-1.389A4.833,4.833,0,0,1,170.58,284.918Zm-8.6,10.613A1.975,1.975,0,0,1,160,293.547v-1.124a3.638,3.638,0,0,1,.628-2.149,4.033,4.033,0,0,1,1.62-1.355,24.85,24.85,0,0,1,4.248-1.488,17.173,17.173,0,0,1,4.083-.5,16.451,16.451,0,0,1,4.067.512,28.161,28.161,0,0,1,4.232,1.471,3.986,3.986,0,0,1,1.653,1.355,3.638,3.638,0,0,1,.628,2.149v1.124a1.975,1.975,0,0,1-1.984,1.984Z"
                                     transform="translate(-160 -275)" />
                             </svg>
-                            <p id="userAccountMob">حساب کاربری</p>
+                            <p v-text="state.userPanel"></p>
                         </button>
-                        <a href="#fa" class="reload"> <button id="persianMob"
-                                class="flex gap-2 justify-center items-center border border-gray-500 rounded-lg text-white px-3 py-2 dark:bg-none dark:text-white dark:border-gray-200"><img
-                                    src="../../Assets/Icons/Fa.png" alt="">
-                                <p>فارسی</p>
-                            </button></a>
-                        <a href="#en" class="reload"> <button id="EnglishMob"
+
+                        <a v-if="state.lang" href="#en" class="reload"> <button id="EnglishMob" @click="switchToEnglish"
                                 class="flex gap-2 justify-center items-center border border-gray-500 rounded-lg text-white px-3 py-2 dark:bg-none dark:text-white dark:border-gray-200"><img
                                     src="../../Assets/Icons/English.jpg" alt="">
                                 <p>English</p>
                             </button></a>
-
+                        <a v-else href="#fa" class="reload"> <button id="persianMob" @click="switchToPersian"
+                                class="flex gap-2 justify-center items-center border border-gray-500 rounded-lg text-white px-3 py-2 dark:bg-none dark:text-white dark:border-gray-200"><img
+                                    src="../../Assets/Icons/Fa.png" alt="">
+                                <p>فارسی</p>
+                            </button></a>
                         <button
                             class="border border-gray-500 border-solid p-2 rounded-lg hover:bg-gray-700 dark:border-white">
                             <svg @click="switchToDarkMode" class="dark:hidden switchToDark"
@@ -218,7 +219,7 @@
                 </div>
                 <a href="./index.html"
                     class="flex justify-between items-center text-gray-300 dark:text-white hover:bg-gray-700 hover:text-white   text-sm font-medium">
-                    <p id="mainPageMob">صفحه اصلی</p>
+                    <p v-text="state.main"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -228,7 +229,7 @@
                 <hr />
                 <a href="./market.html"
                     class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
-                    <p id="marketsMob">بازار ها</p>
+                    <p v-text="state.markets"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -238,7 +239,7 @@
                 <hr />
                 <a href="./exchange.html"
                     class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
-                    <p id="tradeMob">تبدیل ارز</p>
+                    <p v-text="state.trade"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -248,7 +249,7 @@
                 <hr />
                 <a href="#"
                     class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium dark:text-white">
-                    <p id="userManualMob">راهنمای استفاده</p>
+                    <p v-text="state.trade"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -258,7 +259,7 @@
                 <hr />
                 <a href="#"
                     class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
-                    <p id="easyShoppingMob">خرید آسان</p>
+                    <p v-text="state.userManual"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -268,7 +269,7 @@
                 <hr />
                 <a href="#"
                     class="flex justify-between dark:text-white items-center text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium">
-                    <p id="blogMob">بلاگ</p>
+                    <p v-text="state.blog"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -278,7 +279,7 @@
                 <hr />
                 <a href="#"
                     class="flex justify-between items-center dark:text-white text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium">
-                    <p id="aboutUsMob">درباره ما</p>
+                    <p v-text="state.about"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -288,7 +289,7 @@
                 <hr />
                 <a href="#"
                     class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
-                    <p id="contactUsMob">تماس با ما</p>
+                    <p v-text="state.contact"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -298,7 +299,7 @@
                 <hr />
                 <a href="#"
                     class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
-                    <p id="rulesMob">قوانین و مقررات</p>
+                    <p v-text="state.rules"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
@@ -322,12 +323,14 @@
     </nav>
 </template>
 <script setup>
+const props = defineProps(['state', 'switchToEnglish', 'switchToPersian'])
+// منوی موبایل
 const isMenuHidden = ref(true);
-
-
 const toggleMenu = () => {
     isMenuHidden.value = !isMenuHidden.value;
 };
+// پایان بخش موبایل
+// تغییر تم دارک و لایت
 const switchToDarkMode = () => {
     localStorage.theme = 'dark';
     window.location.reload();
@@ -348,6 +351,6 @@ onMounted(() => {
         switchToLight[i].addEventListener('click', switchToLightMode);
     }
 });
-
+// پایان بخش تغییر تم دارک و لایت
 
 </script>
