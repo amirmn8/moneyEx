@@ -7,12 +7,12 @@
           <MainHeader :state="state" />
         </div>
         <div class="dark:bg-black">
-          <div class="2xl:mx-36 mx-4">
+          <div class="2xl:mx-36 mx-4 mb-16">
             <MainTrendCoindSection :state="state" />
             <MainWhyUs :state="state" />
             <MainOurPoints :state="state" />
             <MainTradeEveryWhere :state="state" />
-            <MainBlogSlider />
+            <MainBlogSlider :state="state" />
           </div>
           <CommonFooter :state="state" />
         </div>
@@ -123,6 +123,12 @@ const state = reactive({
   tradeEverywhereText8: 'وب سرویس',
   tradeEverywhereText9: 'وب سرویس تریدمن قابلیت اتصال دیگر صرافی ها و وب سرویس گیرنده ها را فراهم می کند و صرافی شما را به عنوان مرجع قرار می دهد',
   image: "/_nuxt/Assets/images/Group 3255.png",
+  postSlideText1: 'مجله اینترنتی مانی اکسـ',
+  postSlideText2: 'جدیدترین اخبار و مطالب حوزه مالی، رمز ارز و ترید',
+  seeAll: 'نمایش همه',
+  postTitle: 'آموزش جامع بازار رمز ارز',
+  postTime: '12 ساعت قبل',
+  summery: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ'
 
 })
 
@@ -189,12 +195,17 @@ const switchToPersian = () => {
   state.tradeEverywhereText8 = 'وب سرویس'
   state.tradeEverywhereText9 = 'وب سرویس تریدمن قابلیت اتصال دیگر صرافی ها و وب سرویس گیرنده ها را فراهم می کند و صرافی شما را به عنوان مرجع قرار می دهد'
   state.image = "/_nuxt/Assets/images/Group 3255.png",
-
-    useHead({
-      bodyAttrs: {
-        dir: 'rtl'
-      },
-    })
+    state.postSlideText1 = 'مجله اینترنتی مانی اکسـ',
+    state.postSlideText2 = 'جدیدترین اخبار و مطالب حوزه مالی، رمز ارز و ترید',
+    state.seeAll = 'نمایش همه',
+    state.postTitle = 'آموزش جامع بازار رمز ارز',
+    state.postTime = '12 ساعت قبل',
+    state.summery = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ'
+  useHead({
+    bodyAttrs: {
+      dir: 'rtl'
+    },
+  })
 }
 const switchToEnglish = () => {
   window.location.hash = "#en";
@@ -258,13 +269,18 @@ const switchToEnglish = () => {
   state.tradeEverywhereText8 = 'Web service'
   state.tradeEverywhereText9 = 'Trademan web service provides the ability to connect other exchanges and web clients and places your exchange as a reference.'
   state.image = "/_nuxt/Assets/images/Image-1.png",
+    state.postSlideText1 = 'MoneyEx online magazine',
+    state.postSlideText2 = 'The latest news and content in the field of finance, cryptocurrency and trade',
+    state.seeAll = 'See All'
+  state.postTitle = 'Comprehensive education of the cryptocurrency market',
+    state.postTime = '12 hours ago',
+    state.summery = 'Lorem Ipsum is a mock text with an unintelligible'
 
-
-    useHead({
-      bodyAttrs: {
-        dir: 'ltr'
-      },
-    })
+  useHead({
+    bodyAttrs: {
+      dir: 'ltr'
+    },
+  })
 }
 onMounted(() => {
   var hash = window.location.hash;

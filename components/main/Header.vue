@@ -79,7 +79,7 @@
                     </div>
 
                     <button
-                        class="border-ExYellow shadow-sm dark:hover:shadow-lg dark:hover:shadow-ExYellow shadow-ExYellow bg-ExYellow text-white h-10 text-ExYellow border-solid hover:border hover:bg-white hover:text-ExYellow mt-7 flex justify-center px-3 py-2 rounded-md gap-2 dark:hover:bg-ExYellow dark:hover:text-white">
+                        class="border-ExYellow shadow-sm dark:hover:shadow-lg dark:hover:shadow-ExYellow shadow-ExYellow bg-ExYellow h-10 text-white border-solid hover:border hover:bg-white hover:text-ExYellow mt-7 flex justify-center px-3 py-2 rounded-md gap-2 dark:hover:bg-ExYellow dark:hover:text-white">
 
                         <p v-text="state.buyForce"></p>
                     </button>
