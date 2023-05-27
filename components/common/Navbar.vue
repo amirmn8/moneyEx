@@ -1,6 +1,6 @@
 <template>
     <!-- منوی نسخه وب -->
-    <nav class="bg-none hidden lg:block">
+    <nav id="first" class="bg-none hidden lg:block">
         <div class=" max-w-7xl  px-8 mx-auto">
             <div class="relative flex h-20 items-center justify-between">
                 <div class="flex flex-1  h-5per  justify-between items-stretch">
@@ -52,7 +52,11 @@
                                 class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
                             </a>
                             <a href="#" class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
-                                <img src="./Assets/Icons/three-dots-vertical.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                                    class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>
                             </a>
                         </div>
 
@@ -308,11 +312,11 @@
                 </a>
                 <div class="flex flex-col mt-auto gap-2">
                     <div class="flex items-center gap-3 text-bold text-white">
-                        <img src="./Assets/Icons/phone_in_talk.png" alt="">
+                        <img src="../../assets/icons/phone_in_talk.png" alt="">
                         <p>091212121212</p>
                     </div>
                     <div class="flex items-center gap-3 text-bold text-white">
-                        <img src="./Assets/Icons/Email.png" alt="">
+                        <img src="../../assets/icons/Email.png" alt="">
                         <p>support@moneyex.org</p>
                     </div>
                 </div>

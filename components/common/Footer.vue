@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-ExGray dark:bg-ExBlack rounded-t-3xl relative w-full flex flex-col  px-12">
-        <a href="#first" class="absolute hidden top-4 left-20 md:block"><img src="./Assets/Icons/arrow-up-square-fill.png"
-                alt=""></a>
+        <a href="#first" class="absolute hidden top-4 left-20 md:block"><img
+                src="../..//Assets/Icons/arrow-up-square-fill.png" alt=""></a>
         <div class="mx-auto">
             <img class="dark:hidden" src="../../Assets/images/Logo-footer.png" alt="">
             <img class="dark:block hidden" src="../../Assets/images/Logo-footerDark.png" alt="">
