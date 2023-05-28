@@ -1,10 +1,10 @@
 <template>
     <footer class="bg-ExGray dark:bg-ExBlack rounded-t-3xl relative w-full flex flex-col mt-16 px-12">
-        <a href="#first" class="absolute hidden top-4 left-20 md:block"><img src="./Assets/Icons/arrow-up-square-fill.png"
-                alt=""></a>
+        <a href="#first" class="absolute hidden top-4 left-20 md:block"><img
+                src="../../assets/icons/arrow-up-square-fill.png" alt=""></a>
         <div class="mx-auto">
-            <img class="dark:hidden" src="./Assets/Img/Logo-footer.png" alt="">
-            <img class="dark:block hidden" src="./Assets/Img/Logo-footerDark.png" alt="">
+            <img class="dark:hidden" src="../../assets/images/Logo-footer.png" alt="">
+            <img class="dark:block hidden" src="../../assets/images/Logo-footerDark.png" alt="">
         </div>
         <div class="lg:flex gap-12">
             <div class="basis-1/3">
@@ -48,15 +48,15 @@
                 <div class="mt-8 flex flex-col gap-2">
                     <p v-text="state.footerText11" class="font-bold dark:text-white"></p>
                     <div class="flex items-center gap-3">
-                        <img src="./Assets/Icons/phone_in_talk.png" alt="">
+                        <img src="../../assets/icons/phone_in_talk.png" alt="">
                         <p class="font-bold dark:text-white">091212121212</p>
                     </div>
                     <div class="flex items-center gap-3">
-                        <img src="./Assets/Icons/Email.png" alt="">
+                        <img src="../../assets/icons/Email.png" alt="">
                         <p class="font-bold dark:text-white">support@moneyex.org</p>
                     </div>
                     <div class="flex items-start gap-3">
-                        <img src="./Assets/Icons/Location.png" alt="">
+                        <img src="../../assets/icons/Location.png" alt="">
                         <p v-text="state.footerText12" class="font-normal dark:text-white">
                         </p>
                     </div>
