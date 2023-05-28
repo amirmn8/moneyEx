@@ -53,7 +53,7 @@
                     <p>0</p>
                 </div>
                 <button
-                    class="border-ExGreen shadow-sm dark:hover:shadow-lg dark:hover:shadow-ExYellow shadow-ExGreen bg-ExGreen text-white h-10 text-ExYellow border-solid hover:border hover:bg-white hover:text-ExGreen flex justify-center px-3 py-2 rounded-md gap-2 dark:hover:bg-ExYellow dark:hover:text-white">
+                    class="border-ExGreen shadow-sm dark:hover:shadow-lg dark:hover:shadow-ExYellow shadow-ExGreen bg-ExGreen text-white h-10 border-solid hover:border hover:bg-white hover:text-ExGreen flex justify-center px-3 py-2 rounded-md gap-2 dark:hover:bg-ExYellow dark:hover:text-white">
 
                     <p id="buyForce">خرید آنی </p>
                 </button>

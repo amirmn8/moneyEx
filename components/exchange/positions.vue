@@ -39,7 +39,7 @@
                         class="  text-center border-b border-solid border-gray-400 pb-4 w-full">معاملات اخیر
                     </button>
                 </div>
-                <div id="marketCapSection" class="flex flex-col md:flex-row-reverse xl:flex-col md:gap-8 w-full hidden">
+                <div id="marketCapSection" class=" flex-col md:flex-row-reverse xl:flex-col md:gap-8 w-full hidden">
                     <div class="flex flex-col w-full">
                         <div>
                             <div class="flex justify-between">

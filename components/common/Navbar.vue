@@ -82,7 +82,7 @@
                                 <p>فارسی</p>
                             </button></a>
                         <button
-                            class="border border-gray-200 fs border-solid p-2 dark:border-gray-700 hover:fill-white dark:fill-white rounded-lg fill-gray-700 hover:fill-gray-100 hover:bg-gray-700 dark:hover:bg-white dark:hover:fill-ExBlack">
+                            class="border border-gray-200 fs border-solid p-2 dark:border-gray-700  dark:fill-white rounded-lg fill-gray-700 hover:fill-gray-100 hover:bg-gray-700 dark:hover:bg-white dark:hover:fill-ExBlack">
                             <svg @click="switchToDarkMode" class="dark:hidden switchToDark"
                                 xmlns="http://www.w3.org/2000/svg" width="23.883" height="23.88" viewBox="0 0 23.883 23.88">
                                 <path id="Moon4"
