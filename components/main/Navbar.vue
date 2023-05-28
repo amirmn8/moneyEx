@@ -253,7 +253,7 @@
                 <hr />
                 <a href="#"
                     class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium dark:text-white">
-                    <p v-text="state.trade"></p>
+                    <p v-text="state.easyShopping"></p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
                         <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                             d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
