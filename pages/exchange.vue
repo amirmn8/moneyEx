@@ -5,9 +5,9 @@
             <CommonNavbar :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" :state="state" />
             <div class="dark:bg-black  md:bg-slate-100">
                 <div class="2xl:mx-36  mb-16">
-                    <ExchangeHeader />
-                    <ExchangeTradingchartSection />
-                    <ExchangePositions />
+                    <ExchangeHeader :state="state" />
+                    <ExchangeTradingchartSection :state="state" />
+                    <ExchangePositions :state="state" />
                 </div>
                 <CommonFooter :state="state" />
             </div>
@@ -56,6 +56,8 @@ onMounted(() => {
 
 
 const state = reactive({
+    theme: "light",
+    switchTrades: true,
     lang: false,
     markets: "بازارها",
     trade: 'تبدیل ارز',

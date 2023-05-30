@@ -1,54 +1,54 @@
 <template>
-    <div class="flex flex-col bg-gray-100 md:bg-white md:mx-12 lg:mx-10 justify-center items-center py-8 px-8 rounded-xl">
+    <div
+        class="flex flex-col bg-gray-100 md:bg-white md:mx-12 lg:mx-10 justify-center items-center py-8 px-8 rounded-xl mt-8 dark:bg-ExBlack">
 
         <div class="flex gap-2 w-full justify-center md:justify-between items-center">
             <div id="select w-full">
                 <select
-                    class="form-select w-full px-10 border-none focus:border-none focus:outline-none focus:ring-0 hover:border-none h-10 appearance-none">
+                    class="form-select dark:bg-ExBlack dark:text-white w-full px-10 border-none focus:border-none focus:outline-none focus:ring-0 hover:border-none h-10">
                     <option value=""> BTC/USDT</option>
                     <option value="">USD</option>
                     <option value="">USDT</option>
                     <option value="">BTC</option>
                 </select>
-
             </div>
             <div class="md:flex flex-col hidden xl:hidden">
                 <p class="font-bold text-ExGreen">30,968.596</p>
-                <p style="direction: ltr;">=30,968.596 USD</p>
+                <p style="direction: ltr;" class="dark:text-white">=30,968.596 USD</p>
             </div>
             <div class="justify-between items-center gap-8 hidden xl:flex  mt-6 xl:mt-0 text-sm">
                 <div class="flex flex-col  ">
                     <p class="font-bold text-ExGreen">30,968.596</p>
-                    <p style="direction: ltr;">=30,968.596 USD</p>
+                    <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                    <p class="text-ExPlaceHolder">تغییرات 24 ساعته</p>
+                    <p class="text-ExPlaceHolder dark:text-gray-300">تغییرات 24 ساعته</p>
                     <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
                             src="./Assets/Icons/trending_up.png" alt="">
                         <p class="font-bold" style="direction: ltr;">+ 1.09 %</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-2">
-                    <p class="text-ExPlaceHolder">تغییرات 30 روزه</p>
+                    <p class="text-ExPlaceHolder dark:text-gray-300">تغییرات 30 روزه</p>
                     <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
                             src="./Assets/Icons/trending_up.png" alt="">
                         <p class="font-bold" style="direction: ltr;">+ 0.2455 %</p>
                     </div>
                 </div>
                 <div class="hidden md:flex flex-col gap-2">
-                    <p class="text-ExPlaceHolder">در گردش</p>
-                    <p style="direction: ltr;">=30,968.596 USD</p>
+                    <p class="text-ExPlaceHolder dark:text-gray-300">در گردش</p>
+                    <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
                 </div>
                 <div class="md:flex hidden flex-col gap-2">
-                    <p class="text-ExPlaceHolder">نرخ دلار در گردش</p>
+                    <p class="text-ExPlaceHolder dark:text-gray-300">نرخ دلار در گردش</p>
                     <div class="flex gap-2 items-center ">
-                        <p style="direction: ltr;">1</p>
+                        <p class="dark:text-white" style="direction: ltr;">1</p>
                     </div>
                 </div>
                 <div class="md:flex flex-col gap-2 hidden">
-                    <p class="text-ExPlaceHolder">حجم معاملات</p>
+                    <p class="text-ExPlaceHolder dark:text-gray-300">حجم معاملات</p>
                     <div class="flex gap-2 items-center">
-                        <p style="direction: ltr;">14,767,993.121</p>
+                        <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
                     </div>
                 </div>
             </div>
@@ -77,54 +77,54 @@
         <div class="flex justify-between items-center gap-6 xl:hidden  mt-6 text-sm">
             <div class="flex flex-col gap-2 md:hidden">
                 <p class="font-bold text-ExGreen">30,968.596</p>
-                <p style="direction: ltr;">=30,968.596 USD</p>
+                <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder">تغییرات 24 ساعته</p>
+                <p class="text-ExPlaceHolder dark:text-gray-300">تغییرات 24 ساعته</p>
                 <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4" src="./Assets/Icons/trending_up.png"
                         alt="">
                     <p class="font-bold" style="direction: ltr;">+ 1.09 %</p>
                 </div>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder">تغییرات 30 روزه</p>
+                <p class="text-ExPlaceHolder dark:text-gray-300">تغییرات 30 روزه</p>
                 <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4" src="./Assets/Icons/trending_up.png"
                         alt="">
                     <p class="font-bold" style="direction: ltr;">+ 0.2455 %</p>
                 </div>
             </div>
             <div class="hidden md:flex flex-col gap-2">
-                <p class="text-ExPlaceHolder">در گردش</p>
-                <p style="direction: ltr;">=30,968.596 USD</p>
+                <p class="text-ExPlaceHolder dark:text-gray-300">در گردش</p>
+                <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
             </div>
             <div class="md:flex hidden flex-col gap-2">
-                <p class="text-ExPlaceHolder">نرخ دلار در گردش</p>
+                <p class="text-ExPlaceHolder dark:text-gray-300">نرخ دلار در گردش</p>
                 <div class="flex gap-2 items-center ">
-                    <p style="direction: ltr;">1</p>
+                    <p class="dark:text-white" style="direction: ltr;">1</p>
                 </div>
             </div>
             <div class="md:flex flex-col gap-2 hidden">
-                <p class="text-ExPlaceHolder">حجم معاملات</p>
+                <p class="text-ExPlaceHolder dark:text-gray-300">حجم معاملات</p>
                 <div class="flex gap-2 items-center">
-                    <p style="direction: ltr;">14,767,993.121</p>
+                    <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
                 </div>
             </div>
         </div>
         <div class="flex justify-between items-center gap-6 md:hidden mt-6 text-sm">
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder">در گردش</p>
-                <p style="direction: ltr;">=30,968.596 USD</p>
+                <p class="text-ExPlaceHolder dark:text-gray-300">در گردش</p>
+                <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder">نرخ دلار در گردش</p>
+                <p class="text-ExPlaceHolder dark:text-gray-300">نرخ دلار در گردش</p>
                 <div class="flex gap-2 items-center ">
-                    <p style="direction: ltr;">1</p>
+                    <p class="dark:text-white" style="direction: ltr;">1</p>
                 </div>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder">حجم معاملات</p>
+                <p class="text-ExPlaceHolder dark:text-gray-300">حجم معاملات</p>
                 <div class="flex gap-2 items-center">
-                    <p style="direction: ltr;">14,767,993.121</p>
+                    <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
                 </div>
             </div>
         </div>
@@ -133,3 +133,6 @@
 
     </div>
 </template>
+<script setup>
+const props = defineProps(['state'])
+</script>

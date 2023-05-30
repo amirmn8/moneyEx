@@ -72,7 +72,7 @@
                             <p v-text="state.userPanel"></p>
                         </button>
                         <a v-if="state.lang" id="English" class="reload" href="#en"> <button @click="switchToEnglish"
-                                class="flex gap-2 justify-center items-center  dark:text-white dark:hover:text-ExBlack border border-gray-200 dark:border-gray-300 rounded-lg hover:bg-gray-700 dark:hover:bg-white px-3 py-2 hover:text-white"><img
+                                class="flex gap-2 justify-center items-center  dark:text-white dark:hover:text-ExBlack border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-700 dark:hover:bg-white px-3 py-2 hover:text-white"><img
                                     src="../../assets/icons/English.png" alt="">
                                 <p>English</p>
                             </button></a>

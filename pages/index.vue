@@ -200,12 +200,12 @@ const switchToPersian = () => {
     state.seeAll = 'نمایش همه',
     state.postTitle = 'آموزش جامع بازار رمز ارز',
     state.postTime = '12 ساعت قبل',
-    state.summery = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ'
-  useHead({
-    bodyAttrs: {
-      dir: 'rtl'
-    },
-  })
+    state.summery = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ',
+    useHead({
+      bodyAttrs: {
+        dir: 'rtl'
+      },
+    })
 }
 const switchToEnglish = () => {
   window.location.hash = "#en";
@@ -274,13 +274,13 @@ const switchToEnglish = () => {
     state.seeAll = 'See All'
   state.postTitle = 'Comprehensive education of the cryptocurrency market',
     state.postTime = '12 hours ago',
-    state.summery = 'Lorem Ipsum is a mock text with an unintelligible'
+    state.summery = 'Lorem Ipsum is a mock text with an unintelligible',
 
-  useHead({
-    bodyAttrs: {
-      dir: 'ltr'
-    },
-  })
+    useHead({
+      bodyAttrs: {
+        dir: 'ltr'
+      },
+    })
 }
 onMounted(() => {
   var hash = window.location.hash;
