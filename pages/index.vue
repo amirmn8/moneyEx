@@ -37,31 +37,7 @@ useHead({
     class: "dark:bg-black"
   }
 })
-onMounted(() => {
-  watchEffect(() => {
-    if (process.client) {
-      if (localStorage.theme) {
-        if (
-          localStorage.theme === 'dark' ||
-          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-        ) {
-          useHead({
-            htmlAttrs: {
-              class: 'dark'
-            },
-          })
-        } else {
-          useHead({
 
-            htmlAttrs: {
-              class: ''
-            },
-          })
-        }
-      }
-    }
-  });
-});
 const state = reactive({
   lang: false,
   markets: "بازارها",

@@ -340,7 +340,29 @@ const toggleMenu = () => {
 // تغییر تم دارک و لایت
 const switchToDarkMode = () => {
     localStorage.theme = 'dark';
-    window.location.reload();
+    watchEffect(() => {
+    if (process.client) {
+      if (localStorage.theme) {
+        if (
+          localStorage.theme === 'dark' ||
+          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          useHead({
+            htmlAttrs: {
+              class: 'dark'
+            },
+          })
+        } else {
+          useHead({
+
+            htmlAttrs: {
+              class: ''
+            },
+          })
+        }
+      }
+    }
+  });
 };
 onMounted(() => {
     const switchToDark = document.querySelectorAll('.switchToDark');
@@ -350,7 +372,29 @@ onMounted(() => {
 });
 const switchToLightMode = () => {
     localStorage.theme = 'light';
-    window.location.reload();
+    watchEffect(() => {
+    if (process.client) {
+      if (localStorage.theme) {
+        if (
+          localStorage.theme === 'dark' ||
+          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          useHead({
+            htmlAttrs: {
+              class: 'dark'
+            },
+          })
+        } else {
+          useHead({
+
+            htmlAttrs: {
+              class: ''
+            },
+          })
+        }
+      }
+    }
+  });
 };
 onMounted(() => {
     const switchToLight = document.querySelectorAll('.switchToLight');

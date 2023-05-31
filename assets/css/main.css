@@ -41,3 +41,6 @@ html {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+* {
+    @apply transition-colors duration-1000;
+}
