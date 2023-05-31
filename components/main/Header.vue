@@ -94,5 +94,4 @@
 </template>
 <script setup>
 const props = defineProps(['state'])
-const { data: coinDetail } = await useFetch('https://moneyex.org/api/public?command=returnTicker&tradePair=BTC_USDT')
 </script>
