@@ -21,7 +21,9 @@
 useHead({
     htmlAttrs: {
         ref: "darkSwitchRef"
-    }
+    },
+    title: 'MoneyEx | Exchange',
+
 })
 useHead({
     bodyAttrs: {

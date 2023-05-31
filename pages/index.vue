@@ -27,10 +27,14 @@
 </template>
 <script setup>
 
+
+
 useHead({
   htmlAttrs: {
-    ref: "darkSwitchRef"
-  }
+    ref: "darkSwitchRef",
+    
+  },
+  title: 'MoneyEx',
 })
 useHead({
   bodyAttrs: {

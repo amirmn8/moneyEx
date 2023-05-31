@@ -19,7 +19,8 @@
 useHead({
     htmlAttrs: {
         ref: "darkSwitchRef"
-    }
+    },
+    title: 'MoneyEx | Markets',
 })
 useHead({
     bodyAttrs: {
@@ -207,7 +208,8 @@ const switchToEnglish = () => {
     useHead({
         bodyAttrs: {
             dir: 'ltr'
-        },
+        }
+       
     })
 }
 onMounted(() => {

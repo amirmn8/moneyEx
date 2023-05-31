@@ -30,7 +30,7 @@
                 </div>
 
                 <div class=" flex-col w-full justify-center items-center py-16 px-4 gap-6 hidden">
-                    <img class="w-72" src="../../assets/images/Group 3467.png" alt="">
+                    <img class="w-72" src="../../assets/images/Group3467.png" alt="">
                     <p v-text="state.positionText4" dir="ltr" class="font-lg font-bold text-center">
                     </p>
                 </div>
