@@ -13,19 +13,19 @@
                 </select>
             </div>
             <div class="md:flex flex-col hidden xl:hidden">
-                <p class="font-bold text-ExGreen">30,968.596</p>
-                <p style="direction: ltr;" class="dark:text-white">=30,968.596 USD</p>
+                <p class="font-bold text-ExGreen">{{coinDetail.last}}</p>
+                <p style="direction: ltr;" class="dark:text-white">={{coinDetail.last}} USD</p>
             </div>
             <div class="justify-between items-center gap-8 hidden xl:flex  mt-6 xl:mt-0 text-sm">
                 <div class="flex flex-col  ">
-                    <p class="font-bold text-ExGreen">30,968.596</p>
-                    <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
+                    <p class="font-bold text-ExGreen">{{coinDetail.last}}</p>
+                    <p class="dark:text-white" style="direction: ltr;">={{coinDetail.last}} USD</p>
                 </div>
                 <div class="flex flex-col gap-2">
                     <p v-text="state.headerText1" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                     <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
                             src="../../assets/icons/trending_up.png" alt="">
-                        <p class="font-bold" style="direction: ltr;">+ 1.09 %</p>
+                        <p class="font-bold" style="direction: ltr;">{{coinDetail.change}} %</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-2">
@@ -37,7 +37,7 @@
                 </div>
                 <div class="hidden md:flex flex-col gap-2">
                     <p v-text="state.headerText3" class="text-ExPlaceHolder dark:text-gray-300"></p>
-                    <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
+                    <p class="dark:text-white" style="direction: ltr;">{{coinDetail.tradeVolume}}</p>
                 </div>
                 <div class="md:flex hidden flex-col gap-2">
                     <p v-text="state.headerText4" class="text-ExPlaceHolder dark:text-gray-300"> </p>
@@ -48,7 +48,7 @@
                 <div class="md:flex flex-col gap-2 hidden">
                     <p v-text="state.headerText5" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                     <div class="flex gap-2 items-center">
-                        <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
+                        <p class="dark:text-white" style="direction: ltr;">{{coinDetail.baseVolume}}</p>
                     </div>
                 </div>
             </div>
@@ -76,14 +76,14 @@
         </div>
         <div class="flex justify-between items-center gap-6 xl:hidden  mt-6 text-sm">
             <div class="flex flex-col gap-2 md:hidden">
-                <p class="font-bold text-ExGreen">30,968.596</p>
-                <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
+                <p class="font-bold text-ExGreen">{{coinDetail.last}}</p>
+                <p class="dark:text-white" style="direction: ltr;">={{coinDetail.last}} USD</p>
             </div>
             <div class="flex flex-col gap-2">
                 <p v-text="state.headerText1" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
                         src="../../assets/icons/trending_up.png" alt="">
-                    <p class="font-bold" style="direction: ltr;">+ 1.09 %</p>
+                    <p class="font-bold" style="direction: ltr;">{{coinDetail.change}} %</p>
                 </div>
             </div>
             <div class="flex flex-col gap-2">
@@ -95,7 +95,7 @@
             </div>
             <div class="hidden md:flex flex-col gap-2">
                 <p v-text="state.headerText3" class="text-ExPlaceHolder dark:text-gray-300"> </p>
-                <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
+                <p class="dark:text-white" style="direction: ltr;">={{coinDetail.tradeVolume}} USD</p>
             </div>
             <div class="md:flex hidden flex-col gap-2">
                 <p v-text="state.headerText4" class="text-ExPlaceHolder dark:text-gray-300"> </p>
@@ -106,14 +106,14 @@
             <div class="md:flex flex-col gap-2 hidden">
                 <p v-text="state.headerText5" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <div class="flex gap-2 items-center">
-                    <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
+                    <p class="dark:text-white" style="direction: ltr;">{{coinDetail.baseVolume}}</p>
                 </div>
             </div>
         </div>
         <div class="flex justify-between items-center gap-6 md:hidden mt-6 text-sm">
             <div class="flex flex-col gap-2">
                 <p v-text="state.headerText3" class="text-ExPlaceHolder dark:text-gray-300"> </p>
-                <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
+                <p class="dark:text-white" style="direction: ltr;">={{coinDetail.tradeVolume}} USD</p>
             </div>
             <div class="flex flex-col gap-2">
                 <p v-text="state.headerText4" class="text-ExPlaceHolder dark:text-gray-300"> </p>
@@ -124,7 +124,7 @@
             <div class="flex flex-col gap-2">
                 <p v-text="state.headerText5" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <div class="flex gap-2 items-center">
-                    <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
+                    <p class="dark:text-white" style="direction: ltr;">{{coinDetail.baseVolume}}</p>
                 </div>
             </div>
         </div>
@@ -135,4 +135,5 @@
 </template>
 <script setup>
 const props = defineProps(['state'])
+const { data: coinDetail } = await useFetch('https://moneyex.org/api/public?command=returnTicker&tradePair=BTC_USDT')
 </script>

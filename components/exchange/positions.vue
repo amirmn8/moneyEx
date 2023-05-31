@@ -354,71 +354,7 @@
                                 </div>
                             </div>
 
-                            <div id="marketCapSection"
-                                class=" flex-col md:flex-row-reverse xl:flex-col md:gap-8 w-full hidden">
-                                <div class="flex flex-col w-full">
-                                    <table class="flex flex-col">
-                                        <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
-                                            <tr class="w-full  flex  justify-between">
-                                                <th v-text="state.positionText19" class="text-center font-normal">
-                                                </th>
-                                                <th v-text="state.positionText20" class="text-center font-normal">
-                                                </th>
-                                                <th v-text="state.positionText21" class="text-center font-normal"> </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
-                                            <tr v-for="i in 20"
-                                                class="w-full bg-red-100 rounded-3xl px-4  flex text-gray-700 justify-between">
-                                                <td>
-                                                    <p class="text-red-600">705,456,394</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.01</p>
-                                                </td>
-                                                <td>
-                                                    <p>7,054,564</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="flex flex-col w-full">
-                                    <div class="flex justify-between my-3 md:my-1.5">
-                                        <p class="font-bold text-ExGreen text-lg"> 6,695,572,632</p>
-                                        <p dir="ltr">22,151.29 USDT =</p>
-
-                                    </div>
-                                    <table>
-                                        <thead class=" hidden md:flex text-base text-ExPlaceHolder py-2 px-4">
-                                            <tr class="w-full  flex  justify-between">
-                                                <th v-text="state.positionText19" class="text-center font-normal">
-                                                </th>
-                                                <th v-text="state.positionText20" class="text-center font-normal">
-                                                </th>
-                                                <th v-text="state.positionText21" class="text-center font-normal"> </th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
-                                            <tr v-for="i in 20"
-                                                class="w-full bg-green-100 rounded-3xl px-4  flex text-gray-700 justify-between">
-                                                <td>
-                                                    <p class="text-gray-600">705,456,394</p>
-                                                </td>
-                                                <td>
-                                                    <p>0.01</p>
-                                                </td>
-                                                <td>
-                                                    <p>7,054,564</p>
-                                                </td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
+            
                         </div>
                         <div class="flex flex-col">
                             <div id="recentTradesSection" class="flex flex-col md:gap-8 w-full h-72">
@@ -433,16 +369,16 @@
                                     </thead>
                                     <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
 
-                                        <tr v-for="i in 20"
+                                        <tr v-for="(item , index) in ordersDetail.bids" :key="index"
                                             class="w-full bg-red-100 rounded-3xl px-4  flex text-gray-700 justify-between">
                                             <td>
-                                                <p class="text-red-600">705,456,394</p>
+                                                <p class="text-red-600">{{item.price}}</p>
                                             </td>
                                             <td>
-                                                <p>0.01</p>
+                                                <p>{{item.amount}}</p>
                                             </td>
                                             <td>
-                                                <p>7,054,564</p>
+                                                <p>{{item.total}}</p>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -464,16 +400,16 @@
                                         </tr>
                                     </thead>
                                     <tbody class="flex flex-col h-48  gap-1 overflow-y-scroll ">
-                                        <tr v-for="i in 20"
+                                        <tr v-for="(item , index) in ordersDetail.asks" :key="index"
                                             class="w-full bg-green-100 rounded-3xl px-4  flex text-gray-700 justify-between">
                                             <td>
-                                                <p class="text-gray-600">705,456,394</p>
+                                                <p class="text-gray-600">{{item.price}}</p>
                                             </td>
                                             <td>
-                                                <p>0.01</p>
+                                                <p>{{item.amount}}</p>
                                             </td>
                                             <td>
-                                                <p>7,054,564</p>
+                                                <p>{{item.total}}</p>
                                             </td>
 
                                         </tr>
@@ -523,6 +459,9 @@
 </template>
 <script setup>
 const props = defineProps(['state'])
+const { data: ordersDetail } = await useFetch('https://moneyex.org/api/public?command=returnOrderBook&tradePair=BTC_USDT')
+const { data: recentOrdersDetail } = await useFetch('https://moneyex.org/api/public?command=returnTradeHistory&tradePair=BTC_USDT')
+
 </script>
 <style scoped>
 .slide-fade-enter-active {

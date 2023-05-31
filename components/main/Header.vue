@@ -51,7 +51,7 @@
                     <div>
                         <label v-text="state.amountPaid2" class="block text-ExPlaceHolder text-sm font-bold mb-2">
                         </label>
-                        <input type="text" placeholder="0"
+                        <input disabled type="text" placeholder="0"
                             class="flex w-full items-center rounded justify-between  h-10 bg-white p-2 border border-solid border-gray-300 ">
                     </div>
 
@@ -94,4 +94,5 @@
 </template>
 <script setup>
 const props = defineProps(['state'])
+const { data: coinDetail } = await useFetch('https://moneyex.org/api/public?command=returnTicker&tradePair=BTC_USDT')
 </script>

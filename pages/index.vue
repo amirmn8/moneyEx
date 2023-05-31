@@ -69,7 +69,7 @@ const state = reactive({
   headerText3: "در دنیای رمز ارز ها پیشتاز باشید",
   headerText4: "از منبع درآمد های بیشمار بهره مند شوید",
   amountPaid: 'مقدار پرداختی',
-  amountPaid2: 'مقدار پرداختی',
+  amountPaid2: 'مقدار دریافتی',
   btcAddress: 'آدرس بیت کوین',
   email: 'ایمیل یا شماره موبایل',
   buyForce: 'خرید آنی',
@@ -141,7 +141,7 @@ const switchToPersian = () => {
   state.headerText3 = "در دنیای رمز ارز ها پیشتاز باشید"
   state.headerText4 = "از منبع درآمد های بیشمار بهره مند شوید"
   state.amountPaid = 'مقدار پرداختی'
-  state.amountPaid2 = 'مقدار پرداختی'
+  state.amountPaid2 = 'مقدار دریافتی'
   state.btcAddress = 'آدرس بیت کوین'
   state.email = 'ایمیل یا شماره موبایل'
   state.buyForce = 'خرید آنی'
@@ -215,7 +215,7 @@ const switchToEnglish = () => {
   state.headerText3 = "Be a leader in the world of cryptocurrencies"
   state.headerText4 = "Benefit from countless sources of income"
   state.amountPaid = 'Amount Paid'
-  state.amountPaid2 = 'Amount Paid'
+  state.amountPaid2 = 'Amount Received'
   state.btcAddress = 'Bitcoin address'
   state.email = 'Email or Phone number'
   state.buyForce = 'Buy'
