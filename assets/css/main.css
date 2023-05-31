@@ -29,8 +29,9 @@
 
 html {
     direction: rtl;
-    
+     scroll-behavior: smooth;
 }
+
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }

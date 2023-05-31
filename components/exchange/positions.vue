@@ -341,31 +341,98 @@
                     </button>
 
                 </div>
-                <div v-if="state.switchTrades">
-                    <div class="flex flex-col">
-                        <div>
-                            <div class="flex justify-between">
-                                <p v-text="state.positionText17" class="text-sm text-ExGreen font-bold"></p>
-                                <p v-text="state.positionText18" class="text-sm text-red-600 font-bold"></p>
+                <Transition name="slide-fade">
+                    <div v-show="state.switchTrades">
+                        <div class="flex flex-col">
+                            <div>
+                                <div class="flex justify-between">
+                                    <p v-text="state.positionText17" class="text-sm text-ExGreen font-bold"></p>
+                                    <p v-text="state.positionText18" class="text-sm text-red-600 font-bold"></p>
+                                </div>
+                                <div dir="ltr" class="h-1 w-full my-2 bg-ExGreen rounded-full">
+                                    <div id="progress-bar" class="h-1 bg-red-600 rounded-full" style="width: 35%"></div>
+                                </div>
                             </div>
-                            <div dir="ltr" class="h-1 w-full my-2 bg-ExGreen rounded-full">
-                                <div id="progress-bar" class="h-1 bg-red-600 rounded-full" style="width: 35%"></div>
+
+                            <div id="marketCapSection"
+                                class=" flex-col md:flex-row-reverse xl:flex-col md:gap-8 w-full hidden">
+                                <div class="flex flex-col w-full">
+                                    <table class="flex flex-col">
+                                        <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
+                                            <tr class="w-full  flex  justify-between">
+                                                <th v-text="state.positionText19" class="text-center font-normal">
+                                                </th>
+                                                <th v-text="state.positionText20" class="text-center font-normal">
+                                                </th>
+                                                <th v-text="state.positionText21" class="text-center font-normal"> </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
+                                            <tr v-for="i in 20"
+                                                class="w-full bg-red-100 rounded-3xl px-4  flex text-gray-700 justify-between">
+                                                <td>
+                                                    <p class="text-red-600">705,456,394</p>
+                                                </td>
+                                                <td>
+                                                    <p>0.01</p>
+                                                </td>
+                                                <td>
+                                                    <p>7,054,564</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="flex flex-col w-full">
+                                    <div class="flex justify-between my-3 md:my-1.5">
+                                        <p class="font-bold text-ExGreen text-lg"> 6,695,572,632</p>
+                                        <p dir="ltr">22,151.29 USDT =</p>
+
+                                    </div>
+                                    <table>
+                                        <thead class=" hidden md:flex text-base text-ExPlaceHolder py-2 px-4">
+                                            <tr class="w-full  flex  justify-between">
+                                                <th v-text="state.positionText19" class="text-center font-normal">
+                                                </th>
+                                                <th v-text="state.positionText20" class="text-center font-normal">
+                                                </th>
+                                                <th v-text="state.positionText21" class="text-center font-normal"> </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
+                                            <tr v-for="i in 20"
+                                                class="w-full bg-green-100 rounded-3xl px-4  flex text-gray-700 justify-between">
+                                                <td>
+                                                    <p class="text-gray-600">705,456,394</p>
+                                                </td>
+                                                <td>
+                                                    <p>0.01</p>
+                                                </td>
+                                                <td>
+                                                    <p>7,054,564</p>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
                             </div>
                         </div>
-
-                        <div id="marketCapSection" class=" flex-col md:flex-row-reverse xl:flex-col md:gap-8 w-full hidden">
-                            <div class="flex flex-col w-full">
+                        <div class="flex flex-col">
+                            <div id="recentTradesSection" class="flex flex-col md:gap-8 w-full h-72">
                                 <table class="flex flex-col">
                                     <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
                                         <tr class="w-full  flex  justify-between">
-                                            <th v-text="state.positionText19" class="text-center font-normal">
-                                            </th>
-                                            <th v-text="state.positionText20" class="text-center font-normal">
-                                            </th>
+                                            <th v-text="state.positionText19" class="text-center font-normal"></th>
+                                            <th v-text="state.positionText20" class="text-center font-normal"> </th>
                                             <th v-text="state.positionText21" class="text-center font-normal"> </th>
+
                                         </tr>
                                     </thead>
                                     <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
+
                                         <tr v-for="i in 20"
                                             class="w-full bg-red-100 rounded-3xl px-4  flex text-gray-700 justify-between">
                                             <td>
@@ -381,8 +448,8 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="flex flex-col w-full">
-                                <div class="flex justify-between my-3 md:my-1.5">
+                            <div class="flex flex-col w-full h-72">
+                                <div class="flex justify-between">
                                     <p class="font-bold text-ExGreen text-lg"> 6,695,572,632</p>
                                     <p dir="ltr">22,151.29 USDT =</p>
 
@@ -390,15 +457,13 @@
                                 <table>
                                     <thead class=" hidden md:flex text-base text-ExPlaceHolder py-2 px-4">
                                         <tr class="w-full  flex  justify-between">
-                                            <th v-text="state.positionText19" class="text-center font-normal">
-                                            </th>
-                                            <th v-text="state.positionText20" class="text-center font-normal">
-                                            </th>
+                                            <th v-text="state.positionText19" class="text-center font-normal"> </th>
+                                            <th v-text="state.positionText20" class="text-center font-normal"></th>
                                             <th v-text="state.positionText21" class="text-center font-normal"> </th>
 
                                         </tr>
                                     </thead>
-                                    <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
+                                    <tbody class="flex flex-col h-48  gap-1 overflow-y-scroll ">
                                         <tr v-for="i in 20"
                                             class="w-full bg-green-100 rounded-3xl px-4  flex text-gray-700 justify-between">
                                             <td>
@@ -415,100 +480,39 @@
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
                     </div>
-                    <div class="flex flex-col">
-                        <div id="recentTradesSection" class="flex flex-col md:gap-8 w-full h-72">
-                            <table class="flex flex-col">
-                                <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
-                                    <tr class="w-full  flex  justify-between">
-                                        <th v-text="state.positionText19" class="text-center font-normal"></th>
-                                        <th v-text="state.positionText20" class="text-center font-normal"> </th>
-                                        <th v-text="state.positionText21" class="text-center font-normal"> </th>
+                </Transition>
+                <Transition name="slide-fade">
+                    <div v-show="!state.switchTrades" class="flex">
+                        <table class="w-full">
+                            <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
+                                <tr class="w-full  flex  justify-between">
+                                    <th v-text="state.positionText19" class="text-center font-normal"></th>
+                                    <th v-text="state.positionText20" class="text-center font-normal"></th>
+                                    <th v-text="state.positionText22" class="text-center font-normal"></th>
 
-                                    </tr>
-                                </thead>
-                                <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
+                                </tr>
+                            </thead>
+                            <tbody class="flex flex-col gap-1 overflow-y-scroll h-96">
+                                <tr v-for="i in 40"
+                                    class="w-full px-4 flex text-gray-700 justify-between border-solid border-b border-gray-200">
+                                    <td>
+                                        <p class="text-red-700">705,456,394</p>
+                                    </td>
+                                    <td>
+                                        <p class="dark:text-gray-300">0.01</p>
+                                    </td>
+                                    <td>
+                                        <p class="dark:text-gray-300">16:36:12</p>
+                                    </td>
 
-                                    <tr v-for="i in 20"
-                                        class="w-full bg-red-100 rounded-3xl px-4  flex text-gray-700 justify-between">
-                                        <td>
-                                            <p class="text-red-600">705,456,394</p>
-                                        </td>
-                                        <td>
-                                            <p>0.01</p>
-                                        </td>
-                                        <td>
-                                            <p>7,054,564</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="flex flex-col w-full h-72">
-                            <div class="flex justify-between">
-                                <p class="font-bold text-ExGreen text-lg"> 6,695,572,632</p>
-                                <p dir="ltr">22,151.29 USDT =</p>
-
-                            </div>
-                            <table>
-                                <thead class=" hidden md:flex text-base text-ExPlaceHolder py-2 px-4">
-                                    <tr class="w-full  flex  justify-between">
-                                        <th v-text="state.positionText19" class="text-center font-normal"> </th>
-                                        <th v-text="state.positionText20" class="text-center font-normal"></th>
-                                        <th v-text="state.positionText21" class="text-center font-normal"> </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody class="flex flex-col h-48  gap-1 overflow-y-scroll ">
-                                    <tr v-for="i in 20"
-                                        class="w-full bg-green-100 rounded-3xl px-4  flex text-gray-700 justify-between">
-                                        <td>
-                                            <p class="text-gray-600">705,456,394</p>
-                                        </td>
-                                        <td>
-                                            <p>0.01</p>
-                                        </td>
-                                        <td>
-                                            <p>7,054,564</p>
-                                        </td>
-
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-                <div v-else class="flex">
-                    <table class="w-full">
-                        <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
-                            <tr class="w-full  flex  justify-between">
-                                <th v-text="state.positionText19" class="text-center font-normal"></th>
-                                <th v-text="state.positionText20" class="text-center font-normal"></th>
-                                <th v-text="state.positionText22" class="text-center font-normal"></th>
 
-                            </tr>
-                        </thead>
-                        <tbody class="flex flex-col gap-1 overflow-y-scroll h-96">
-                            <tr v-for="i in 40"
-                                class="w-full px-4 flex text-gray-700 justify-between border-solid border-b border-gray-200">
-                                <td>
-                                    <p class="text-red-700">705,456,394</p>
-                                </td>
-                                <td>
-                                    <p class="dark:text-gray-300">0.01</p>
-                                </td>
-                                <td>
-                                    <p class="dark:text-gray-300">16:36:12</p>
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-
+                </Transition>
 
 
             </div>
@@ -520,3 +524,18 @@
 <script setup>
 const props = defineProps(['state'])
 </script>
+<style scoped>
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.3s cubic-bezier(1, 1, 1, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+</style>
