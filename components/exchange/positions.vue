@@ -7,15 +7,18 @@
             <div class="flex flex-col  bg-white dark:bg-ExBlack p-6 rounded-xl  gap-6 h-full">
                 <div class="flex flex-col gap-4 md:flex-row justify-between">
                     <div class="flex  text-center w-full">
-                        <p class="  text-center border-b border-solid border-ExYellow font-bold text-ExYellow pb-4 w-full">
+                        <p v-text="state.positionText1"
+                            class="  text-center border-b border-solid border-ExYellow font-bold text-ExYellow pb-4 w-full">
 
-                            سفارشات باز</p>
-                        <p class="  text-center border-b border-solid border-gray-400 pb-4 w-full dark:text-gray-300"> سوابق
-                            معاملات
+                        </p>
+                        <p v-text="state.positionText2"
+                            class="  text-center border-b border-solid border-gray-400 pb-4 w-full dark:text-gray-300">
+
+
                         </p>
                     </div>
                     <div class="flex justify-between text-center md:justify-center w-full items-center md:gap-4">
-                        <p class="dark:text-gray-300">نمایش همه جفت ارز ها</p>
+                        <p v-text="state.positionText3" class="dark:text-gray-300"> </p>
                         <label class="relative inline-flex items-center cursor-pointer">
                             <input type="checkbox" value="" class="sr-only peer" checked>
                             <div
@@ -28,49 +31,51 @@
 
                 <div class=" flex-col w-full justify-center items-center py-16 px-4 gap-6 hidden">
                     <img class="w-72" src="../../assets/images/Group 3467.png" alt="">
-                    <p dir="ltr" class="font-lg font-bold text-center">.در این لحظه شما سفارش باز ندارید</p>
+                    <p v-text="state.positionText4" dir="ltr" class="font-lg font-bold text-center">
+                    </p>
                 </div>
                 <div class="flex flex-col gap-2 md:hidden">
                     <div class="bg-gray-100 dark:bg-black flex flex-col py-3 rounded-md gap-4">
                         <div class="grid grid-cols-3  px-8">
                             <div class="flex flex-col">
-                                <p class="text-ExPlaceHolder dark:text-gray-300">نماد</p>
+                                <p v-text="state.positionText5" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                 <p class="dark:text-gray-300">BTC</p>
                             </div>
                             <div class="flex flex-col">
-                                <p class="text-ExPlaceHolder dark:text-gray-300">قیمت(IRR)</p>
+                                <p v-text="state.positionText6" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                 <p class="dark:text-gray-300">11,155,111,111</p>
 
                             </div>
                             <div class="flex flex-col">
-                                <p class="text-ExPlaceHolder dark:text-gray-300">مقدار</p>
+                                <p v-text="state.positionText7" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                 <p class="dark:text-gray-300">0.00356</p>
 
                             </div>
                         </div>
                         <div class="grid grid-cols-3  px-8">
                             <div class="flex flex-col">
-                                <p class="text-ExPlaceHolder dark:text-gray-300">انجام شده</p>
+                                <p v-text="state.positionText8" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                 <p class="dark:text-gray-300">0</p>
                             </div>
                             <div class="flex flex-col">
-                                <p class="text-ExPlaceHolder dark:text-gray-300">مقدار باز</p>
+                                <p v-text="state.positionText9" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                 <p class="dark:text-gray-300">0</p>
 
                             </div>
                             <div class="flex flex-col">
-                                <p class="text-ExPlaceHolder dark:text-gray-300">کل</p>
+                                <p v-text="state.positionText10" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                 <p class="dark:text-gray-300">0.00356</p>
 
                             </div>
                         </div>
                         <div class="grid grid-cols-3 px-8">
                             <div class="flex flex-col gap-2">
-                                <p class="text-ExPlaceHolder dark:text-gray-300">نوع سفارش</p>
-                                <p class="bg-green-200/10 rounded-lg text-center py-1 text-ExGreen w-fit px-4">خرید</p>
+                                <p v-text="state.positionText11" class="text-ExPlaceHolder dark:text-gray-300"> </p>
+                                <p v-text="state.positionText12"
+                                    class="bg-green-200/10 rounded-lg text-center py-1 text-ExGreen w-fit px-4"></p>
                             </div>
                             <div class="flex flex-col gap-2 justify-between">
-                                <p class="text-ExPlaceHolder dark:text-gray-300">زمان سفارش
+                                <p v-text="state.positionText13" class="text-ExPlaceHolder dark:text-gray-300">
                                 </p>
                                 <p class="dark:text-gray-300">1402/01/28 13:52</p>
 
@@ -82,7 +87,7 @@
                                             d="M90,187.05l3.225,3.225a.743.743,0,1,0,1.05-1.05L91.05,186l3.225-3.225a.743.743,0,1,0-1.05-1.05L90,184.95l-3.225-3.225a.743.743,0,1,0-1.05,1.05L88.95,186l-3.225,3.225a.743.743,0,1,0,1.05,1.05ZM90,196a9.676,9.676,0,0,1-3.875-.788,10.075,10.075,0,0,1-5.338-5.337,9.989,9.989,0,0,1,0-7.775,9.994,9.994,0,0,1,2.15-3.175,10.251,10.251,0,0,1,3.188-2.137,9.989,9.989,0,0,1,7.775,0,9.984,9.984,0,0,1,5.313,5.313,9.989,9.989,0,0,1,0,7.775,10.251,10.251,0,0,1-2.137,3.188,9.994,9.994,0,0,1-3.175,2.15A9.738,9.738,0,0,1,90,196Zm0-1.5a8.493,8.493,0,1,0-6.013-2.488A8.179,8.179,0,0,0,90,194.5ZM90,186Z"
                                             transform="translate(-80 -176)" fill="#f63f3f" />
                                     </svg>
-                                    <p class="text-red-500">انصراف</p>
+                                    <p v-text="state.positionText14" class="text-red-500"></p>
                                 </button>
 
 
@@ -117,7 +122,7 @@
                                     </svg>
                                 </th>
                                 <th class="text-center flex items-center gap-1 font-normal">
-                                    <p class="text-ExPlaceHolder dark:text-gray-300">قیمت</p>
+                                    <p v-text="state.positionText6" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                     <svg id="sort" xmlns="http://www.w3.org/2000/svg" width="10.532" height="14.267"
                                         viewBox="0 0 10.532 14.267">
                                         <path id="arrow_drop_down_FILL0_wght400_GRAD0_opsz48"
@@ -136,7 +141,7 @@
                                     </svg>
                                 </th>
                                 <th class="text-center flex items-center gap-1 font-normal">
-                                    <p class="text-ExPlaceHolder dark:text-gray-300">مقدار</p>
+                                    <p v-text="state.positionText7" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                     <svg id="sort" xmlns="http://www.w3.org/2000/svg" width="10.532" height="14.267"
                                         viewBox="0 0 10.532 14.267">
                                         <path id="arrow_drop_down_FILL0_wght400_GRAD0_opsz48"
@@ -155,7 +160,8 @@
                                     </svg>
                                 </th>
                                 <th class="text-center flex items-center gap-1 font-normal">
-                                    <p class="text-ExPlaceHolder dark:text-gray-300">انجام شده</p>
+                                    <p v-text="state.positionText8" class="text-ExPlaceHolder dark:text-gray-300">
+                                    </p>
                                     <svg id="sort" xmlns="http://www.w3.org/2000/svg" width="10.532" height="14.267"
                                         viewBox="0 0 10.532 14.267">
                                         <path id="arrow_drop_down_FILL0_wght400_GRAD0_opsz48"
@@ -174,7 +180,8 @@
                                     </svg>
                                 </th>
                                 <th class="text-center flex items-center gap-1 font-normal">
-                                    <p class="text-ExPlaceHolder dark:text-gray-300">مقدار سفارش باز</p>
+                                    <p v-text="state.positionText9" class="text-ExPlaceHolder dark:text-gray-300">
+                                    </p>
                                     <svg id="sort" xmlns="http://www.w3.org/2000/svg" width="10.532" height="14.267"
                                         viewBox="0 0 10.532 14.267">
                                         <path id="arrow_drop_down_FILL0_wght400_GRAD0_opsz48"
@@ -193,7 +200,7 @@
                                     </svg>
                                 </th>
                                 <th class="text-center flex items-center gap-1 font-normal">
-                                    <p class="text-ExPlaceHolder dark:text-gray-300">کل</p>
+                                    <p v-text="state.positionText10" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                     <svg id="sort" xmlns="http://www.w3.org/2000/svg" width="10.532" height="14.267"
                                         viewBox="0 0 10.532 14.267">
                                         <path id="arrow_drop_down_FILL0_wght400_GRAD0_opsz48"
@@ -212,7 +219,8 @@
                                     </svg>
                                 </th>
                                 <th class="text-center flex items-center gap-1 font-normal">
-                                    <p class="text-ExPlaceHolder dark:text-gray-300">نوع سفارش</p>
+                                    <p v-text="state.positionText11" class="text-ExPlaceHolder dark:text-gray-300">
+                                    </p>
                                     <svg id="sort" xmlns="http://www.w3.org/2000/svg" width="10.532" height="14.267"
                                         viewBox="0 0 10.532 14.267">
                                         <path id="arrow_drop_down_FILL0_wght400_GRAD0_opsz48"
@@ -231,7 +239,7 @@
                                     </svg>
                                 </th>
                                 <th class="text-center flex items-center gap-1 font-normal">
-                                    <p class="text-ExPlaceHolder dark:text-gray-300">زمان</p>
+                                    <p v-text="state.positionText13" class="text-ExPlaceHolder dark:text-gray-300"></p>
                                     <svg id="sort" xmlns="http://www.w3.org/2000/svg" width="10.532" height="14.267"
                                         viewBox="0 0 10.532 14.267">
                                         <path id="arrow_drop_down_FILL0_wght400_GRAD0_opsz48"
@@ -250,7 +258,8 @@
                                     </svg>
                                 </th>
                                 <th class="text-center flex items-center gap-1 font-normal">
-                                    <p class="text-ExPlaceHolder dark:text-gray-300">انصراف</p>
+                                    <p v-text="state.positionText14" class="text-ExPlaceHolder dark:text-gray-300">
+                                    </p>
                                     <svg id="sort" xmlns="http://www.w3.org/2000/svg" width="10.532" height="14.267"
                                         viewBox="0 0 10.532 14.267">
                                         <path id="arrow_drop_down_FILL0_wght400_GRAD0_opsz48"
@@ -292,7 +301,8 @@
                                     <p class="dark:text-gray-200">0.00356</p>
                                 </td>
                                 <td>
-                                    <p class="bg-green-200/10 rounded-lg text-center py-1 text-ExGreen w-fit px-4">خرید</p>
+                                    <p v-text="state.positionText12"
+                                        class="bg-green-200/10 rounded-lg text-center py-1 text-ExGreen w-fit px-4"></p>
 
                                 </td>
                                 <td>
@@ -305,7 +315,7 @@
                                                 d="M90,187.05l3.225,3.225a.743.743,0,1,0,1.05-1.05L91.05,186l3.225-3.225a.743.743,0,1,0-1.05-1.05L90,184.95l-3.225-3.225a.743.743,0,1,0-1.05,1.05L88.95,186l-3.225,3.225a.743.743,0,1,0,1.05,1.05ZM90,196a9.676,9.676,0,0,1-3.875-.788,10.075,10.075,0,0,1-5.338-5.337,9.989,9.989,0,0,1,0-7.775,9.994,9.994,0,0,1,2.15-3.175,10.251,10.251,0,0,1,3.188-2.137,9.989,9.989,0,0,1,7.775,0,9.984,9.984,0,0,1,5.313,5.313,9.989,9.989,0,0,1,0,7.775,10.251,10.251,0,0,1-2.137,3.188,9.994,9.994,0,0,1-3.175,2.15A9.738,9.738,0,0,1,90,196Zm0-1.5a8.493,8.493,0,1,0-6.013-2.488A8.179,8.179,0,0,0,90,194.5ZM90,186Z"
                                                 transform="translate(-80 -176)" fill="#f63f3f" />
                                         </svg>
-                                        <p class="dark:text-gray-200">انصراف</p>
+                                        <p v-text="state.positionText14" class="dark:text-gray-200"></p>
                                     </button>
 
                                 </td>
@@ -319,15 +329,15 @@
             <div class="flex flex-col  bg-white dark:bg-ExBlack p-6 rounded-xl justify-start gap-6 h-full">
 
                 <div class="flex justify-center text-center w-full">
-                    <button @click="state.switchTrades = true" id="marketCap"
+                    <button @click="state.switchTrades = true" v-text="state.positionText15"
                         class="text-center border-b border-solid  font-bold  pb-4 w-full"
                         :class="state.switchTrades ? 'text-ExYellow border-ExYellow' : 'border-gray-400 text-gray-400'">
-                        حجم
-                        معاملات</button>
-                    <button @click="state.switchTrades = false" id="recentTrades"
+
+                    </button>
+                    <button @click="state.switchTrades = false" v-text="state.positionText16"
                         class="  text-center border-b border-solid  pb-4 w-full"
-                        :class="state.switchTrades ? 'border-gray-400 text-gray-400' : 'text-ExYellow border-ExYellow'">معاملات
-                        اخیر
+                        :class="state.switchTrades ? 'border-gray-400 text-gray-400' : 'text-ExYellow border-ExYellow'">
+
                     </button>
 
                 </div>
@@ -335,8 +345,8 @@
                     <div class="flex flex-col">
                         <div>
                             <div class="flex justify-between">
-                                <p class="text-sm text-ExGreen font-bold"> خرید 57%</p>
-                                <p class="text-sm text-red-600 font-bold"> فروش 43%</p>
+                                <p v-text="state.positionText17" class="text-sm text-ExGreen font-bold"></p>
+                                <p v-text="state.positionText18" class="text-sm text-red-600 font-bold"></p>
                             </div>
                             <div dir="ltr" class="h-1 w-full my-2 bg-ExGreen rounded-full">
                                 <div id="progress-bar" class="h-1 bg-red-600 rounded-full" style="width: 35%"></div>
@@ -348,9 +358,11 @@
                                 <table class="flex flex-col">
                                     <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
                                         <tr class="w-full  flex  justify-between">
-                                            <th id="market" class="text-center font-normal">قیمت (TMN)</th>
-                                            <th id="market" class="text-center font-normal">مقدار (BTC)</th>
-                                            <th id="market" class="text-center font-normal">قیمت کل</th>
+                                            <th v-text="state.positionText19" class="text-center font-normal">
+                                            </th>
+                                            <th v-text="state.positionText20" class="text-center font-normal">
+                                            </th>
+                                            <th v-text="state.positionText21" class="text-center font-normal"> </th>
                                         </tr>
                                     </thead>
                                     <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
@@ -378,9 +390,11 @@
                                 <table>
                                     <thead class=" hidden md:flex text-base text-ExPlaceHolder py-2 px-4">
                                         <tr class="w-full  flex  justify-between">
-                                            <th id="market" class="text-center font-normal">قیمت (TMN)</th>
-                                            <th id="market" class="text-center font-normal">مقدار (BTC)</th>
-                                            <th id="market" class="text-center font-normal">قیمت کل</th>
+                                            <th v-text="state.positionText19" class="text-center font-normal">
+                                            </th>
+                                            <th v-text="state.positionText20" class="text-center font-normal">
+                                            </th>
+                                            <th v-text="state.positionText21" class="text-center font-normal"> </th>
 
                                         </tr>
                                     </thead>
@@ -409,9 +423,9 @@
                             <table class="flex flex-col">
                                 <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
                                     <tr class="w-full  flex  justify-between">
-                                        <th id="market" class="text-center font-normal">قیمت (TMN)</th>
-                                        <th id="market" class="text-center font-normal">مقدار (BTC)</th>
-                                        <th id="market" class="text-center font-normal">قیمت کل</th>
+                                        <th v-text="state.positionText19" class="text-center font-normal"></th>
+                                        <th v-text="state.positionText20" class="text-center font-normal"> </th>
+                                        <th v-text="state.positionText21" class="text-center font-normal"> </th>
 
                                     </tr>
                                 </thead>
@@ -441,9 +455,9 @@
                             <table>
                                 <thead class=" hidden md:flex text-base text-ExPlaceHolder py-2 px-4">
                                     <tr class="w-full  flex  justify-between">
-                                        <th id="market" class="text-center font-normal">قیمت (TMN)</th>
-                                        <th id="market" class="text-center font-normal">مقدار (BTC)</th>
-                                        <th id="market" class="text-center font-normal">قیمت کل</th>
+                                        <th v-text="state.positionText19" class="text-center font-normal"> </th>
+                                        <th v-text="state.positionText20" class="text-center font-normal"></th>
+                                        <th v-text="state.positionText21" class="text-center font-normal"> </th>
 
                                     </tr>
                                 </thead>
@@ -470,9 +484,9 @@
                     <table class="w-full">
                         <thead class="flex text-base text-ExPlaceHolder py-2 px-4">
                             <tr class="w-full  flex  justify-between">
-                                <th id="market" class="text-center font-normal">قیمت</th>
-                                <th id="market" class="text-center font-normal">مقدار</th>
-                                <th id="market" class="text-center font-normal">زمان</th>
+                                <th v-text="state.positionText19" class="text-center font-normal"></th>
+                                <th v-text="state.positionText20" class="text-center font-normal"></th>
+                                <th v-text="state.positionText22" class="text-center font-normal"></th>
 
                             </tr>
                         </thead>

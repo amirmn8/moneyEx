@@ -22,31 +22,31 @@
                     <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                    <p class="text-ExPlaceHolder dark:text-gray-300">تغییرات 24 ساعته</p>
+                    <p v-text="state.headerText1" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                     <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
-                            src="./Assets/Icons/trending_up.png" alt="">
+                            src="../../assets/icons/trending_up.png" alt="">
                         <p class="font-bold" style="direction: ltr;">+ 1.09 %</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-2">
-                    <p class="text-ExPlaceHolder dark:text-gray-300">تغییرات 30 روزه</p>
+                    <p v-text="state.headerText2" class="text-ExPlaceHolder dark:text-gray-300"></p>
                     <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
-                            src="./Assets/Icons/trending_up.png" alt="">
+                            src="../../assets/icons/trending_up.png" alt="">
                         <p class="font-bold" style="direction: ltr;">+ 0.2455 %</p>
                     </div>
                 </div>
                 <div class="hidden md:flex flex-col gap-2">
-                    <p class="text-ExPlaceHolder dark:text-gray-300">در گردش</p>
+                    <p v-text="state.headerText3" class="text-ExPlaceHolder dark:text-gray-300"></p>
                     <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
                 </div>
                 <div class="md:flex hidden flex-col gap-2">
-                    <p class="text-ExPlaceHolder dark:text-gray-300">نرخ دلار در گردش</p>
+                    <p v-text="state.headerText4" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                     <div class="flex gap-2 items-center ">
                         <p class="dark:text-white" style="direction: ltr;">1</p>
                     </div>
                 </div>
                 <div class="md:flex flex-col gap-2 hidden">
-                    <p class="text-ExPlaceHolder dark:text-gray-300">حجم معاملات</p>
+                    <p v-text="state.headerText5" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                     <div class="flex gap-2 items-center">
                         <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
                     </div>
@@ -80,31 +80,31 @@
                 <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder dark:text-gray-300">تغییرات 24 ساعته</p>
-                <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4" src="./Assets/Icons/trending_up.png"
-                        alt="">
+                <p v-text="state.headerText1" class="text-ExPlaceHolder dark:text-gray-300"> </p>
+                <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
+                        src="../../assets/icons/trending_up.png" alt="">
                     <p class="font-bold" style="direction: ltr;">+ 1.09 %</p>
                 </div>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder dark:text-gray-300">تغییرات 30 روزه</p>
-                <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4" src="./Assets/Icons/trending_up.png"
-                        alt="">
+                <p v-text="state.headerText2" class="text-ExPlaceHolder dark:text-gray-300"> </p>
+                <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
+                        src="../../assets/icons/trending_up.png" alt="">
                     <p class="font-bold" style="direction: ltr;">+ 0.2455 %</p>
                 </div>
             </div>
             <div class="hidden md:flex flex-col gap-2">
-                <p class="text-ExPlaceHolder dark:text-gray-300">در گردش</p>
+                <p v-text="state.headerText3" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
             </div>
             <div class="md:flex hidden flex-col gap-2">
-                <p class="text-ExPlaceHolder dark:text-gray-300">نرخ دلار در گردش</p>
+                <p v-text="state.headerText4" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <div class="flex gap-2 items-center ">
                     <p class="dark:text-white" style="direction: ltr;">1</p>
                 </div>
             </div>
             <div class="md:flex flex-col gap-2 hidden">
-                <p class="text-ExPlaceHolder dark:text-gray-300">حجم معاملات</p>
+                <p v-text="state.headerText5" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <div class="flex gap-2 items-center">
                     <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
                 </div>
@@ -112,17 +112,17 @@
         </div>
         <div class="flex justify-between items-center gap-6 md:hidden mt-6 text-sm">
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder dark:text-gray-300">در گردش</p>
+                <p v-text="state.headerText3" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <p class="dark:text-white" style="direction: ltr;">=30,968.596 USD</p>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder dark:text-gray-300">نرخ دلار در گردش</p>
+                <p v-text="state.headerText4" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <div class="flex gap-2 items-center ">
                     <p class="dark:text-white" style="direction: ltr;">1</p>
                 </div>
             </div>
             <div class="flex flex-col gap-2">
-                <p class="text-ExPlaceHolder dark:text-gray-300">حجم معاملات</p>
+                <p v-text="state.headerText5" class="text-ExPlaceHolder dark:text-gray-300"> </p>
                 <div class="flex gap-2 items-center">
                     <p class="dark:text-white" style="direction: ltr;">14,767,993.121</p>
                 </div>

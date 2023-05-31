@@ -56,6 +56,7 @@ onMounted(() => {
 
 
 const state = reactive({
+    hash: '#fa',
     theme: "light",
     switchTrades: true,
     lang: false,
@@ -83,10 +84,51 @@ const state = reactive({
     footerText11: "ارتباط با ما",
     footerText12: "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7",
     footerText13: "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد",
+    headerText1: "تغییرات 24 ساعته",
+    headerText2: "تغییرات 30 روزه",
+    headerText3: "در گردش",
+    headerText4: "نرخ دلار در گردش",
+    headerText5: "حجم معاملات",
+    positionText1: "سفارشات باز",
+    positionText2: "سوابق معاملات",
+    positionText3: "نمایش همه جفت ارز ها",
+    positionText4: "در این لحظه شما سفارش باز ندارید.",
+    positionText5: "نماد",
+    positionText6: "قیمت",
+    positionText7: "مقدار",
+    positionText8: "انجام شده",
+    positionText9: "مقدار باز",
+    positionText10: "کل",
+    positionText11: "نوع سفارش ",
+    positionText12: "خرید",
+    positionText13: "زمان سفارش",
+    positionText14: "انصراف",
+    positionText15: "حجم معاملات",
+    positionText16: "معاملات اخیر",
+    positionText17: "خرید 57%",
+    positionText18: " فروش 43%",
+    positionText19: "قیمت",
+    positionText20: "مقدار",
+    positionText21: "قیمت کل",
+    positionText22: "زمان",
+    tradingText1: "تریدینگ ویو",
+    tradingText2: "استاندارد",
+    tradingText3: "عمق معامله",
+    tradingText4: "معاملات اسپات",
+    tradingText5: "خرید",
+    tradingText6: "فروش",
+    tradingText7: `<span class="text-ExYellow">ثابت</span> مارکت حد ضرر (Stop Limit)`,
+    tradingText8: "موجودی",
+    tradingText9: "نرخ سفارش",
+    tradingText10: "تعداد",
+    tradingText11: "خرید آنی",
+
+
 })
 
 const switchToPersian = () => {
     window.location.hash = "#fa";
+    state.hash = "#fa";
     state.lang = true;
     state.markets = "بازار ها";
     state.trade = "تبدیل ارز";
@@ -112,6 +154,45 @@ const switchToPersian = () => {
     state.footerText11 = "ارتباط با ما";
     state.footerText12 = "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7";
     state.footerText13 = "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد";
+    state.headerText1 = "تغییرات 24 ساعته";
+    state.headerText2 = "تغییرات 30 روزه";
+    state.headerText3 = "در گردش";
+    state.headerText4 = "نرخ دلار در گردش";
+    state.headerText5 = "حجم معاملات";
+    state.positionText1 = "سفارشات باز";
+    state.positionText2 = "سوابق معاملات";
+    state.positionText3 = "نمایش همه جفت ارز ها";
+    state.positionText4 = "در این لحظه شما سفارش باز ندارید.";
+    state.positionText5 = "نماد";
+    state.positionText6 = "قیمت";
+    state.positionText7 = "مقدار";
+    state.positionText8 = "انجام شده";
+    state.positionText9 = "مقدار باز";
+    state.positionText10 = "کل";
+    state.positionText11 = "نوع سفارش ";
+    state.positionText12 = "خرید";
+    state.positionText13 = "زمان سفارش";
+    state.positionText14 = "انصراف";
+    state.positionText15 = "حجم معاملات";
+    state.positionText16 = "معاملات اخیر";
+    state.positionText17 = "خرید 57%";
+    state.positionText18 = " فروش 43%";
+    state.positionText19 = "قیمت";
+    state.positionText20 = "مقدار";
+    state.positionText21 = "قیمت کل";
+    state.positionText22 = "زمان";
+    state.tradingText1 = "تریدینگ ویو";
+    state.tradingText2 = "استاندارد";
+    state.tradingText3 = "عمق معامله";
+    state.tradingText4 = "معاملات اسپات";
+    state.tradingText5 = "خرید";
+    state.tradingText6 = "فروش";
+    state.tradingText7 = `<span class="text-ExYellow">ثابت</span> مارکت حد ضرر (Stop Limit)`;
+    state.tradingText8 = "موجودی";
+    state.tradingText9 = "نرخ سفارش";
+    state.tradingText10 = "تعداد";
+    state.tradingText11 = "خرید آنی";
+
     useHead({
         bodyAttrs: {
             dir: 'rtl'
@@ -120,6 +201,8 @@ const switchToPersian = () => {
 }
 const switchToEnglish = () => {
     window.location.hash = "#en";
+    state.hash = "#en";
+
     state.lang = false;
     state.markets = "Markets";
     state.trade = "Trade";
@@ -145,6 +228,44 @@ const switchToEnglish = () => {
     state.footerText11 = "Contact Us";
     state.footerText12 = "Tehran province, Tehran city, st Central building Central, no.7";
     state.footerText13 = "All rights of this site are reserved and belong to MoneyEx";
+    state.headerText1 = "24 hour changes";
+    state.headerText2 = "30 day changes";
+    state.headerText3 = "In circulation";
+    state.headerText4 = "Circulating Dollar Rate";
+    state.headerText5 = "Turnover";
+    state.positionText1 = "Open Orders";
+    state.positionText2 = "Transaction records";
+    state.positionText3 = "Show all currency pairs";
+    state.positionText4 = "At this moment you have no open orders.";
+    state.positionText5 = "symbol";
+    state.positionText6 = "price";
+    state.positionText7 = "value";
+    state.positionText8 = "done";
+    state.positionText9 = "open value";
+    state.positionText10 = "Total";
+    state.positionText11 = "order type";
+    state.positionText12 = "Buy";
+    state.positionText13 = "order time";
+    state.positionText14 = "Cancel";
+    state.positionText15 = "Trade volume";
+    state.positionText16 = "Recent Transactions";
+    state.positionText17 = "Buy 57%";
+    state.positionText18 = "Sale 43%";
+    state.positionText19 = "Price";
+    state.positionText20 = "value";
+    state.positionText21 = "Total Price";
+    state.positionText22 = "time";
+    state.tradingText1 = "Trading View";
+    state.tradingText2 = "standard";
+    state.tradingText3 = "Trading Depth";
+    state.tradingText4 = "Spot Trading";
+    state.tradingText5 = "Buy";
+    state.tradingText6 = "Sell";
+    state.tradingText7 = `<span class="text-ExYellow">Fixed</span> Stop Limit Market`;
+    state.tradingText8 = "Inventory";
+    state.tradingText9 = "Order Rate";
+    state.tradingText10 = "Number";
+    state.tradingText11 = "Buy";
     useHead({
         bodyAttrs: {
             dir: 'ltr'
