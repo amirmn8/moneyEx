@@ -35,6 +35,7 @@ module.exports = {
         'lightBg': "linear-gradient(to bottom, #273141, #372c3d, #432831, #442821, #3a2d16);",
         'darkBg': "linear-gradient(to bottom, #f6b33f, #f8b936, #f9bf2c, #f9c520, #f9cc0b);",
         'hero-pattern': "url('/assets/images/HomeNav.png')",
+        'exgreenBg':'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(37,236,167,0.08727240896358546) 100%);'
       },
       width: {
         '540': '540px',
