@@ -102,7 +102,6 @@ const state = reactive({
   tradeEverywhereText7: 'پلتفرم قدرتمند ترید با قابلیت اتصال به فول نود ها و سازگار با محیط ویندوز و مک در ابعاد مختلف به صورت کاملا ریسپانسیو و بهینه.',
   tradeEverywhereText8: 'وب سرویس',
   tradeEverywhereText9: 'وب سرویس تریدمن قابلیت اتصال دیگر صرافی ها و وب سرویس گیرنده ها را فراهم می کند و صرافی شما را به عنوان مرجع قرار می دهد',
-  image: "/_nuxt/Assets/images/Group 3255.png",
   postSlideText1: 'مجله اینترنتی مانی اکسـ',
   postSlideText2: 'جدیدترین اخبار و مطالب حوزه مالی، رمز ارز و ترید',
   seeAll: 'نمایش همه',
@@ -174,7 +173,6 @@ const switchToPersian = () => {
   state.tradeEverywhereText7 = 'پلتفرم قدرتمند ترید با قابلیت اتصال به فول نود ها و سازگار با محیط ویندوز و مک در ابعاد مختلف به صورت کاملا ریسپانسیو و بهینه.'
   state.tradeEverywhereText8 = 'وب سرویس'
   state.tradeEverywhereText9 = 'وب سرویس تریدمن قابلیت اتصال دیگر صرافی ها و وب سرویس گیرنده ها را فراهم می کند و صرافی شما را به عنوان مرجع قرار می دهد'
-  state.image = "/_nuxt/Assets/images/Group 3255.png",
     state.postSlideText1 = 'مجله اینترنتی مانی اکسـ',
     state.postSlideText2 = 'جدیدترین اخبار و مطالب حوزه مالی، رمز ارز و ترید',
     state.seeAll = 'نمایش همه',
@@ -248,7 +246,6 @@ const switchToEnglish = () => {
   state.tradeEverywhereText7 = 'A powerful trade platform with the ability to connect to full nodes and compatible with Windows and Mac environment in different dimensions in a fully responsive and optimal way.'
   state.tradeEverywhereText8 = 'Web service'
   state.tradeEverywhereText9 = 'Trademan web service provides the ability to connect other exchanges and web clients and places your exchange as a reference.'
-  state.image = "/_nuxt/Assets/images/Image-1.png",
     state.postSlideText1 = 'MoneyEx online magazine',
     state.postSlideText2 = 'The latest news and content in the field of finance, cryptocurrency and trade',
     state.seeAll = 'See All'
