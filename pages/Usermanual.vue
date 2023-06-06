@@ -3,10 +3,21 @@
         <div class=" dark:bg-black md:bg-slate-100">
 
             <CommonNavbar :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" :state="state" />
-            <div class="dark:bg-black  md:bg-white"> <UsermanualSearchBox/>
-                <div class="2xl:mx-36  mb-16">
-                   
-                    <UsermanualWhyUs/>
+            <div class="dark:bg-black  md:bg-white">
+                <UsermanualSearchBox />
+                <div class="xl:mx-36  mb-16">
+                    <div v-show="state.openBox">
+                        <UsermanualWhyUs />
+                    </div>
+
+                    <div v-show="state.openBox">
+                        <UsermanualSubjects :state="state" />
+                    </div>
+                    <div v-show="!state.openBox">
+                        <UsermanualAccordingBox :state="state" />
+                    </div>
+
+
                 </div>
                 <CommonFooter :state="state" />
             </div>
@@ -41,14 +52,16 @@ onMounted(() => {
                         htmlAttrs: {
                             class: 'dark'
                         },
-                    })
+                    });
+                    state.theme = 'dark';
                 } else {
                     useHead({
 
                         htmlAttrs: {
                             class: ''
                         },
-                    })
+                    });
+                    state.theme = 'light';
                 }
             }
         }
@@ -57,6 +70,7 @@ onMounted(() => {
 
 
 const state = reactive({
+    openBox: true,
     hash: '#fa',
     theme: "light",
     switchTrades: true,
@@ -85,7 +99,7 @@ const state = reactive({
     footerText11: "ارتباط با ما",
     footerText12: "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7",
     footerText13: "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد",
-   
+
 
 })
 
@@ -117,7 +131,7 @@ const switchToPersian = () => {
     state.footerText11 = "ارتباط با ما";
     state.footerText12 = "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7";
     state.footerText13 = "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد";
-   
+
 
     useHead({
         bodyAttrs: {
