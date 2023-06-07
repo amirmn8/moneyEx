@@ -53,7 +53,7 @@
 
         </div>
         <div class="flex lg:row-span-3 order-1 md:order-3 md:col-span-6  justify-center">
-            <img v-if="state.lang" src="../../assets/images/Group 3255.png">
+            <img v-if="state.lang" src="../../assets/images/Group3255.png">
             <img v-else  src="../../assets/images/Image-1.png">
 
         </div>
