@@ -21,7 +21,8 @@ module.exports = {
       },
       spacing: {
         '5per': '5vw',
-        '530': '530px'
+        '530': '530px',
+        '400': '400px',
       },
       backgroundImage: {
         'USDT': 'radial-gradient(circle, rgba(0,192,175,0.4430147058823529) 0%, rgba(247,248,250,1) 43%);',
@@ -38,6 +39,7 @@ module.exports = {
         'exgreenBg':'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(37,236,167,0.08727240896358546) 100%);',
         'darkExgreenBg':'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(37,236,167,0.08727240896358546) 100%);',
         'exPink': 'linear-gradient(90deg, rgba(255,205,205,0.16290266106442575) 0%, rgba(255,255,255,0) 100%);',
+        'exBlog':'linear-gradient(355deg, rgba(58,45,22,1) 0%, rgba(39,49,65,1) 100%);',
       },
       width: {
         '540': '540px',

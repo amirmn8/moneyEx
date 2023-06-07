@@ -48,7 +48,7 @@
                                 class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
 
                             </a>
-                            <a v-text="state.blog" href="#"
+                            <a v-text="state.blog" href="/blog"
                                 class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
                             </a>
                             <a href="#" class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
@@ -274,7 +274,7 @@
                         </svg>
                     </a>
                     <hr />
-                    <a href="#"
+                    <a href="/blog"
                         class="flex justify-between dark:text-white items-center text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium">
                         <p v-text="state.blog"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
