@@ -7,7 +7,7 @@
         
                 <div class="2xl:mx-36 pt-16">
                     <div class="flex flex-col items-center gap-4">
-                        <img class="lg:w-1/2" src="../assets/images/404-Image.png" alt="">
+                        <img class="lg:w-1/2" src="./assets/images/404-Image.png" alt="">
                         <p class="font-bold text-2xl">صفحه مورد نظر پیدا نشد (404)</p>
                         <p>احتمال دارد آدرس صفحه مورد نظر خود را به اشتباه وارد کرده باشید</p>
                         <a href="/"
