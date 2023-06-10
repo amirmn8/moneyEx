@@ -1,6 +1,6 @@
 <template>
-    <div class="w-400 col-span-12 md:col-span-6 xl:col-span-4 my-4 lg:mx-4 ">
-        <img class="rounded-t-lg w-400" src="../../assets/images/postimg.png" alt="">
+    <div class="w-fit col-span-12 md:col-span-6 lg:col-span-4 my-4 flex flex-col mx-auto">
+        <img class="rounded-t-lg w-full" src="../../assets/images/postimg.png" alt="">
         <div class="flex flex-col px-4 bg-white rounded-b-lg py-4 gap-4">
             <p class="font-bold">آموزش جامع بازار رمز ارز</p>
             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم

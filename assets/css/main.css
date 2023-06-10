@@ -12,7 +12,20 @@
     }
  
 }
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
 
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    }
+  }
 @font-face {
 font-family: Shabnam;
   src: url(../fonts/Shabnam-Light-FD.woff2) format('woff2'),
@@ -46,15 +59,7 @@ html {
      scroll-behavior: smooth;
 }
 
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
 body * {
     @apply transition-colors duration-75;
 }
