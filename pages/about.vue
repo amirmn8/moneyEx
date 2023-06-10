@@ -8,7 +8,7 @@
                     <div class="flex flex-col">
                         <div class="flex justify-center">
                             <img class="w-screen sm:hidden" src="../assets/images/herosm.png" alt="">
-                            <img class="hidden sm:block lg:hidden w-screen" src="../assets/images/heromd.png" alt="">
+                            <img class="hidden sm:block lg:hidden w-screen" src="../assets/images/Heromd.png" alt="">
                             <img class="hidden mt-8 lg:block w-5/6" src="../assets/images/Herolg.png" alt="">
                         </div>
                     </div>
