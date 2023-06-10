@@ -16,30 +16,26 @@
                     <div class="flex flex-col gap-1">
                         <p v-text="state.footerText3" class="font-bold dark:text-white"></p>
                         <ul class="gap-1 flex flex-col dark:text-gray-300">
-                            <li v-text="state.footerText4">
-                            </li>
-                            <li v-text="state.footerText5">
-                            </li>
+                            <a href="/about" v-text="state.footerText4">
+                            </a>
+                            <a href="/contact" v-text="state.footerText5">
+                            </a>
                             <li v-text="state.footerText6">
+
                             </li>
-                            <li v-text="state.footerText7">
-                            </li>
+                            <a href="/terms" v-text="state.footerText7">
+                            </a>
                         </ul>
                     </div>
                     <div class="flex flex-col gap-1">
                         <p v-text="state.footerText8" class="font-bold dark:text-white"></p>
                         <ul class="gap-1 flex flex-col dark:text-gray-300">
-                            <li v-text="state.footerText9">
-                            </li>
-                            <li>
-                                Public API
-                            </li>
-                            <li>
-                                Private API
-                            </li>
-                            <li v-text="state.footerText10">
+                            <a href="/exchange" v-text="state.footerText9">
+                            </a>
 
-                            </li>
+                            <a href="/blog" v-text="state.footerText10">
+
+                            </a>
                         </ul>
                     </div>
                 </div>

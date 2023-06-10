@@ -51,13 +51,21 @@
                             <a v-text="state.blog" href="/blog"
                                 class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
                             </a>
-                            <a href="#" class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
+                            <button class="group relative hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
                                     class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                                     <path
                                         d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
                                 </svg>
-                            </a>
+                                <div class="hidden group-hover:flex w-48 bg-slate-700 absolute top-8 -right-2 py-2 flex-col rounded-xl">
+                                    <a class="py-2 hover:bg-slate-800" href="/about">درباره ی ما</a>
+                                    <a class="py-2 hover:bg-slate-800" href="/contact"> تماس با ما </a>
+                                    <a class="py-2 hover:bg-slate-800" href="/terms"> قوانین و مقررات </a>
+
+
+
+                                </div>
+                            </button>
                         </div>
 
                     </div>
@@ -284,7 +292,7 @@
                         </svg>
                     </a>
                     <hr />
-                    <a href="#"
+                    <a href="/about"
                         class="flex justify-between items-center dark:text-white text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium">
                         <p v-text="state.about"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -294,7 +302,7 @@
                         </svg>
                     </a>
                     <hr />
-                    <a href="#"
+                    <a href="/contact"
                         class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
                         <p v-text="state.contact"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -304,7 +312,7 @@
                         </svg>
                     </a>
                     <hr />
-                    <a href="#"
+                    <a href="/terms"
                         class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
                         <p v-text="state.rules"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
