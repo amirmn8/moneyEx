@@ -40,7 +40,8 @@ module.exports = {
         'darkExgreenBg':'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(37,236,167,0.08727240896358546) 100%);',
         'exPink': 'linear-gradient(90deg, rgba(255,205,205,0.16290266106442575) 0%, rgba(255,255,255,0) 100%);',
         'exBlog':'linear-gradient(355deg, rgba(58,45,22,1) 0%, rgba(39,49,65,1) 100%);',
-      
+        'contact': "url('/assets/images/Earth.png')",
+
       },
       width: {
         '540': '540px',
