@@ -4,12 +4,10 @@
             <img class="dark:hidden" src="../assets/images/Repair-image.png" alt="">
             <img class="hidden dark:block" src="../assets/images/Repair-image2.png" alt="">
             <div class="flex flex-col gap-4 items-center text-center lg:text-start dark:text-white">
-                <p class="text-ExYellow font-bold">504 Gateway Timeout</p>
-                <p class="font-bold text-2xl">مشکلی پیش آمده به زودی باز میگردیم</p>
-                <p class="w-2/3">کاربر گرامی، کارشناسان فنی مانی اکس درحال آماده سازی وبسایت می باشند
-                    و به زودی وبسایت در دسترس خواهد بود</p>
-                <p class="w-2/3">بعد از چند ساعت مجدد امتحان کنید در صورت مشاهده مجدد خطا با تیم
-                    پشتیبانی تماس بگیرید</p>
+                <p  class="text-ExYellow font-bold">504 Gateway Timeout</p>
+                <p v-text="state.error1" class="font-bold text-2xl"> </p>
+                <p v-text="state.error2" class="w-2/3"></p>
+                <p v-text="state.error3" class="w-2/3"></p>
             </div>
         </div>
         <div class="flex mt-auto pb-12 ">
@@ -95,6 +93,9 @@ const state = reactive({
     footerText12: "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7",
     footerText13: "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد",
     hash: '#fa',
+   error1:"مشکلی پیش آمده به زودی باز میگردیم",
+   error2:"کاربر گرامی، کارشناسان فنی مانی اکس درحال آماده سازی وبسایت می باشند و به زودی وبسایت در دسترس خواهد بود",
+   error3:"بعد از چند ساعت مجدد امتحان کنید در صورت مشاهده مجدد خطا با تیم پشتیبانی تماس بگیرید",
 
 
 })
@@ -127,7 +128,9 @@ const switchToPersian = () => {
     state.footerText12 = "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7";
     state.footerText13 = "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد";
     state.hash = '#fa',
-
+    state.error1="مشکلی پیش آمده به زودی باز میگردیم",
+    state.error2="کاربر گرامی، کارشناسان فنی مانی اکس درحال آماده سازی وبسایت می باشند و به زودی وبسایت در دسترس خواهد بود",
+    state.error3="بعد از چند ساعت مجدد امتحان کنید در صورت مشاهده مجدد خطا با تیم پشتیبانی تماس بگیرید",
         useHead({
             bodyAttrs: {
                 dir: 'rtl'
@@ -162,7 +165,9 @@ const switchToEnglish = () => {
     state.footerText12 = "Tehran province, Tehran city, st Central building Central, no.7";
     state.footerText13 = "All rights of this site are reserved and belong to MoneyEx";
     state.hash = '#en'
-
+    state.error1="There was a problem, we will be back soon",
+     state.error2="Dear user, MoneyX technical experts are preparing the website and the website will be available soon",
+     state.error3="Try again after a few hours. If you see the error again, contact the support team",
 
     useHead({
         bodyAttrs: {

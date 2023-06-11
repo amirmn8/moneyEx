@@ -4,16 +4,15 @@
 
             <CommonNavbar :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" :state="state" />
             <div class="dark:bg-black bg-white">
-        
+
                 <div class="2xl:mx-36 pt-16 dark:text-white">
                     <div class="flex flex-col items-center gap-4">
                         <img class="lg:w-1/2" src="./assets/images/404-Image.png" alt="">
-                        <p class="font-bold text-2xl">صفحه مورد نظر پیدا نشد (404)</p>
-                        <p>احتمال دارد آدرس صفحه مورد نظر خود را به اشتباه وارد کرده باشید</p>
-                        <a href="/" class="hover:bg-ExYellow hover:text-white bg-white text-ExYellow px-12 text-center justify-center border border-solid border-ExYellow  fill-white  flex my-auto items-center rounded-lg h-10 dark:bg-black dark:hover:bg-ExYellow">
-
-                                    برو به صفحه اصلی 
-                    </a>
+                        <p v-text="state.not1" class="font-bold text-2xl"></p>
+                        <p v-text="state.not2"></p>
+                        <a v-text="state.not3" href="/"
+                            class="hover:bg-ExYellow hover:text-white bg-white text-ExYellow px-12 text-center justify-center border border-solid border-ExYellow  fill-white  flex my-auto items-center rounded-lg h-10 dark:bg-black dark:hover:bg-ExYellow">
+                        </a>
                     </div>
 
                 </div>
@@ -90,6 +89,10 @@ const state = reactive({
     footerText12: "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7",
     footerText13: "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد",
     hash: '#fa',
+    not1: 'صفحه ی مورد نظر پیدا نشد 404',
+    not2: 'احتمال دارد آدرس صفحه مورد نظر خود را به اشتباه وارد کرده باشید',
+    not3: 'برو به صفحه اصلی',
+
 
 
 })
@@ -121,13 +124,16 @@ const switchToPersian = () => {
     state.footerText11 = "ارتباط با ما";
     state.footerText12 = "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7";
     state.footerText13 = "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد";
-    state.hash = '#fa',
+    state.hash = '#fa';
+    state.not1 = 'صفحه ی مورد نظر پیدا نشد 404';
+    state.not2 = 'احتمال دارد آدرس صفحه مورد نظر خود را به اشتباه وارد کرده باشید';
+    state.not3 = 'برو به صفحه اصلی';
 
-        useHead({
-            bodyAttrs: {
-                dir: 'rtl'
-            },
-        })
+    useHead({
+        bodyAttrs: {
+            dir: 'rtl'
+        },
+    })
 }
 const switchToEnglish = () => {
     window.location.hash = "#en";
@@ -156,8 +162,10 @@ const switchToEnglish = () => {
     state.footerText11 = "Contact Us";
     state.footerText12 = "Tehran province, Tehran city, st Central building Central, no.7";
     state.footerText13 = "All rights of this site are reserved and belong to MoneyEx";
-    state.hash = '#en'
-
+    state.hash = '#en';
+    state.not1 = 'Page not found 404';
+     state.not2 = 'It is possible that you entered the address of the desired page by mistake';
+     state.not3 = 'Go to Home';
 
     useHead({
         bodyAttrs: {

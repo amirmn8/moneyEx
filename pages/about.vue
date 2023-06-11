@@ -6,63 +6,43 @@
             <div class="dark:bg-black bg-slate-100">
                 <div class="2xl:mx-36  mb-16">
                     <div class="flex flex-col">
-                        <div class="flex justify-center">
+                        <div v-if="state.hash === '#fa'" class="flex justify-center">
                             <img class="w-screen sm:hidden" src="../assets/images/herosm.png" alt="">
                             <img class="hidden sm:block lg:hidden w-screen" src="../assets/images/Heromd.png" alt="">
                             <img class="hidden mt-8 lg:block w-5/6" src="../assets/images/Herolg.png" alt="">
+                        </div>
+                        <div v-else class="flex justify-center">
+                            <img class="w-screen sm:hidden" src="../assets/images/herosmEn.png" alt="">
+                            <img class="hidden sm:block lg:hidden w-screen" src="../assets/images/HeromdEn.png" alt="">
+                            <img class="hidden mt-8 lg:block w-5/6" src="../assets/images/HerolgEn.png" alt="">
                         </div>
                     </div>
                     <div>
                         <MainOurPoints :state="state" />
                     </div>
                     <div class="flex flex-col gap-6 px-8 mt-12 dark:text-white">
-                        <p class="text-lg font-bold">درباره شرکت</p>
-                        <p>لورم ایپسوم یا طرح‌نمابه متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته
-                            می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل
-                            ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه
-                            فونت و ظاهر متن باشد
+                        <p v-text="state.aboutText1" class="text-lg font-bold"></p>
+                        <p v-text="state.aboutText2">
+                        </p>
+                        <p v-text="state.aboutText3" class="text-lg font-bold"></p>
+                        <p v-text="state.aboutText4">
 
-                            معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا
-                            به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار
-                            گیردلورم ایپسوم یا طرح‌نمابه متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته
-                            می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل
-                            ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه
-                            فونت و ظاهر متن باشد
-
-                            معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا
-                            به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار
-                            گیرد</p>
-                        <p class="text-lg font-bold">چرا مانی اکس؟</p>
-                        <p>لورم ایپسوم یا طرح‌نمابه متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته
-                            می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل
-                            ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه
-                            فونت و ظاهر متن باشد
-
-                            معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا
-                            به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار
-                            گیردلورم ایپسوم یا طرح‌نمابه متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته
-                            می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل
-                            ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه
-                            فونت و ظاهر متن باشد
-
-                            معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا
-                            به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار
-                            گیرد</p>
+                        </p>
                     </div>
                     <div class="flex flex-col gap-12 mt-16 md:flex-row justify-center md:gap-32 lg:gap-72 dark:text-white">
                         <div class="flex flex-col items-center">
                             <p class="font-bold text-3xl">+200 B</p>
-                            <p class="text-md font-bold">حجم معاملات</p>
+                            <p v-text="state.aboutText5" class="text-md font-bold"></p>
                         </div>
                         <div class="flex flex-col items-center">
                             <p class="font-bold text-3xl">+5.5 M</p>
-                            <p class="text-md font-bold">معاملات انجام شده </p>
+                            <p v-text="state.aboutText6" class="text-md font-bold">  </p>
                         </div>
                         <div class="flex flex-col items-center">
                             <p class="font-bold text-3xl">+600 K</p>
-                            <p class="text-md font-bold">کاربر فعال </p>
+                            <p v-text="state.aboutText7" class="text-md font-bold">  </p>
                         </div>
-         
+
 
                     </div>
                     <div class="flex justify-center mt-24">
@@ -151,6 +131,13 @@ const state = reactive({
     ourPointsText6: 'بررسی خرید و فروش رمز ارز ها و مدیریت آن ها در یک صفحه',
     ourPointsText7: 'سفارش گذاری',
     ourPointsText8: 'تنظیم سفارش گذاری برای معامله روی قیمت خاص و جلوگیری از ضرر',
+    aboutText1: 'درباره شرکت',
+    aboutText2: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.',
+    aboutText3: 'چرا مانی اکس؟',
+    aboutText4: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.',
+    aboutText5: 'حجم معاملات',
+    aboutText6: 'معاملات انجام شده',
+    aboutText7: 'کاربر فعال',
 
 })
 
@@ -190,6 +177,14 @@ const switchToPersian = () => {
     state.ourPointsText6 = 'بررسی خرید و فروش رمز ارز ها و مدیریت آن ها در یک صفحه'
     state.ourPointsText7 = 'سفارش گذاری'
     state.ourPointsText8 = 'تنظیم سفارش گذاری برای معامله روی قیمت خاص و جلوگیری از ضرر'
+    state.aboutText1 = 'درباره شرکت';
+    state.aboutText2 = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.';
+    state.aboutText3 = 'چرا مانی اکس؟';
+    state.aboutText4 = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.';
+    state.aboutText5 = 'حجم معاملات';
+    state.aboutText6 = 'معاملات انجام شده';
+    state.aboutText7 = 'کاربر فعال';
+
 
     useHead({
         bodyAttrs: {
@@ -233,7 +228,13 @@ const switchToEnglish = () => {
     state.ourPointsText6 = 'Investigating buying and selling of cryptocurrencies and managing them on one page'
     state.ourPointsText7 = 'Ordering'
     state.ourPointsText8 = 'Set orders to trade at a specific price and avoid losses'
-
+    state.aboutText1 = 'About Company';
+    state.aboutText2 = 'Lorem Epsom is a fake text with the production of incomprehensible simplicity from the printing industry, and with the use of graphic designers, printers and texts, but also newspapers and magazines in columns and rows as necessary, and for the current conditions of the technology required, and diverse applications with the aim of improving the tools It is practical, many books in sixty-three percent of the past, present and future require a lot of knowledge from the society and experts, in order to create more knowledge for computer designers, especially creative designers, and the leading culture in the Persian language. In this case, we can hope that all the difficulty in providing solutions, and the difficult conditions of typing will end, and the time required, including the typesetting of the main achievements, and answering the continuous questions of the existing world of design will be basically used.';
+    state.aboutText3 = 'Why MoneyEx?';
+    state.aboutText4 = 'Lorem Epsom is a fake text with the production of incomprehensible simplicity from the printing industry, and with the use of graphic designers, printers and texts, but also newspapers and magazines in columns and rows as necessary, and for the current conditions of the technology required, and diverse applications with the aim of improving the tools It is practical, many books in sixty-three percent of the past, present and future require a lot of knowledge from the society and experts, in order to create more knowledge for computer designers, especially creative designers, and the leading culture in the Persian language. In this case, we can hope that all the difficulty in providing solutions, and the difficult conditions of typing will end, and the time required, including the typesetting of the main achievements, and answering the continuous questions of the existing world of design will be basically used.';
+    state.aboutText5 = 'Turnover';
+    state.aboutText6 = 'Transactions done';
+    state.aboutText7 = 'Active user';
     useHead({
         bodyAttrs: {
             dir: 'ltr'

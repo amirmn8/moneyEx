@@ -7,8 +7,8 @@
                 <div class="2xl:mx-36 mx-4 mb-16">
                     <div
                         class="bg-contact dark:bg-contact2 dark:text-white h-96 bg-no-repeat bg-center sm:flex flex-col justify-center items-center gap-4 hidden">
-                        <p class="text-3xl font-bold">تماس با مانی اکسـ </p>
-                        <p class="">لطفاً پیش از ارسال ایمیل یا تماس تلفنی، ابتدا سوالات متداول را مشاهده کنید.</p>
+                        <p v-text="state.contactText1" class="text-3xl font-bold"></p>
+                        <p v-text="state.contactText2"></p>
                     </div>
                     <div class=" flex-wrap gap-4 justify-center hidden sm:flex">
                         <div
@@ -155,7 +155,7 @@
                                             stroke-width="0.5" />
                                     </g>
                                 </svg>
-                                <p class="font-bold">شماره های تماس</p>
+                                <p v-text="state.contactText3" class="font-bold"></p>
 
                             </div>
                             <p dir="ltr"> 0098 (123) 4567 8910</p>
@@ -226,7 +226,7 @@
                                     </g>
                                 </svg>
 
-                                <p class="font-bold"> پست الکترونیکی </p>
+                                <p v-text="state.contactText4" class="font-bold"> </p>
 
                             </div>
                             <p dir="ltr">Info@moneyex.org</p>
@@ -262,11 +262,10 @@
                                     </g>
                                 </svg>
 
-                                <p class="font-bold"> آدرس دفتر مرکزی</p>
+                                <p v-text="state.contactText5" class="font-bold"></p>
 
                             </div>
-                            <p> استان تهران، شهر تهران، خیابان مرکزی
-                                ساختمان مرکزی، پلاک 7</p>
+                            <p v-text="state.contactText6"> </p>
 
                         </div>
                         <div
@@ -316,27 +315,31 @@
                                 </svg>
 
 
-                                <p class="font-bold"> ارسال پیام </p>
+                                <p v-text="state.contactText7" class="font-bold"> </p>
 
                             </div>
                             <div class="grid grid-cols-3 gap-6">
-                                <div> <label class="block text-ExPlaceHolder text-sm font-bold mb-2">نام و نام
-                                        خانوداگی</label>
+                                <div> <label v-text="state.contactText8"
+                                        class="block text-ExPlaceHolder text-sm font-bold mb-2">
+                                    </label>
                                     <input type="text"
                                         class="flex dark:bg-ExBlack dark:border-gray-700 w-full items-center justify-between rounded-xl h-10 bg-white p-2 border border-solid border-gray-300 ">
                                 </div>
-                                <div> <label class="block text-ExPlaceHolder text-sm font-bold mb-2">ایمیل</label>
+                                <div> <label v-text="state.contactText9"
+                                        class="block text-ExPlaceHolder text-sm font-bold mb-2"></label>
                                     <input type="text"
                                         class="flex dark:bg-ExBlack dark:border-gray-700  w-full items-center justify-between rounded-xl h-10 bg-white p-2 border border-solid border-gray-300 ">
                                 </div>
-                                <div> <label class="block text-ExPlaceHolder text-sm font-bold mb-2">عنوان</label>
+                                <div> <label v-text="state.contactText10"
+                                        class="block text-ExPlaceHolder text-sm font-bold mb-2"></label>
                                     <input type="text"
                                         class="flex dark:bg-ExBlack dark:border-gray-700  w-full items-center justify-between rounded-xl h-10 bg-white p-2 border border-solid border-gray-300 ">
                                 </div>
 
                             </div>
                             <div>
-                                <label class="block text-ExPlaceHolder text-sm font-bold mb-2">متن</label>
+                                <label v-text="state.contactText11"
+                                    class="block text-ExPlaceHolder text-sm font-bold mb-2"></label>
                                 <input type="textarea"
                                     class="flex w-full dark:bg-ExBlack dark:border-gray-700  items-center justify-between rounded-xl h-40 bg-white p-2 border border-solid border-gray-300 ">
                             </div>
@@ -348,12 +351,12 @@
                                             d="M19.726,32.1A7.564,7.564,0,0,1,14.265,29.9,7.214,7.214,0,0,1,12,24.509V9.408A5.185,5.185,0,0,1,13.6,5.58,5.272,5.272,0,0,1,17.443,4a5.4,5.4,0,0,1,5.443,5.443v11.73h-1.4V9.408a3.838,3.838,0,0,0-1.176-2.845,4.114,4.114,0,0,0-5.724,0A3.838,3.838,0,0,0,13.4,9.408V24.58a5.761,5.761,0,0,0,1.861,4.337,6.478,6.478,0,0,0,6.971,1.264,6.559,6.559,0,0,0,2.054-1.387V30.62a8.109,8.109,0,0,1-2.125,1.089A7.564,7.564,0,0,1,19.726,32.1ZM26.4,30.339V26.125H22.184V24.018H26.4V19.8h2.107v4.214H32.72v2.107H28.506v4.214Zm-6.673-5.268v1.4a2.923,2.923,0,0,1-2.248-1,3.4,3.4,0,0,1-.913-2.371V9.338h1.4V23.21a1.858,1.858,0,0,0,.509,1.317A1.642,1.642,0,0,0,19.726,25.071Zm6.321-8.323V9.338h1.4v7.41Z"
                                             transform="translate(32.095 -12) rotate(90)" />
                                     </svg>
-                                    <p class="font-bold">افزودن فایل پیوست</p>
+                                    <p v-text="state.contactText12" class="font-bold"> </p>
                                 </div>
-                                <button
+                                <button v-text="state.contactText13"
                                     class="bg-ExYellow text-white hover:bg-white hover:text-ExYellow w-1/3 text-center justify-center border border-solid border-ExYellow dark:text-ExBlack fill-white dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex my-auto items-center rounded-lg h-10">
 
-                                    ارسال پیام
+
                                 </button>
                             </div>
                         </div>
@@ -502,7 +505,7 @@
                                             stroke-width="0.5" />
                                     </g>
                                 </svg>
-                                <p>شماره های تماس</p>
+                                <p v-text="state.contactText3"> </p>
                             </div>
                         </div>
                         <div class="flex flex-col border-b border-solid border-gray-200 px-10 pb-4">
@@ -573,7 +576,7 @@
                                     </g>
                                 </svg>
 
-                                <p> پست الکترونیکی </p>
+                                <p v-text="state.contactText4"> </p>
                             </div>
                         </div>
                         <div class="flex flex-col border-b border-solid border-gray-200 px-10 pb-4">
@@ -610,12 +613,11 @@
                                 </svg>
 
 
-                                <p>آدرس دفتر مرکزی </p>
+                                <p v-text="state.contactText5"></p>
                             </div>
                         </div>
                         <div class="flex flex-col border-b border-solid border-gray-200 px-10 pb-4">
-                            <p> استان تهران، شهر تهران، خیابان مرکزی
-                                ساختمان مرکزی، پلاک 7</p>
+                            <p v-text="state.contactText6"></p>
 
                         </div>
                         <div class="flex flex-col  w-full px-4 py-6 rounded-xl gap-8 ">
@@ -665,44 +667,48 @@
 
 
 
-                                <p class="font-bold"> ارسال پیام </p>
+                                <p v-text="state.contactText7" class="font-bold"> </p>
 
                             </div>
                             <div class="flex flex-col gap-6">
-                                <div> <label class="block text-ExPlaceHolder text-sm font-bold mb-2">نام و نام
-                                        خانوداگی</label>
+                                <div> <label v-text="state.contactText8"
+                                        class="block text-ExPlaceHolder text-sm font-bold mb-2">
+                                    </label>
                                     <input type="text"
                                         class="flex dark:bg-ExBlack dark:border-gray-700 w-full items-center justify-between rounded-xl h-10 bg-white p-2 border border-solid border-gray-300 ">
                                 </div>
-                                <div> <label class="block text-ExPlaceHolder text-sm font-bold mb-2">ایمیل</label>
+                                <div> <label v-text="state.contactText9"
+                                        class="block text-ExPlaceHolder text-sm font-bold mb-2"></label>
                                     <input type="text"
                                         class="flex dark:bg-ExBlack dark:border-gray-700 w-full items-center justify-between rounded-xl h-10 bg-white p-2 border border-solid border-gray-300 ">
                                 </div>
-                                <div> <label class="block text-ExPlaceHolder text-sm font-bold mb-2">عنوان</label>
+                                <div> <label v-text="state.contactText10"
+                                        class="block text-ExPlaceHolder text-sm font-bold mb-2"></label>
                                     <input type="text"
                                         class="flex dark:bg-ExBlack dark:border-gray-700 w-full items-center justify-between rounded-xl h-10 bg-white p-2 border border-solid border-gray-300 ">
                                 </div>
 
                             </div>
                             <div>
-                                <label class="block text-ExPlaceHolder text-sm font-bold mb-2">متن</label>
+                                <label v-text="state.contactText11"
+                                    class="block text-ExPlaceHolder text-sm font-bold mb-2"></label>
                                 <input type="textarea"
                                     class="flex dark:bg-ExBlack dark:border-gray-700 w-full items-center justify-between rounded-xl h-40 bg-white p-2 border border-solid border-gray-300 ">
                             </div>
                             <div class="flex flex-col items-center justify-between">
                                 <div class="flex items-center gap-4 my-4">
-                                    <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" width="28.095" height="20.72"
-                                        viewBox="0 0 28.095 20.72">
+                                    <svg class="dark:fill-white" xmlns="http://www.w3.org/2000/svg" width="28.095"
+                                        height="20.72" viewBox="0 0 28.095 20.72">
                                         <path id="attach_file_add_FILL0_wght400_GRAD0_opsz48"
                                             d="M19.726,32.1A7.564,7.564,0,0,1,14.265,29.9,7.214,7.214,0,0,1,12,24.509V9.408A5.185,5.185,0,0,1,13.6,5.58,5.272,5.272,0,0,1,17.443,4a5.4,5.4,0,0,1,5.443,5.443v11.73h-1.4V9.408a3.838,3.838,0,0,0-1.176-2.845,4.114,4.114,0,0,0-5.724,0A3.838,3.838,0,0,0,13.4,9.408V24.58a5.761,5.761,0,0,0,1.861,4.337,6.478,6.478,0,0,0,6.971,1.264,6.559,6.559,0,0,0,2.054-1.387V30.62a8.109,8.109,0,0,1-2.125,1.089A7.564,7.564,0,0,1,19.726,32.1ZM26.4,30.339V26.125H22.184V24.018H26.4V19.8h2.107v4.214H32.72v2.107H28.506v4.214Zm-6.673-5.268v1.4a2.923,2.923,0,0,1-2.248-1,3.4,3.4,0,0,1-.913-2.371V9.338h1.4V23.21a1.858,1.858,0,0,0,.509,1.317A1.642,1.642,0,0,0,19.726,25.071Zm6.321-8.323V9.338h1.4v7.41Z"
                                             transform="translate(32.095 -12) rotate(90)" />
                                     </svg>
-                                    <p class="font-bold">افزودن فایل پیوست</p>
+                                    <p v-text="state.contactText12" class="font-bold"> </p>
                                 </div>
-                                <button
+                                <button v-text="state.contactText13"
                                     class="bg-ExYellow text-white hover:bg-white hover:text-ExYellow w-full text-center justify-center border border-solid border-ExYellow dark:text-ExBlack fill-white dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex my-auto items-center rounded-lg h-10">
 
-                                    ارسال پیام
+
                                 </button>
                             </div>
                         </div>
@@ -800,7 +806,21 @@ const state = reactive({
     seeAll: 'نمایش همه',
     postTitle: 'آموزش جامع بازار رمز ارز',
     postTime: '12 ساعت قبل',
-    summery: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ'
+    summery: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ',
+    contactText1: 'تماس با مانی اکسـ',
+    contactText2: 'لطفاً پیش از ارسال ایمیل یا تماس تلفنی، ابتدا سوالات متداول را مشاهده کنید.',
+    contactText3: 'شماره های تماس',
+    contactText4: 'پست الکترونیکی',
+    contactText5: 'آدرس دفتر مرکزی',
+    contactText6: 'استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7',
+    contactText7: 'ارسال پیام',
+    contactText8: 'نام و نام خانوادگی',
+    contactText9: 'ایمیل',
+    contactText10: 'عنوان',
+    contactText11: 'متن',
+    contactText12: 'افزودن فایل پیوست',
+    contactText13: 'ارسال پیام',
+
 })
 
 const switchToPersian = () => {
@@ -837,6 +857,20 @@ const switchToPersian = () => {
         state.postTitle = 'آموزش جامع بازار رمز ارز',
         state.postTime = '12 ساعت قبل',
         state.summery = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ',
+        state.contactText1 = "";
+    state.contactText1 = 'تماس با مانی اکسـ',
+        state.contactText2 = 'لطفاً پیش از ارسال ایمیل یا تماس تلفنی، ابتدا سوالات متداول را مشاهده کنید.',
+        state.contactText3 = 'شماره های تماس',
+        state.contactText4 = 'پست الکترونیکی',
+        state.contactText5 = 'آدرس دفتر مرکزی',
+        state.contactText6 = 'استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7',
+        state.contactText7 = 'ارسال پیام',
+        state.contactText8 = 'نام و نام خانوادگی',
+        state.contactText9 = 'ایمیل',
+        state.contactText10 = 'عنوان',
+        state.contactText11 = 'متن',
+        state.contactText12 = 'افزودن فایل پیوست',
+        state.contactText13 = 'ارسال پیام',
 
         useHead({
             bodyAttrs: {
@@ -878,13 +912,25 @@ const switchToEnglish = () => {
     state.postTitle = 'Comprehensive education of the cryptocurrency market',
         state.postTime = '12 hours ago',
         state.summery = 'Lorem Ipsum is a mock text with an unintelligible',
+        state.contactText1 = 'Contact with MoneyEx',
+         state.contactText2 = 'Please see the FAQ first before sending an email or calling.',
+         state.contactText3 = 'Contact Numbers',
+         state.contactText4 = 'Email',
+         state.contactText5 = 'Office address',
+         state.contactText6 = 'Tehran Province, No. 7, Central Building, Central Street, Tehran City',
+         state.contactText7 = 'Send message',
+         state.contactText8 = 'Name',
+         state.contactText9 = 'Email',
+         state.contactText10 = 'Title',
+         state.contactText11 = 'Text',
+         state.contactText12 = 'Add attachment',
+         state.contactText13 = 'Send',
+    useHead({
+        bodyAttrs: {
+            dir: 'ltr'
+        }
 
-        useHead({
-            bodyAttrs: {
-                dir: 'ltr'
-            }
-
-        })
+    })
 }
 onMounted(() => {
     var hash = window.location.hash;
