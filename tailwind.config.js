@@ -41,6 +41,7 @@ module.exports = {
         'exPink': 'linear-gradient(90deg, rgba(255,205,205,0.16290266106442575) 0%, rgba(255,255,255,0) 100%);',
         'exBlog':'linear-gradient(355deg, rgba(58,45,22,1) 0%, rgba(39,49,65,1) 100%);',
         'contact': "url('/assets/images/Earth.png')",
+        'contact2': "url('/assets/images/Earth2.png')",
         'terms': "radial-gradient(circle, rgba(0,192,175,0) 62%, rgba(0,192,175,0.17970938375350143) 100%);",
 
 

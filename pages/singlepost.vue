@@ -3,7 +3,7 @@
         <div class="bg-white dark:bg-black md:bg-slate-100">
 
             <CommonNavbar :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" :state="state" />
-            <div class="dark:bg-black bg-white">
+            <div class="dark:bg-black bg-white dark:text-white dark:fill-white">
                 <div class="2xl:mx-36 mx-4 mb-16">
                     <div class="flex flex-col gap-12 pb-32">
                         <div class="flex justify-center">
@@ -17,7 +17,7 @@
                                         d="M162.17,256.5a2.177,2.177,0,0,1-2.17-2.17V240.223a2.155,2.155,0,0,1,.231-.977,2.081,2.081,0,0,1,.638-.76l9.4-7.053a2.307,2.307,0,0,1,.627-.326,2.154,2.154,0,0,1,.682-.109,2.109,2.109,0,0,1,.677.109,2.26,2.26,0,0,1,.618.326l9.4,7.053a2.081,2.081,0,0,1,.638.76,2.155,2.155,0,0,1,.231.977V254.33a2.177,2.177,0,0,1-2.17,2.17h-6.511V246.372h-5.787V256.5Z"
                                         transform="translate(-160 -231)" />
                                 </svg>
-                                <p>خانه | وبلاگ | تحلیل بازار | تحلیل بیت کوین (30 فروردین 1402)</p>
+                                <p >خانه | وبلاگ | تحلیل بازار | تحلیل بیت کوین (30 فروردین 1402)</p>
                             </div>
                             <div class="mr-8 md:mr-0">
                                 منبع : بایننس | 1402/02/29 20:26

@@ -3,7 +3,7 @@
         <div class="bg-white dark:bg-black md:bg-slate-100">
 
             <CommonNavbar :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" :state="state" />
-            <div class="dark:bg-black bg-slate-100">
+            <div class="dark:bg-black bg-slate-100 dark:text-white">
                 <div class="flex flex-col bg-terms items-center justify-center h-full md:py-24 py-12 gap-4">
                     <img class="lg:w-1/12" src="../assets/icons/moneyEx.png" alt="">
                     <p class="font-bold text-xl">قوانین و شرایط استفاده از خدمات</p>

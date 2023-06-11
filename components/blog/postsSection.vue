@@ -1,24 +1,24 @@
 <template>
-    <div class="bg-exBlog 2xl:px-36 px-4 pb-48 text-white">
-        <div class="flex justify-between mx-6 py-8">
+    <div class="bg-exBlog dark:bg-none dark:bg-ExYellow 2xl:px-36 px-4 pb-48 text-white">
+        <div class="flex justify-between mx-6 py-8 dark:text-black">
             <p class="font-bold">انتخاب دسته بندی</p>
             <p>136 مورد برای نمایش</p>
         </div>
         <div class="flex flex-col overflow-x-scroll no-scrollbar">
 
-            <div class="flex flex-row w-fit md:w-full gap-6  justify-between px-6">
-                <button class="border border-white border-solid rounded-lg w-36 py-2 ">
+            <div class="flex flex-row w-fit md:w-full gap-6  justify-between px-6 dark:text-black ">
+                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
                     اخبار رمز ارز
                 </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2">
+                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
                     NFT </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2">
+                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
                     آموزش </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2">
+                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
                     رویدادها </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2">
+                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
                     مقالات </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2">
+                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
                     قیمت </button>
             </div>
         </div>
@@ -71,23 +71,23 @@
                     transform="translate(-11.251 -6.194)" />
             </svg>
         <button
-            class="bg-ExYellow items-center text-white fill-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow  border border-solid border-ExYellow dark:text-ExBlack  dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
+            class="bg-ExYellow items-center text-white dark:text-black fill-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow  border border-solid border-ExYellow  dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
             <p>1</p>
         </button>
         <button
-            class=" items-center text-black fill-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow   dark:text-ExBlack  dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
+            class=" items-center text-black dark:text-white fill-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow   dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
             <p>2</p>
         </button>
         <button
-            class=" items-center text-black fill-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow   dark:text-ExBlack  dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
+            class=" items-center text-black fill-white dark:text-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow     dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
             <p>3</p>
         </button>
         <button
-            class=" items-center text-black fill-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow   dark:text-ExBlack  dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
+            class=" items-center text-black fill-white dark:text-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow    dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
             <p>4</p>
         </button>
         <button
-            class=" items-center text-black fill-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow   dark:text-ExBlack  dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
+            class=" items-center text-black fill-white hover:fill-ExYellow hover:bg-white hover:text-ExYellow   dark:text-white  dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex px-3 py-2 rounded-lg gap-2">
             <p>5</p>
         </button>
         <svg class="fill-gray-300" xmlns="http://www.w3.org/2000/svg" width="10.289" height="17.997" viewBox="0 0 10.289 17.997">

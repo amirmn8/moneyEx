@@ -9,15 +9,15 @@
                         <img class="rounded-t-xl xl:basis-2/3 xl:rounded-tl-none xl:rounded-r-xl max-h-96 xl:max-h-max"
                             src="../../assets/images/Image4.png" alt="">
                         <div
-                            class="bg-white opacity-90 flex flex-col px-4 py-2 gap-3 w-full rounded-b-xl xl:rounded-l-xl xl:rounded-br-none pb-6 xl:basis-1/3 xl:p-8">
+                            class="bg-white dark:bg-ExBlack opacity-90 flex flex-col px-4 py-2 gap-3 w-full rounded-b-xl xl:rounded-l-xl xl:rounded-br-none pb-6 xl:basis-1/3 xl:p-8">
                             <div class="flex justify-between xl:justify-end items-center">
 
                                 <p v-text="state.postTime" class="text-sm text-gray-700 xl:hidden"> </p>
                                 <p class="text-base font-bold text-ExYellow ">اخبار ارز دیجیتال </p>
                             </div>
-                            <p v-text="state.postTitle" class="text-base text-end font-bold"> </p>
+                            <p v-text="state.postTitle" class="text-base dark:text-white text-end font-bold"> </p>
 
-                            <p class="text-base xl:leading-10 md:flex w-full text-end h-5/6 overflow-hidden">
+                            <p class="text-base xl:leading-10 md:flex w-full dark:text-gray-200 text-end h-5/6 overflow-hidden">
                                 بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده
                                 از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای
                                 زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه
@@ -35,7 +35,7 @@
                                     </svg>
                                     <a href="/singlepost" class="text-ExYellow">ادامه مطلب</a>
                                 </div>
-                                <p v-text="state.postTime" class="text-sm text-gray-700 hidden xl:block"> </p>
+                                <p v-text="state.postTime" class="text-sm text-gray-700 dark:text-gray-300 hidden xl:block"> </p>
 
                             </button>
                         </div>

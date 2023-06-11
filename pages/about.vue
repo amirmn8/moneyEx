@@ -15,7 +15,7 @@
                     <div>
                         <MainOurPoints :state="state" />
                     </div>
-                    <div class="flex flex-col gap-6 px-8 mt-12">
+                    <div class="flex flex-col gap-6 px-8 mt-12 dark:text-white">
                         <p class="text-lg font-bold">درباره شرکت</p>
                         <p>لورم ایپسوم یا طرح‌نمابه متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته
                             می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل
@@ -49,7 +49,7 @@
                             به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار
                             گیرد</p>
                     </div>
-                    <div class="flex flex-col gap-12 mt-16 md:flex-row justify-center md:gap-32 lg:gap-72">
+                    <div class="flex flex-col gap-12 mt-16 md:flex-row justify-center md:gap-32 lg:gap-72 dark:text-white">
                         <div class="flex flex-col items-center">
                             <p class="font-bold text-3xl">+200 B</p>
                             <p class="text-md font-bold">حجم معاملات</p>

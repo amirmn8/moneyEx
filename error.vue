@@ -5,13 +5,12 @@
             <CommonNavbar :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" :state="state" />
             <div class="dark:bg-black bg-white">
         
-                <div class="2xl:mx-36 pt-16">
+                <div class="2xl:mx-36 pt-16 dark:text-white">
                     <div class="flex flex-col items-center gap-4">
                         <img class="lg:w-1/2" src="./assets/images/404-Image.png" alt="">
                         <p class="font-bold text-2xl">صفحه مورد نظر پیدا نشد (404)</p>
                         <p>احتمال دارد آدرس صفحه مورد نظر خود را به اشتباه وارد کرده باشید</p>
-                        <a href="/"
-                                    class="hover:bg-ExYellow hover:text-white bg-white text-ExYellow px-12 text-center justify-center border border-solid border-ExYellow dark:text-ExBlack fill-white dark:hover:bg-ExYellow dark:hover:shadow-md dark:hover:shadow-gray-600 flex my-auto items-center rounded-lg h-10">
+                        <a href="/" class="hover:bg-ExYellow hover:text-white bg-white text-ExYellow px-12 text-center justify-center border border-solid border-ExYellow  fill-white  flex my-auto items-center rounded-lg h-10 dark:bg-black dark:hover:bg-ExYellow">
 
                                     برو به صفحه اصلی 
                     </a>

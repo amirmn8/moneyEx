@@ -1,8 +1,9 @@
 <template >
     <div class="bg-white dark:bg-black h-screen flex items-center flex-col justify-center gap-48">
         <div class="flex flex-col lg:flex-row justify-center items-center  gap-32 xl:mr-32 mt-48">
-            <img src="../assets/images/Repair-image.png" alt="">
-            <div class="flex flex-col gap-4 items-center text-center lg:text-start">
+            <img class="dark:hidden" src="../assets/images/Repair-image.png" alt="">
+            <img class="hidden dark:block" src="../assets/images/Repair-image2.png" alt="">
+            <div class="flex flex-col gap-4 items-center text-center lg:text-start dark:text-white">
                 <p class="text-ExYellow font-bold">504 Gateway Timeout</p>
                 <p class="font-bold text-2xl">مشکلی پیش آمده به زودی باز میگردیم</p>
                 <p class="w-2/3">کاربر گرامی، کارشناسان فنی مانی اکس درحال آماده سازی وبسایت می باشند
@@ -11,13 +12,13 @@
                     پشتیبانی تماس بگیرید</p>
             </div>
         </div>
-        <div class="flex mt-auto pb-12">
+        <div class="flex mt-auto pb-12 ">
             <div class="flex mt-auto gap-2">
-                <div class="flex items-center gap-3 font-bold text-black">
+                <div class="flex items-center gap-3 font-bold text-black dark:text-white">
                     <img src="../assets/icons/phone_in_talk.png" alt="">
                     <p>091212121212</p>
                 </div>
-                <div class="flex items-center gap-3 font-bold text-black">
+                <div class="flex items-center gap-3 font-bold text-black dark:text-white">
                     <img src="../assets/icons/Email.png" alt="">
                     <p>support@moneyex.org</p>
                 </div>

@@ -1,12 +1,12 @@
 <template>
     <div class="w-fit col-span-12 md:col-span-6 lg:col-span-4 my-4 flex flex-col mx-auto">
         <img class="rounded-t-lg w-full" src="../../assets/images/postimg.png" alt="">
-        <div class="flex flex-col px-4 bg-white rounded-b-lg py-4 gap-4">
+        <div class="flex flex-col px-4 bg-white dark:bg-ExBlack dark:text-white rounded-b-lg py-4 gap-4">
             <p class="font-bold">آموزش جامع بازار رمز ارز</p>
             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
                 از صنعت چاپ</p>
             <div class="flex justify-between">
-                <p v-text="state.postTime" class="text-sm text-gray-700 hidden xl:block"> </p>
+                <p v-text="state.postTime" class="text-sm text-gray-700 hidden xl:block dark:text-gray-400"> </p>
 
                 <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="27.176" height="27.176"
                         viewBox="0 0 27.176 27.176">
