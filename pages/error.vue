@@ -32,7 +32,7 @@ useHead({
     htmlAttrs: {
         ref: "darkSwitchRef"
     },
-    title: 'MoneyEx | Blog',
+    title: 'MoneyEx | Error',
 })
 useHead({
     bodyAttrs: {
