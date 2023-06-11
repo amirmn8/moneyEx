@@ -12,7 +12,7 @@
                             <img class="hidden mt-8 lg:block w-5/6" src="../assets/images/Herolg.png" alt="">
                         </div>
                         <div v-else class="flex justify-center">
-                            <img class="w-screen sm:hidden" src="../assets/images/herosmEn.png" alt="">
+                            <img class="w-screen sm:hidden" src="../assets/images/HerosmEn.png" alt="">
                             <img class="hidden sm:block lg:hidden w-screen" src="../assets/images/HeromdEn.png" alt="">
                             <img class="hidden mt-8 lg:block w-5/6" src="../assets/images/HerolgEn.png" alt="">
                         </div>

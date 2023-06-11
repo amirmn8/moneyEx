@@ -57,7 +57,7 @@
                                         d="M433.382,274.487a1.326,1.326,0,0,1-.978-.409,1.346,1.346,0,0,1-.4-.982,1.326,1.326,0,0,1,.409-.978,1.346,1.346,0,0,1,.982-.4,1.326,1.326,0,0,1,.978.409,1.346,1.346,0,0,1,.4.982,1.326,1.326,0,0,1-.409.978A1.346,1.346,0,0,1,433.382,274.487Zm0-7.857a1.326,1.326,0,0,1-.978-.409,1.346,1.346,0,0,1-.4-.982,1.326,1.326,0,0,1,.409-.978,1.346,1.346,0,0,1,.982-.4,1.326,1.326,0,0,1,.978.409,1.346,1.346,0,0,1,.4.982,1.326,1.326,0,0,1-.409.978A1.346,1.346,0,0,1,433.382,266.63Zm0-7.857a1.326,1.326,0,0,1-.978-.409,1.346,1.346,0,0,1-.4-.982,1.326,1.326,0,0,1,.409-.978,1.346,1.346,0,0,1,.982-.4,1.326,1.326,0,0,1,.978.409,1.346,1.346,0,0,1,.4.982,1.326,1.326,0,0,1-.409.978A1.346,1.346,0,0,1,433.382,258.773Z"
                                         transform="translate(-432 -256)" />
                                 </svg>
-                                <div class="hidden group-hover:flex w-48 bg-slate-200 dark:bg-black  absolute top-9 -right-2 py-2 flex-col rounded-xl">
+                                <div class="hidden group-hover:flex w-48 bg-slate-200 dark:bg-black z-50 absolute top-9 -right-2 py-2 flex-col rounded-xl">
                                     <a  v-text="state.about" class="py-2 hover:bg-slate-300 dark:hover:bg-ExBlack" href="/about">  </a>
                                     <a  v-text="state.contact" class="py-2 hover:bg-slate-300 dark:hover:bg-ExBlack" href="/contact">    </a>
                                     <a  v-text="state.rules" class="py-2 hover:bg-slate-300 dark:hover:bg-ExBlack" href="/terms"></a>
