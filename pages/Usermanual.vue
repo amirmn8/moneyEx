@@ -124,6 +124,7 @@ const state = reactive({
 })
 
 const switchToPersian = () => {
+    localStorage.hash= '#fa';
     window.location.hash = "#fa";
     state.hash = "#fa";
     state.lang = true;
@@ -180,6 +181,7 @@ const switchToPersian = () => {
     })
 }
 const switchToEnglish = () => {
+    localStorage.hash= '#en';
     window.location.hash = "#en";
     state.hash = "#en";
     state.lang = false;
@@ -235,7 +237,7 @@ const switchToEnglish = () => {
     })
 }
 onMounted(() => {
-    var hash = window.location.hash;
+    var hash = localStorage.hash;
     if (hash) {
         if (hash === "#en") {
             switchToEnglish();
