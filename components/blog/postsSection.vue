@@ -1,25 +1,24 @@
 <template>
     <div class="bg-exBlog dark:bg-none dark:bg-ExYellow 2xl:px-36 px-4 pb-48 text-white">
         <div class="flex justify-between mx-6 py-8 dark:text-black">
-            <p class="font-bold">انتخاب دسته بندی</p>
-            <p>136 مورد برای نمایش</p>
+            <p v-text="state.postSecText1" class="font-bold"> </p>
+            <p v-text="state.postSecText2">   </p>
         </div>
         <div class="flex flex-col overflow-x-scroll no-scrollbar">
 
             <div class="flex flex-row w-fit md:w-full gap-6  justify-between px-6 dark:text-black ">
-                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
-                    اخبار رمز ارز
+                <button v-text="state.postSecText3" class="border border-white border-solid rounded-lg w-36 h-12 dark:border-black">
                 </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
-                    NFT </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
-                    آموزش </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
-                    رویدادها </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
-                    مقالات </button>
-                <button class="border border-white border-solid rounded-lg w-36 py-2 dark:border-black">
-                    قیمت </button>
+                <button v-text="state.postSecText4" class="border border-white border-solid rounded-lg w-36 h-12 dark:border-black">
+                     </button>
+                <button v-text="state.postSecText5" class="border border-white border-solid rounded-lg w-36 h-12 dark:border-black">
+                     </button>
+                <button v-text="state.postSecText6" class="border border-white border-solid rounded-lg w-36 h-12 dark:border-black">
+                     </button>
+                <button v-text="state.postSecText7" class="border border-white border-solid rounded-lg w-36 h-12 dark:border-black">
+                     </button>
+                <button v-text="state.postSecText8" class="border border-white border-solid rounded-lg w-36 h-12 dark:border-black">
+                     </button>
             </div>
         </div>
     </div>
@@ -46,14 +45,14 @@
                     d="M18.438,15.19l-6.81-6.8A1.286,1.286,0,1,1,13.45,6.569l7.715,7.71a1.284,1.284,0,0,1,.038,1.773l-7.747,7.763A1.286,1.286,0,0,1,11.634,22Z"
                     transform="translate(-11.251 -6.194)" />
             </svg>
-            <p>صفحه بعد</p>
+            <p v-text="state.nextpage"> </p>
 
 
         </button>
         <button
             class="bg-white fill-ExYellow hover:fill-white items-center dark:bg-ExBlack dark:text-ExYellow text-ExYellow hover:bg-ExYellow hover:text-white    flex px-3 py-2 rounded-lg gap-2 border border-solid border-ExYellow dark:hover:shadow-md dark:hover:shadow-ExYellow">
 
-            <p>صفحه قبل</p>
+            <p v-text="state.prevpage"> </p>
             <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="10.289" height="17.997"
                 viewBox="0 0 10.289 17.997">
                 <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
@@ -63,7 +62,7 @@
 
         </button>
     </div>
-    <div class="mx-auto justify-center items-center gap-4 mt-4 hidden md:flex flex-row-reverse">
+    <div dir="rtl" class="mx-auto justify-center items-center gap-4 mt-4 hidden md:flex flex-row-reverse">
         <svg class="rotate-180 fill-gray-300" xmlns="http://www.w3.org/2000/svg" width="10.289" height="17.997"
                 viewBox="0 0 10.289 17.997">
                 <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"

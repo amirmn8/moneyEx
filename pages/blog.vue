@@ -88,7 +88,22 @@ const state = reactive({
     seeAll: 'نمایش همه',
     postTitle: 'آموزش جامع بازار رمز ارز',
     postTime: '12 ساعت قبل',
-    summery: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ'
+    summery: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ',
+    sliderText1: ' اخبار ارز های دیجیتال',
+    sliderText2: "بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای جبران‌ناپذیری را هم به افراد وارد کند بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده",
+    sliderText3: "ادامه مطلب",
+    postSecText1: "انتخاب دسته بندی",
+    postSecText2: "136 مورد برای نمایش",
+    postSecText3: "اخبار رمز ارز",
+    postSecText4: "NFT",
+    postSecText5: "آموزش",
+    postSecText6: "رویدادها",
+    postSecText7: "مقالات",
+    postSecText8: "قیمت",
+    nextpage: 'صفحه بعد',
+    prevpage: 'صفحه قبل'
+
+
 })
 
 const switchToPersian = () => {
@@ -118,19 +133,31 @@ const switchToPersian = () => {
     state.footerText11 = "ارتباط با ما";
     state.footerText12 = "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7";
     state.footerText13 = "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد";
-    state.hash = '#fa',
-        state.postSlideText1 = 'مجله اینترنتی مانی اکسـ',
-        state.postSlideText2 = 'جدیدترین اخبار و مطالب حوزه مالی، رمز ارز و ترید',
-        state.seeAll = 'نمایش همه',
-        state.postTitle = 'آموزش جامع بازار رمز ارز',
-        state.postTime = '12 ساعت قبل',
-        state.summery = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ',
-
-        useHead({
-            bodyAttrs: {
-                dir: 'rtl'
-            },
-        })
+    state.hash = '#fa';
+    state.postSlideText1 = 'مجله اینترنتی مانی اکسـ';
+    state.postSlideText2 = 'جدیدترین اخبار و مطالب حوزه مالی، رمز ارز و ترید';
+    state.seeAll = 'نمایش همه';
+    state.postTitle = 'آموزش جامع بازار رمز ارز';
+    state.postTime = '12 ساعت قبل';
+    state.summery = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ';
+    state.sliderText1 = "اخبار ارز های دیجیتال";
+    state.sliderText2 = "بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای جبران‌ناپذیری را هم به افراد وارد کند بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده";
+    state.sliderText3 = "ادامه مطلب";
+    state.postSecText1= "انتخاب دسته بندی";
+    state.postSecText2= "136 مورد برای نمایش";
+    state.postSecText3= "اخبار رمز ارز";
+    state.postSecText4= "NFT";
+    state.postSecText5= "آموزش";
+    state.postSecText6= "رویدادها";
+    state.postSecText7= "مقالات";
+    state.postSecText8= "قیمت";
+    state.nextpage= 'صفحه بعد';
+    state.prevpage='صفحه قبل';
+    useHead({
+        bodyAttrs: {
+            dir: 'rtl'
+        },
+    })
 }
 const switchToEnglish = () => {
     window.location.hash = "#en";
@@ -159,20 +186,32 @@ const switchToEnglish = () => {
     state.footerText11 = "Contact Us";
     state.footerText12 = "Tehran province, Tehran city, st Central building Central, no.7";
     state.footerText13 = "All rights of this site are reserved and belong to MoneyEx";
-    state.hash = '#en'
-    state.postSlideText1 = 'MoneyEx online magazine',
-        state.postSlideText2 = 'The latest news and content in the field of finance, cryptocurrency and trade',
-        state.seeAll = 'See All'
-    state.postTitle = 'Comprehensive education of the cryptocurrency market',
-        state.postTime = '12 hours ago',
-        state.summery = 'Lorem Ipsum is a mock text with an unintelligible',
+    state.hash = '#en';
+    state.postSlideText1 = 'MoneyEx online magazine';
+    state.postSlideText2 = 'The latest news and content in the field of finance, cryptocurrency and trade';
+    state.seeAll = 'See All';
+    state.postTitle = 'Comprehensive education of the cryptocurrency market';
+    state.postTime = '12 hours ago';
+    state.summery = 'Lorem Ipsum is a mock text with an unintelligible';
+    state.sliderText1 = "Digital currency news";
+    state.sliderText2 = "From the past to today, the cryptocurrency market has been an attractive option for investors to earn large profits and multiply their assets by using the methods of analyzing Bitcoin and other cryptocurrencies and investing and buying Bitcoin, but we should not forget that this The market, like all financial markets, has its own risks and challenges, and as much as it brings high profits to its investors, it may also cause irreparable losses to people. The cryptocurrency market has been an attractive option for investors since the past until today up with use";
+    state.sliderText3 = "Read more";
+    state.postSecText1= "Select Category";
+    state.postSecText2= "136 items to display";
+    state.postSecText3= "Cryptocurrency News";
+    state.postSecText4= "NFT";
+    state.postSecText5= "Education";
+    state.postSecText6= "events";
+    state.postSecText7= "articles";
+    state.postSecText8= "Price";
+    state.nextpage= 'Next page';
+    state.prevpage='Previous page';
+    useHead({
+        bodyAttrs: {
+            dir: 'ltr'
+        }
 
-        useHead({
-            bodyAttrs: {
-                dir: 'ltr'
-            }
-
-        })
+    })
 }
 onMounted(() => {
     var hash = window.location.hash;

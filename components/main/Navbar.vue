@@ -58,9 +58,9 @@
                                         d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
                                 </svg>
                                 <div class="hidden group-hover:flex w-48 bg-slate-700 absolute top-8 -right-2 py-2 flex-col rounded-xl">
-                                    <a class="py-2 hover:bg-slate-800" href="/about">درباره ی ما</a>
-                                    <a class="py-2 hover:bg-slate-800" href="/contact"> تماس با ما </a>
-                                    <a class="py-2 hover:bg-slate-800" href="/terms"> قوانین و مقررات </a>
+                                    <a v-text="state.about" class="py-2 hover:bg-slate-800" href="/about"> </a>
+                                    <a  v-text="state.contact" class="py-2 hover:bg-slate-800" href="/contact">    </a>
+                                    <a v-text="state.rules" class="py-2 hover:bg-slate-800" href="/terms">   </a>
 
 
 
