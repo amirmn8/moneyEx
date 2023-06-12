@@ -4,7 +4,7 @@
             <div class="relative flex h-20 items-center justify-between">
                 <div class="flex flex-1  h-5per  justify-between items-stretch">
                     <div class="flex flex-shrink-0 items-center">
-                        <NuxtLink to="/"><a class="hidden dark:block">
+                        <NuxtLink class="hidden dark:block" to="/">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="167" height="37" viewBox="0 0 167 37">
                                     <defs>
@@ -16,8 +16,8 @@
                                     </defs>
                                     <rect id="_company_logo_" width="167" height="37" fill="url(#pattern)" />
                                 </svg>
-                            </a></NuxtLink>
-                        <NuxtLink to="/"><a class="dark:hidden"><svg xmlns="http://www.w3.org/2000/svg"
+                            </NuxtLink>
+                        <NuxtLink to="/" class="dark:hidden"><svg xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="167" height="37" viewBox="0 0 167 37">
                                     <defs>
                                         <pattern id="pattern2" preserveAspectRatio="xMidYMid slice" width="100%"
@@ -28,7 +28,7 @@
                                     </defs>
                                     <rect id="_company_logo_" width="167" height="37" fill="url(#pattern2)" />
                                 </svg>
-                            </a></NuxtLink>
+                           </NuxtLink>
                     </div>
                     <div class="ml-6 flex">
                         <div class="flex space-x-4 items-center text-gray-800  dark:text-white">
