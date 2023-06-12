@@ -17,84 +17,45 @@
                                         d="M162.17,256.5a2.177,2.177,0,0,1-2.17-2.17V240.223a2.155,2.155,0,0,1,.231-.977,2.081,2.081,0,0,1,.638-.76l9.4-7.053a2.307,2.307,0,0,1,.627-.326,2.154,2.154,0,0,1,.682-.109,2.109,2.109,0,0,1,.677.109,2.26,2.26,0,0,1,.618.326l9.4,7.053a2.081,2.081,0,0,1,.638.76,2.155,2.155,0,0,1,.231.977V254.33a2.177,2.177,0,0,1-2.17,2.17h-6.511V246.372h-5.787V256.5Z"
                                         transform="translate(-160 -231)" />
                                 </svg>
-                                <p >خانه | وبلاگ | تحلیل بازار | تحلیل بیت کوین (30 فروردین 1402)</p>
+                                <p v-text="state.Text1"></p>
                             </div>
-                            <div class="mr-8 md:mr-0">
-                                منبع : بایننس | 1402/02/29 20:26
+                            <div v-text="state.Text2" class="mr-8 md:mr-0">
                             </div>
                         </div>
                         <div>
-                            <p class="text-2xl font-bold">تحلیل بیت کوین (۳۰ فروردین ۱۴۰۲)</p>
+                            <p v-text="state.Text3" class="text-2xl font-bold"></p>
                         </div>
                         <div>
-                            <p>بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از
-                                روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد
-                                و چند برابر کردن دارایی خود بپردازند
-
-                                اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را
-                                دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای
-                                جبران‌ناپذیری را هم به افراد وارد کند
-
-                                به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید
-                                با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود
-                                به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت
-                                انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است.</p>
-                        </div>
-                        <div>
-                            <p class="text-lg font-bold">تحلیل بیت کوین امروز سه شنبه ۲۹ فروردین
+                            <p v-text="state.Text4">
                             </p>
                         </div>
                         <div>
-                            <p>قیمت بیت کوین دقیقا طبق آن‌چه در تحلیل قبل ارائه شد، با عبور از گره قیمتی ۳۰۰۰۰ دلار تا
-                                محدوده باکس سبز رنگ اصلاح داشت. حالا ممکن است مجدد به خط میانی کانال پولبک زده و پس از آن در
-                                صورت وجود فشار عرضه به روند نزولی خود ادامه دهد.</p>
+                            <p v-text="state.Text5" class="text-lg font-bold">
+                            </p>
+                        </div>
+                        <div>
+                            <p v-text="state.Text6"></p>
                         </div>
                         <div class="flex justify-center">
                             <img src="../assets/images/Image6.png" alt="">
                         </div>
                         <div>
-                            <p>بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از
-                                روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد
-                                و چند برابر کردن دارایی خود بپردازند
-
-                                اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را
-                                دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای
-                                جبران‌ناپذیری را هم به افراد وارد کند
-
-                                به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید
-                                با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود
-                                به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت
-                                انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است.
-                                بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده
-                                از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای
-                                زیاد و چند برابر کردن دارایی خود بپردازند
-
-                                اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را
-                                دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای
-                                جبران‌ناپذیری را هم به افراد وارد کند
-
-                                به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید
-                                با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود
-                                به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت
-                                انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است.
+                            <p v-text="state.Text7">
                             </p>
                         </div>
                         <div>
-                            <p class="text-lg font-bold">تحلیل بیت کوین امروز سه شنبه ۲۹ فروردین
+                            <p v-text="state.Text6" class="text-lg font-bold">
                             </p>
                         </div>
                         <div>
-                            <p>قیمت بیت کوین دقیقا طبق آن‌چه در تحلیل قبل ارائه شد، با عبور از گره قیمتی ۳۰۰۰۰ دلار تا
-                                محدوده باکس سبز رنگ اصلاح داشت. حالا ممکن است مجدد به خط میانی کانال پولبک زده و پس از آن در
-                                صورت وجود فشار عرضه به روند نزولی خود ادامه دهد.</p>
+                            <p v-text="state.Text7"></p>
                         </div>
                     </div>
                     <div class="relative mb-16">
-                        <p 
+                        <p v-text="state.Text8"
                             class="text-md md:text-3xl  font-bold absolute right-6 lg:top-8 md:-top-4 mt-16 lg:mt-0 dark:text-white">
-                            مطالب مرتبط
                         </p>
-                
+
                         <p class="flex items-center gap-2 text-teal-400 absolute left-6 lg:top-8 top-16 font-light text-sm">
                             <span v-text="state.seeAll"></span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="5.863" height="10.256"
@@ -235,11 +196,21 @@ const state = reactive({
     seeAll: 'نمایش همه',
     postTitle: 'آموزش جامع بازار رمز ارز',
     postTime: '12 ساعت قبل',
-    summery: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ'
+    summery: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ',
+    Text1: 'خانه | وبلاگ | تحلیل بازار | تحلیل بیت کوین (30 فروردین 1402)',
+    Text2: 'منبع : بایننس | 1402/02/29 20:26',
+    Text3: 'تحلیل بیت کوین (۳۰ فروردین ۱۴۰۲)',
+    Text4: 'بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای جبران‌ناپذیری را هم به افراد وارد کند به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است.',
+    Text5: 'تحلیل بیت کوین امروز سه شنبه ۲۹ فروردین',
+    Text6: 'قیمت بیت کوین دقیقا طبق آن‌چه در تحلیل قبل ارائه شد، با عبور از گره قیمتی ۳۰۰۰۰ دلار تا محدوده باکس سبز رنگ اصلاح داشت. حالا ممکن است مجدد به خط میانی کانال پولبک زده و پس از آن در صورت وجود فشار عرضه به روند نزولی خود ادامه دهد.',
+    Text7: 'بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای جبران‌ناپذیری را هم به افراد وارد کند به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است. بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای جبران‌ناپذیری را هم به افراد وارد کند به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است.',
+    Text8: 'مطالب مرتبط',
+
+
 })
 
 const switchToPersian = () => {
-    localStorage.hash= '#fa';
+    localStorage.hash = '#fa';
     window.location.hash = "#fa";
     state.lang = true;
     state.markets = "بازار ها";
@@ -266,13 +237,21 @@ const switchToPersian = () => {
     state.footerText11 = "ارتباط با ما";
     state.footerText12 = "استان تهران، شهر تهران، خیابان مرکزی ساختمان مرکزی، پلاک 7";
     state.footerText13 = "کلیه حقوق این سایت محفوظ و متعلق به مانی اکس می باشد";
-    state.hash = '#fa',
-        state.postSlideText1 = 'مجله اینترنتی مانی اکسـ',
-        state.postSlideText2 = 'جدیدترین اخبار و مطالب حوزه مالی، رمز ارز و ترید',
-        state.seeAll = 'نمایش همه',
-        state.postTitle = 'آموزش جامع بازار رمز ارز',
-        state.postTime = '12 ساعت قبل',
-        state.summery = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ',
+    state.hash = '#fa';
+    state.postSlideText1 = 'مجله اینترنتی مانی اکسـ';
+    state.postSlideText2 = 'جدیدترین اخبار و مطالب حوزه مالی، رمز ارز و ترید';
+    state.seeAll = 'نمایش همه';
+    state.postTitle = 'آموزش جامع بازار رمز ارز';
+    state.postTime = '12 ساعت قبل';
+    state.summery = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ';
+    state.Text1 = 'خانه | وبلاگ | تحلیل بازار | تحلیل بیت کوین (30 فروردین 1402)',
+        state.Text2 = 'منبع : بایننس | 1402/02/29 20:26',
+        state.Text3 = 'تحلیل بیت کوین (۳۰ فروردین ۱۴۰۲)',
+        state.Text4 = 'بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای جبران‌ناپذیری را هم به افراد وارد کند به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است.',
+        state.Text5 = 'تحلیل بیت کوین امروز سه شنبه ۲۹ فروردین',
+        state.Text6 = 'قیمت بیت کوین دقیقا طبق آن‌چه در تحلیل قبل ارائه شد، با عبور از گره قیمتی ۳۰۰۰۰ دلار تا محدوده باکس سبز رنگ اصلاح داشت. حالا ممکن است مجدد به خط میانی کانال پولبک زده و پس از آن در صورت وجود فشار عرضه به روند نزولی خود ادامه دهد.',
+        state.Text7 = 'بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای جبران‌ناپذیری را هم به افراد وارد کند به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است. بازار رمز ارزها از گذشته تا امروز، گزینه‌ای جذاب برای سرمایه‌گذاران بوده است تا با استفاده از روش‌های تحلیل بیت‌ کوین و سایر رمز ارزها و سرمایه‌گذاری و خرید بیت کوین ،به کسب سودهای زیاد و چند برابر کردن دارایی خود بپردازند اما نباید فراموش کرد که این بازار نیز مانند همه بازارهای مالی، ریسک‌ها و چالش‌های خود را دارد و به همان اندازه که سودهای بالایی را نصیب سرمایه‌گذاران خود می‌کند، ممکن است ضررهای جبران‌ناپذیری را هم به افراد وارد کند به همین دلیل افراد تازه‌کار برای ورود به بازار خرید ارز دیجیتال، نیاز به آموزش دارند و باید با اصطلاحات مهم و کاربردی این حوزه به‌‌خوبی آشنا باشند تا بتوانند تجربه خوبی از معاملات خود به‌دست آورند. یکی از کاربردی‌ترین روش‌های کسب سود و موفقیت در بازار رمز ارزها، یادگیری مهارت انجام تحلیل ارزهای دیجیتال و اطلاع از قیمت ازر دیجیتال است.',
+        state.Text8 = 'مطالب مرتبط',
 
         useHead({
             bodyAttrs: {
@@ -281,7 +260,7 @@ const switchToPersian = () => {
         })
 }
 const switchToEnglish = () => {
-    localStorage.hash= '#en';
+    localStorage.hash = '#en';
     window.location.hash = "#en";
     state.lang = false;
     state.markets = "Markets";
@@ -315,7 +294,14 @@ const switchToEnglish = () => {
     state.postTitle = 'Comprehensive education of the cryptocurrency market',
         state.postTime = '12 hours ago',
         state.summery = 'Lorem Ipsum is a mock text with an unintelligible',
-
+        state.Text1 = 'Home | blog | Market analysis Bitcoin analysis (April 30, 1402)',
+        state.Text2 = 'Source: Binance | 02/29/1402 20:26',
+        state.Text3 = 'Bitcoin analysis (April 30, 1402)',
+        state.Text4 = 'Cryptocurrency market has been an attractive option for investors from the past to today, to earn large profits and multiply their assets by using the methods of analyzing Bitcoin and other cryptocurrencies and investing and buying Bitcoin. It should not be forgotten that this market, like all financial markets, has its own risks and challenges, and as much as it brings high profits to its investors, it may cause irreparable losses to people, thats why newbies are reluctant to enter the market. Buying digital currency requires training and must be familiar with the important and practical terms of this field so that they can get a good experience from their transactions. One of the most practical methods of earning profit and success in the cryptocurrency market is to learn the skill of analyzing digital currencies and knowing the price of digital currencies.'
+    state.Text5 = 'Bitcoin analysis today, Tuesday 29 April',
+        state.Text6 = 'Bitcoin price corrected exactly as presented in the previous analysis, crossing the $30,000 price node to the green box range. Now it may hit the middle line of the pullback channel again and then continue its downward trend if there is supply pressure.'
+    state.Text7 = 'Cryptocurrency market has been an attractive option for investors from the past to today, to earn large profits and multiply their assets by using the methods of analyzing Bitcoin and other cryptocurrencies and investing and buying Bitcoin. It should not be forgotten that this market, like all financial markets, has its own risks and challenges, and as much as it brings high profits to its investors, it may cause irreparable losses to people, thats why newbies are reluctant to enter the market. Buying digital currency requires training and must be familiar with the important and practical terms of this field so that they can get a good experience from their transactions. One of the most practical methods of earning profit and success in the cryptocurrency market is learning the skill of analyzing digital currencies and knowing the price of digital currencies. From the past to today, the cryptocurrency market has been an attractive option for investors to earn large profits and multiply their assets by using the methods of analyzing Bitcoin and other cryptocurrencies and investing and buying Bitcoin, but we should not forget that this The market, like all financial markets, has its own risks and challenges, and as much as it brings high profits to its investors, it may also cause irreparable losses to people, thats why newbies need to enter the market to buy digital currency. They have training and should be well familiar with the important and practical terms of this field so that they can get a good experience from their transactions. One of the most practical methods of earning profit and success in the cryptocurrency market is to learn the skill of analyzing digital currencies and knowing the price of digital currencies.'
+    state.Text8 = 'Related Content',
         useHead({
             bodyAttrs: {
                 dir: 'ltr'
