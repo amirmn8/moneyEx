@@ -5,62 +5,44 @@
             <div class="relative flex h-20 items-center justify-between">
                 <div class="flex flex-1  h-5per  justify-between items-stretch">
                     <div class="flex flex-shrink-0 items-center">
-                        <a class="hidden dark:block" href="/"><svg xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="167" height="37" viewBox="0 0 167 37">
-                                <defs>
-                                    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-                                        viewBox="0 0 362 80">
-                                        <image width="362" height="80"
-                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWoAAABQCAYAAAAwTj+cAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGl2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4wLWMwMDAgMTM3LmRhNGE3ZTUsIDIwMjIvMTEvMjctMDk6MzU6MDMgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4xIChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDQtMDZUMTY6MzU6MTUrMDM6MzAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTA0LTExVDIwOjU1OjMzKzAzOjMwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTA0LTExVDIwOjU1OjMzKzAzOjMwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozNDM3MzZmZC1kOWRjLTQzNDEtYjI3Yi05NjhiMDhjMjFmNWMiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpmY2UwZWM3NS05MWU1LTQ0NDgtOTgyNy1kYzEwNmJlOTljNWUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2M2RiM2U5Yi1mMWFiLWU1NGItYjJmMS05MGNkNGVhMmYwZDQiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjYzZGIzZTliLWYxYWItZTU0Yi1iMmYxLTkwY2Q0ZWEyZjBkNCIgc3RFdnQ6d2hlbj0iMjAyMy0wNC0wNlQxNjozNToxNSswMzozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMzRlZTFlOS1iY2U4LTA3NGMtOWQ1My1kZDczZDJiZTNiMzciIHN0RXZ0OndoZW49IjIwMjMtMDQtMDZUMTY6NTQ6MDErMDM6MzAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyNC4xIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MzQzNzM2ZmQtZDlkYy00MzQxLWIyN2ItOTY4YjA4YzIxZjVjIiBzdEV2dDp3aGVuPSIyMDIzLTA0LTExVDIwOjU1OjMzKzAzOjMwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjQuMSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+juGDLAAACYdJREFUeJzt3T+MFFUcB/Dv3hHAnEZiAHOdRwmFidBYQIOJBRQGAokJRIXS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" />
-                                    </pattern>
-                                </defs>
-                                <rect id="_company_logo_" width="167" height="37" fill="url(#pattern)" />
-                            </svg>
+                        <NuxtLink class="hidden dark:block" to="/">
+                            <img src="../../assets/images/_company_logo_.png" alt="">
 
-                        </a> <a class="dark:hidden" href="/"><svg xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="167" height="37" viewBox="0 0 167 37">
-                                <defs>
-                                    <pattern id="pattern2" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-                                        viewBox="0 0 362 80">
-                                        <image width="362" height="80"
-                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWoAAABQCAYAAAAwTj+cAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFymlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4wLWMwMDAgMTM3LmRhNGE3ZTUsIDIwMjIvMTEvMjctMDk6MzU6MDMgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4xIChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDQtMDZUMTY6MzU6MTUrMDM6MzAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTA0LTA2VDE2OjU0OjAxKzAzOjMwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTA0LTA2VDE2OjU0OjAxKzAzOjMwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyMzRlZTFlOS1iY2U4LTA3NGMtOWQ1My1kZDczZDJiZTNiMzciIHhtcE1NOkRvY3VtZW50SUQ9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" />
-                                    </pattern>
-                                </defs>
-                                <rect id="_company_logo_" width="167" height="37" fill="url(#pattern2)" />
-                            </svg>
+                        </NuxtLink>
+                        <NuxtLink class="dark:hidden" to="/">
+                            <img src="../../assets//images/_company_logo_1.png" alt="">
 
-
-                        </a>
+                        </NuxtLink>
                     </div>
                     <div class="ml-6 flex">
                         <div class="flex space-x-4 items-center text-gray-300  dark:text-white">
 
-                            <a v-text="state.markets" href="/markets"
-                                class="  hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
-                            </a>
-                            <a v-text="state.trade" href="./exchange"
-                                class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
-                            </a>
-                            <a v-text="state.userManual" href="/Usermanual"
-                                class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
-                            </a>
-                            <a v-text="state.easyShopping" href="/easybuy"
-                                class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
-
-                            </a>
-                            <a v-text="state.blog" href="/blog"
-                                class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
-                            </a>
+                            <NuxtLink to="/markets" class="  hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
+                                {{ state.markets }}
+                            </NuxtLink>
+                            <NuxtLink to="/exchange" class="hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
+                                {{ state.trade }}
+                            </NuxtLink>
+                            <NuxtLink to="/Usermanual" class=" hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
+                                {{ state.userManual }}
+                            </NuxtLink>
+                            <NuxtLink to="/easybuy" class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
+                                {{ state.easyShopping }}
+                            </NuxtLink>
+                            <NuxtLink to="/blog" class=" hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium">
+                                {{ state.blog }}
+                            </NuxtLink>
                             <button class="group relative hover:bg-gray-700  rounded-md px-3 py-2 text-sm font-medium">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
                                     class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                                     <path
                                         d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
                                 </svg>
-                                <div class="hidden group-hover:flex w-48 bg-slate-700 absolute top-8 -right-2 py-2 flex-col rounded-xl">
-                                    <a v-text="state.about" class="py-2 hover:bg-slate-800" href="/about"> </a>
-                                    <a  v-text="state.contact" class="py-2 hover:bg-slate-800" href="/contact">    </a>
-                                    <a v-text="state.rules" class="py-2 hover:bg-slate-800" href="/terms">   </a>
+                                <div
+                                    class="hidden group-hover:flex w-48 bg-slate-700 absolute top-8 -right-2 py-2 flex-col rounded-xl">
+                                    <NuxtLink class="py-2 hover:bg-slate-800" to="/about"> {{ state.about }} </NuxtLink>
+                                    <NuxtLink class="py-2 hover:bg-slate-800" to="/contact"> {{ state.contact }} </NuxtLink>
+                                    <NuxtLink class="py-2 hover:bg-slate-800" to="/terms"> {{ state.rules }} </NuxtLink>
 
 
 
@@ -126,30 +108,10 @@
                 </svg>
             </button>
 
-            <a href="/" class="flex flex-shrink-0 items-center">
-                <svg class="dark:hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="167" height="37" viewBox="0 0 167 37">
-                    <defs>
-                        <pattern id="pattern3" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-                            viewBox="0 0 362 80">
-                            <image width="362" height="80"
-                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWoAAABQCAYAAAAwTj+cAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFymlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4wLWMwMDAgMTM3LmRhNGE3ZTUsIDIwMjIvMTEvMjctMDk6MzU6MDMgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4xIChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDQtMDZUMTY6MzU6MTUrMDM6MzAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTA0LTA2VDE2OjU0OjAxKzAzOjMwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTA0LTA2VDE2OjU0OjAxKzAzOjMwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyMzRlZTFlOS1iY2U4LTA3NGMtOWQ1My1kZDczZDJiZTNiMzciIHhtcE1NOkRvY3VtZW50SUQ9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" />
-                        </pattern>
-                    </defs>
-                    <rect id="_company_logo_" width="167" height="37" fill="url(#pattern3)" />
-                </svg>
-                <svg class="hidden dark:block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="167" height="37" viewBox="0 0 167 37">
-                    <defs>
-                        <pattern id="pattern4" preserveAspectRatio="xMidYMid slice" width="100%" height="100%"
-                            viewBox="0 0 362 80">
-                            <image width="362" height="80"
-                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWoAAABQCAYAAAAwTj+cAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGl2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgOS4wLWMwMDAgMTM3LmRhNGE3ZTUsIDIwMjIvMTEvMjctMDk6MzU6MDMgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4xIChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDQtMDZUMTY6MzU6MTUrMDM6MzAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTA0LTExVDIwOjU1OjMzKzAzOjMwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTA0LTExVDIwOjU1OjMzKzAzOjMwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozNDM3MzZmZC1kOWRjLTQzNDEtYjI3Yi05NjhiMDhjMjFmNWMiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpmY2UwZWM3NS05MWU1LTQ0NDgtOTgyNy1kYzEwNmJlOTljNWUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2M2RiM2U5Yi1mMWFiLWU1NGItYjJmMS05MGNkNGVhMmYwZDQiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjYzZGIzZTliLWYxYWItZTU0Yi1iMmYxLTkwY2Q0ZWEyZjBkNCIgc3RFdnQ6d2hlbj0iMjAyMy0wNC0wNlQxNjozNToxNSswMzozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDI0LjEgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMzRlZTFlOS1iY2U4LTA3NGMtOWQ1My1kZDczZDJiZTNiMzciIHN0RXZ0OndoZW49IjIwMjMtMDQtMDZUMTY6NTQ6MDErMDM6MzAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyNC4xIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MzQzNzM2ZmQtZDlkYy00MzQxLWIyN2ItOTY4YjA4YzIxZjVjIiBzdEV2dDp3aGVuPSIyMDIzLTA0LTExVDIwOjU1OjMzKzAzOjMwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjQuMSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+juGDLAAACYdJREFUeJzt3T+MFFUcB/Dv3hHAnEZiAHOdRwmFidBYQIOJBRQGAokJRIXS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" />
-                        </pattern>
-                    </defs>
-                    <rect id="_company_logo_" width="167" height="37" fill="url(#pattern4)" />
-                </svg>
-            </a>
+            <NuxtLink to="/" class="flex flex-shrink-0 items-center">
+                <img class="dark:hidden" src="../../assets/images/_company_logo_1.png" alt="">
+                <img class="hidden dark:block" src="../../assets//images/_company_logo_.png" alt="">
+            </NuxtLink>
             <button
                 class="border-gray-700 hover:bg-ExYellow hover:text-white text-ExYellow hover:fill-white fill-white border-solid border flex px-3 py-3 rounded-lg gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21.159" height="20.531" viewBox="0 0 21.159 20.531">
@@ -189,7 +151,8 @@
                                 <p v-text="state.userPanel"></p>
                             </button>
 
-                            <a v-if="state.lang" href="#en" class="reload"> <button id="EnglishMob" @click="switchToEnglish"
+                            <a v-if="state.lang" href="#en" class="reload"> <button id="EnglishMob"
+                                    @click="switchToEnglish"
                                     class="flex gap-2 justify-center items-center border border-gray-500 rounded-lg text-white px-3 py-2 dark:bg-none dark:text-white dark:border-gray-200"><img
                                         src="../../assets/icons/English.png" alt="">
                                     <p>English</p>
@@ -232,7 +195,7 @@
                         </button>
 
                     </div>
-                    <a href="/"
+                    <NuxtLink to="/"
                         class="flex justify-between items-center text-gray-300 dark:text-white hover:bg-gray-700 hover:text-white   text-sm font-medium">
                         <p v-text="state.main"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -240,9 +203,9 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <hr />
-                    <a href="./markets"
+                    <NuxtLink to="/markets"
                         class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
                         <p v-text="state.markets"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -250,9 +213,9 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <hr />
-                    <a href="./exchange"
+                    <NuxtLink to="/exchange"
                         class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
                         <p v-text="state.trade"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -260,9 +223,9 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <hr />
-                    <a href="/easybuy"
+                    <NuxtLink to="/easybuy"
                         class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium dark:text-white">
                         <p v-text="state.easyShopping"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -270,9 +233,9 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <hr />
-                    <a href="/Usermanual"
+                    <NuxtLink to="/Usermanual"
                         class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
                         <p v-text="state.userManual"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -280,9 +243,9 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <hr />
-                    <a href="/blog"
+                    <NuxtLink to="/blog"
                         class="flex justify-between dark:text-white items-center text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium">
                         <p v-text="state.blog"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -290,9 +253,9 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <hr />
-                    <a href="/about"
+                    <NuxtLink to="/about"
                         class="flex justify-between items-center dark:text-white text-gray-300 hover:bg-gray-700 hover:text-white  text-sm font-medium">
                         <p v-text="state.about"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -300,9 +263,9 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <hr />
-                    <a href="/contact"
+                    <NuxtLink to="/contact"
                         class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
                         <p v-text="state.contact"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -310,9 +273,9 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <hr />
-                    <a href="/terms"
+                    <NuxtLink to="/terms"
                         class="flex justify-between items-center text-gray-300 hover:bg-gray-700 hover:text-white   text-sm font-medium dark:text-white">
                         <p v-text="state.rules"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8.934" height="15.628" viewBox="0 0 8.934 15.628">
@@ -320,7 +283,7 @@
                                 d="M13.944,14.005,19.857,8.1A1.117,1.117,0,1,0,18.275,6.52l-6.7,6.695a1.115,1.115,0,0,0-.033,1.54L18.271,21.5a1.117,1.117,0,1,0,1.582-1.577Z"
                                 transform="translate(-11.251 -6.194)" fill="#fff" />
                         </svg>
-                    </a>
+                    </NuxtLink>
                     <div class="flex flex-col mt-auto gap-2">
                         <div class="flex items-center gap-3 text-bold text-white">
                             <img src="../../assets/icons/phone_in_talk.png" alt="">
@@ -349,28 +312,28 @@ const toggleMenu = () => {
 const switchToDarkMode = () => {
     localStorage.theme = 'dark';
     watchEffect(() => {
-    if (process.client) {
-      if (localStorage.theme) {
-        if (
-          localStorage.theme === 'dark' ||
-          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-        ) {
-          useHead({
-            htmlAttrs: {
-              class: 'dark'
-            },
-          })
-        } else {
-          useHead({
+        if (process.client) {
+            if (localStorage.theme) {
+                if (
+                    localStorage.theme === 'dark' ||
+                    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+                ) {
+                    useHead({
+                        htmlAttrs: {
+                            class: 'dark'
+                        },
+                    })
+                } else {
+                    useHead({
 
-            htmlAttrs: {
-              class: ''
-            },
-          })
+                        htmlAttrs: {
+                            class: ''
+                        },
+                    })
+                }
+            }
         }
-      }
-    }
-  });
+    });
 };
 onMounted(() => {
     const switchToDark = document.querySelectorAll('.switchToDark');
@@ -381,28 +344,28 @@ onMounted(() => {
 const switchToLightMode = () => {
     localStorage.theme = 'light';
     watchEffect(() => {
-    if (process.client) {
-      if (localStorage.theme) {
-        if (
-          localStorage.theme === 'dark' ||
-          (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-        ) {
-          useHead({
-            htmlAttrs: {
-              class: 'dark'
-            },
-          })
-        } else {
-          useHead({
+        if (process.client) {
+            if (localStorage.theme) {
+                if (
+                    localStorage.theme === 'dark' ||
+                    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+                ) {
+                    useHead({
+                        htmlAttrs: {
+                            class: 'dark'
+                        },
+                    })
+                } else {
+                    useHead({
 
-            htmlAttrs: {
-              class: ''
-            },
-          })
+                        htmlAttrs: {
+                            class: ''
+                        },
+                    })
+                }
+            }
         }
-      }
-    }
-  });
+    });
 };
 onMounted(() => {
     const switchToLight = document.querySelectorAll('.switchToLight');
