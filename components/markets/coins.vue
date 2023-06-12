@@ -40,7 +40,7 @@
                     <div class="flex flex-col text-base">
                         <p v-text="state.coinText5" class="text-ExPlaceHolder dark:text-gray-500">
                         </p>
-                        <P class="dark:text-white">{{coinDetail.last}}</P>
+                        <P class="dark:text-white">2,700,000,000</P>
                     </div>
                     <div class="flex flex-col text-base">
                         <p v-text="state.coinText6" class="text-ExPlaceHolder dark:text-gray-500">
@@ -52,14 +52,14 @@
                     <div class="flex flex-col text-base">
                         <p v-text="state.coinText7" class="text-ExPlaceHolder dark:text-gray-500">
                         </p>
-                        <P class="dark:text-white">{{coinDetail.high24hr}}</P>
+                        <P class="dark:text-white">2,800,000,000</P>
                     </div>
                     <div class="flex flex-col text-base">
                         <p v-text="state.coinText8" class="text-ExPlaceHolder dark:text-gray-500">
                         </p>
                         <div class="flex justify-center items-center">
                             <img class="w-4 h-4" src="../../assets/icons/trending_up.png" alt="">
-                            <p class="text-ExGreen text-lg">{{coinDetail.change}}%</p>
+                            <p class="text-ExGreen text-lg">4%</p>
                         </div>
                     </div>
                 </div>
@@ -114,17 +114,17 @@
                             <p v-if="state.hash === '#fa'" class="text-ExPlaceHolder dark:text-gray-100">بیت کوین</p>
                         </div>
                     </td>
-                    <td class="mr-8 flex dark:text-gray-100">{{coinDetail.last}}<span
+                    <td class="mr-8 flex dark:text-gray-100">2,700,000,000<span
                             class="text-ExPlaceHolder hidden lg:flex dark:text-gray-100">(IRR)</span>
                     </td>
                     <td class="mr-8 text-center lg:text-start dark:text-gray-100">2x</td>
-                    <td class="mr-8 flex dark:text-gray-100">{{coinDetail.high24hr}}<span
+                    <td class="mr-8 flex dark:text-gray-100">2,800,000,000<span
                             class="text-ExPlaceHolder hidden lg:flex dark:text-gray-100">(IRR)</span>
                     </td>
                     <td class="mr-8 hidden lg:flex">
                         <div class="flex gap-2 items-center text-ExGreen"><img class="w-4 h-4"
                                 src="../../assets/icons/trending_up.png" alt="">
-                            <p style="direction: ltr;">{{coinDetail.change}} %</p>
+                            <p style="direction: ltr;">4%</p>
                         </div>
                     </td>
                     <td id="btnContainer" class="mr-8">
@@ -148,5 +148,4 @@
 </template>
 <script setup>
 const props = defineProps(['state'])
-const { data: coinDetail } = await useFetch('https://moneyex.org/api/public?command=returnTicker&tradePair=BTC_USDT')
 </script>

@@ -10,7 +10,7 @@
             <p id="coin1">{{ coinPersianName }}</p>
             <p class="flex gap-2 items-center">
                 <slot name="growIcon"></slot><span :class=coinClass>{{ coinChanges
-                }} %</span>
+                }}</span>
             </p>
         </div>
     </div>

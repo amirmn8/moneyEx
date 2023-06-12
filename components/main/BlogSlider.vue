@@ -21,17 +21,20 @@
             <div class="w-full mx-auto overflow-auto no-scrollbar">
                 <div id="slider"
                     class=" flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+
                     <div v-for="i in 10" class="flex flex-shrink-0 relative md:w-540 w-328">
-                        <img class="rounded-lg" src="../../assets/images/post.png" alt="">
-                        <div
-                            class="bg-ExGreen opacity-90 text-white px-4 py-2 gap-1 absolute bottom-0 rounded-b-2xl w-full">
-                            <div class="flex justify-between items-center">
-                                <p v-text="state.postTitle" class="text-base font-bold"> </p>
-                                <p v-text="state.postTime" class="text-sm text-gray-300"> </p>
+                        <NuxtLink to="/singlepost">
+                            <img class="rounded-lg" src="../../assets/images/post.png" alt="">
+                            <div
+                                class="bg-ExGreen opacity-90 text-white px-4 py-2 gap-1 absolute bottom-0 rounded-b-2xl w-full">
+                                <div class="flex justify-between items-center">
+                                    <p v-text="state.postTitle" class="text-base font-bold"> </p>
+                                    <p v-text="state.postTime" class="text-sm text-gray-300"> </p>
+                                </div>
+                                <p v-text="state.summery" class="text-base hidden md:flex">
+                                </p>
                             </div>
-                            <p v-text="state.summery" class="text-base hidden md:flex">
-                            </p>
-                        </div>
+                        </NuxtLink>
                     </div>
 
                 </div>

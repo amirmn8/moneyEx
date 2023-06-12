@@ -5,7 +5,7 @@
             <CommonNavbar :switch-to-persian="switchToPersian" :switch-to-english="switchToEnglish" :state="state" />
             <div class="dark:bg-black bg-white">
                 <div class="2xl:mx-36 mx-4 mb-16">
-                    <marketsTrendCoins :state="state" />
+                    <MainTrendCoindSection :state="state" />
                     <marketsCoins :state="state" />
                 </div>
                 <CommonFooter :state="state" />
@@ -103,7 +103,7 @@ const state = reactive({
 })
 
 const switchToPersian = () => {
-    localStorage.hash= '#fa';
+    localStorage.hash = '#fa';
     window.location.hash = "#fa";
     state.lang = true;
     state.markets = "بازار ها";
@@ -159,7 +159,7 @@ const switchToPersian = () => {
     })
 }
 const switchToEnglish = () => {
-    localStorage.hash= '#en';
+    localStorage.hash = '#en';
     window.location.hash = "#en";
     state.lang = false;
     state.markets = "Markets";
@@ -211,7 +211,7 @@ const switchToEnglish = () => {
         bodyAttrs: {
             dir: 'ltr'
         }
-       
+
     })
 }
 onMounted(() => {

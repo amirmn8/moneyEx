@@ -354,7 +354,7 @@
                                 </div>
                             </div>
 
-            
+
                         </div>
                         <div class="flex flex-col">
                             <div id="recentTradesSection" class="flex flex-col md:gap-8 w-full h-72">
@@ -369,16 +369,16 @@
                                     </thead>
                                     <tbody class="flex flex-col h-48 gap-1 overflow-y-scroll ">
 
-                                        <tr v-for="(item , index) in ordersDetail.bids" :key="index"
+                                        <tr v-for="i in 10" :key="index"
                                             class="w-full bg-red-100 rounded-3xl px-4  flex text-gray-700 justify-between">
                                             <td>
-                                                <p class="text-red-600">{{item.price}}</p>
+                                                <p class="text-red-600">1222.56</p>
                                             </td>
                                             <td>
-                                                <p>{{item.amount}}</p>
+                                                <p>0.05</p>
                                             </td>
                                             <td>
-                                                <p>{{item.total}}</p>
+                                                <p>100</p>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -400,18 +400,17 @@
                                         </tr>
                                     </thead>
                                     <tbody class="flex flex-col h-48  gap-1 overflow-y-scroll ">
-                                        <tr v-for="(item , index) in ordersDetail.asks" :key="index"
+                                        <tr v-for="i in 10" :key="index"
                                             class="w-full bg-green-100 rounded-3xl px-4  flex text-gray-700 justify-between">
                                             <td>
-                                                <p class="text-gray-600">{{item.price}}</p>
+                                                <p class="text-green-600">1222.56</p>
                                             </td>
                                             <td>
-                                                <p>{{item.amount}}</p>
+                                                <p>0.05</p>
                                             </td>
                                             <td>
-                                                <p>{{item.total}}</p>
+                                                <p>100</p>
                                             </td>
-
                                         </tr>
                                     </tbody>
                                 </table>
@@ -459,9 +458,6 @@
 </template>
 <script setup>
 const props = defineProps(['state'])
-const { data: ordersDetail } = await useFetch('https://moneyex.org/api/public?command=returnOrderBook&tradePair=BTC_USDT')
-const { data: recentOrdersDetail } = await useFetch('https://moneyex.org/api/public?command=returnTradeHistory&tradePair=BTC_USDT')
-
 </script>
 <style scoped>
 .slide-fade-enter-active {
